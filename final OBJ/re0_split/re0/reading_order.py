@@ -95,9 +95,8 @@ def eval_steds_variants(export_dir: str):
 import numpy as np
 
 def kmeans_1d(x, k, iters=30):
-    """简单 1D kmeans。x: (n,) float"""
+
     x = x.astype(np.float32)
-    # init: 均匀取 k 个分位点
     qs = np.linspace(0.1, 0.9, k)
     centers = np.quantile(x, qs)
     for _ in range(iters):
@@ -123,16 +122,10 @@ def kmeans_1d(x, k, iters=30):
     return labels, centers, inertia
 
 def choose_k_1d(x, k_min=1, k_max=3, min_cluster_size=5):
-    """
-    自动选择列数 k：
-    - 基于“惯性下降幅度”（elbow-ish）
-    - 同时避免产生很小的列
-    """
     best = None
     prev_inertia = None
     for k in range(k_min, k_max + 1):
         labels, centers, inertia = kmeans_1d(x, k)
-        # 小簇过滤
         ok = True
         for j in range(k):
             if (labels == j).sum() < min_cluster_size and len(x) >= min_cluster_size * k:
@@ -144,10 +137,8 @@ def choose_k_1d(x, k_min=1, k_max=3, min_cluster_size=5):
         if prev_inertia is None:
             score = 0.0
         else:
-            # inertia 下降比例越大越好
-            score = (prev_inertia - inertia) / max(prev_inertia, 1e-6)
 
-        # 记录：优先更大“下降”，其次更小 inertia
+            score = (prev_inertia - inertia) / max(prev_inertia, 1e-6)
         cand = (score, -inertia, k, labels, centers, inertia)
         if best is None or cand > best:
             best = cand
@@ -161,10 +152,7 @@ def choose_k_1d(x, k_min=1, k_max=3, min_cluster_size=5):
 
 
 def order_units_multi_column(units, page_w, page_h, max_cols=3):
-    """
-    units: list of dict with 'box'=[x0,y0,x1,y1]
-    返回：按阅读顺序排序后的 index 列表
-    """
+
     n = len(units)
     if n <= 1:
         return list(range(n))
@@ -175,38 +163,24 @@ def order_units_multi_column(units, page_w, page_h, max_cols=3):
     yt = y0
     bw = np.clip(x1 - x0, 1.0, None)
 
-    # 识别“跨栏大框”：宽度超过页面的一定比例（标题/大图/大表等），单独处理
-    wide = bw > (0.70 * page_w)
 
-    # 对非 wide 的做列聚类
+    wide = bw > (0.70 * page_w)
     idx_normal = np.where(~wide)[0]
     idx_wide = np.where(wide)[0]
 
     ordered = []
-
-    # 先把“宽大框”按 y 排到合适位置：通常它们是跨栏标题/大图，阅读上仍按 y 走
-    # 策略：把 wide 与 normal 一起排序时，wide 作为“单独列”插入：这里用更稳的两阶段合并
     if len(idx_normal) > 0:
         x_norm = xc[idx_normal]
         k, labels, centers = choose_k_1d(x_norm, 1, max_cols, min_cluster_size=4)
-
-        # 每一列内部按 y_top 排序
         cols = []
         for c in range(k):
             members = idx_normal[labels == c]
             members = members[np.argsort(yt[members])]
             cols.append(list(members))
-
-        # 列从左到右拼接
         seq_normal = [i for col in cols for i in col]
     else:
         seq_normal = []
-
-    # wide 按 y_top 排序
     seq_wide = list(idx_wide[np.argsort(yt[idx_wide])]) if len(idx_wide) > 0 else []
-
-    # 合并 wide 与 normal：按 y_top 进行稳定插入（wide 的 y 决定位置）
-    # 做法：对两序列按 y_top 归并，但当 y 接近时优先 wide（跨栏标题通常应先读）
     def merge_by_y(a, b):
         ia = ib = 0
         out = []
@@ -225,21 +199,14 @@ def order_units_multi_column(units, page_w, page_h, max_cols=3):
     return ordered
 
 def sort_doc_units_by_reading_order(doc_units, page_images):
-    """
-    doc_units: list[dict], each has page_id, box, text, ...
-    page_images: dict {page_id: image_path}
-    return sorted_units
-    """
-    # 1) 按页收集
     by_page = {}
     for u in doc_units:
         pid = int(u["page_id"])
         by_page.setdefault(pid, []).append(u)
 
-    # 2) 页按 pid 排序
     sorted_units = []
     for pid in sorted(by_page.keys()):
-        # 读 page 尺寸
+
         from PIL import Image
         img = Image.open(page_images[pid])
         W, H = img.width, img.height
@@ -322,8 +289,6 @@ def order_units_multi_column(units, page_w, page_h, max_cols=3):
     xc = 0.5 * (x0 + x1)
     yt = y0
     bw = np.clip(x1 - x0, 1.0, None)
-
-    # “跨栏大框”识别：标题/大图/大表常见
     wide = bw > (0.70 * page_w)
 
     idx_normal = np.where(~wide)[0]
@@ -344,7 +309,6 @@ def order_units_multi_column(units, page_w, page_h, max_cols=3):
 
     seq_wide = list(idx_wide[np.argsort(yt[idx_wide])]) if len(idx_wide) > 0 else []
 
-    # 按 y 归并：wide 在接近同一 y 时略优先（跨栏标题通常应先读）
     def merge_by_y(a, b):
         ia = ib = 0
         out = []
@@ -363,11 +327,7 @@ def order_units_multi_column(units, page_w, page_h, max_cols=3):
 
 
 def sort_doc_units_by_reading_order(doc_units, page_images, max_cols=3):
-    """
-    doc_units: list[dict] each has 'page_id','box',...
-    page_images: dict[int -> image_path]
-    return: new_units_sorted
-    """
+
     by_page = {}
     for u in doc_units:
         pid = int(u["page_id"])
