@@ -22,7 +22,7 @@ from typing import List, Dict, Any, Tuple
 class TNode:
     label: int
     text: str
-    oid: int                 # original id，用来排序
+    oid: int                 
     children: List["TNode"]
 
     def __init__(self, label: int, text: str, oid: int):
@@ -45,24 +45,22 @@ def find_effective_parent(i: int) -> int:
 
     p = parent[i] if 0 <= i < n else -1
 
-    # 1) 直接非法或 root
+    
     if (p is None) or (not isinstance(p, int)) or (p < 0):
         return -1
     if not _is_valid_idx(p):
         return -1
-
-    # 2) 向上跳，直到遇到 kept 的父节点或 root/非法
     seen = set()
     while True:
         if p in kept_set:
             return p
 
         if p in seen:
-            # 出现环，按无父节点处理
+            
             return -1
         seen.add(p)
 
-        # 向上跳
+        
         pp = parent[p]
         if (pp is None) or (not isinstance(pp, int)) or (pp < 0):
             return -1
@@ -70,22 +68,22 @@ def find_effective_parent(i: int) -> int:
             return -1
         p = pp
 
-    # 找“跳过 meta 后的最近祖先”
+    
     def find_effective_parent(i: int) -> int:
         p = parent[i]
         seen = set()
         while True:
             if p < 0:
                 return -1
-            if p in seen:         # 防环保护
+            if p in seen:         
                 return -1
             seen.add(p)
             if kept(p):
                 return p
-            # p 是 meta 或被排除节点，继续向上跳
+           
             p = parent[p]
 
-    # 连接
+
     for i in kept_ids:
         ep = find_effective_parent(i)
         if ep < 0:
@@ -93,7 +91,7 @@ def find_effective_parent(i: int) -> int:
         else:
             obj[ep].children.append(obj[i])
 
-    # children 按原始 reading-order id 排序，确保“有序树”一致
+  
     def sort_rec(x: TNode):
         x.children.sort(key=lambda c: c.oid)
         for ch in x.children:
