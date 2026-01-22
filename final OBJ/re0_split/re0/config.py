@@ -17,7 +17,7 @@ def seed_everything(seed: int = 42) -> None:
 class CFG:
     # data
     max_len: int = 512
-    batch_size: int = 1          # doc-level batch=1（结构任务依赖整篇文档序列）
+    batch_size: int = 1          
     num_workers: int = 2
 
     # model dims
@@ -57,7 +57,7 @@ class CFG:
     epochs: int = 10
 
 def normalize_box_xyxy(box, page_w: float, page_h: float, bins: int = 1000):
-    """像素坐标 [x0,y0,x1,y1] -> 整数归一化到 [0,bins]."""
+    
     x0, y0, x1, y1 = box
     x0 = int(np.clip(round(x0 / max(page_w, 1) * bins), 0, bins))
     x1 = int(np.clip(round(x1 / max(page_w, 1) * bins), 0, bins))
@@ -66,5 +66,5 @@ def normalize_box_xyxy(box, page_w: float, page_h: float, bins: int = 1000):
     return [x0, y0, x1, y1]
 
 def collate_doc(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
-    assert len(batch) == 1, "当前实现是 doc-level batch=1"
+    assert len(batch) == 1, 
     return batch[0]
