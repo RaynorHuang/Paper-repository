@@ -1,16 +1,3 @@
-"""
-Auto-generated split from notebook: 2.ipynb
-File: dochienet_nb/model_ssa.py
-Cells: [13]
-
-Notes:
-- This code is intentionally kept close to the original notebook to preserve behavior.
-- Some "TRAIN CELL" blocks in the notebook were already wrapped in triple-quotes; they remain non-executing reference code here.
-"""
-
-
-# === Notebook cell 13 ===
-# CELL U (REPLACE): SSA decoder with cached block-diag attn mask + model_ssa
 
 import math
 import torch
