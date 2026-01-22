@@ -1,17 +1,4 @@
-"""
-Auto-generated split from notebook: 2.ipynb
-File: dochienet_nb/training_cells_reference.py
-Cells: [18, 22]
 
-Notes:
-- This code is intentionally kept close to the original notebook to preserve behavior.
-- Some "TRAIN CELL" blocks in the notebook were already wrapped in triple-quotes; they remain non-executing reference code here.
-"""
-
-
-# === Notebook cell 18 ===
-# TRAIN CELL (REPLACE): AMP + step timing + epoch timing + ETA
-'''
 import time
 import math
 import random
@@ -20,14 +7,14 @@ import torch
 import torch.optim as optim
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-assert device == "cuda", "你现在不是 CUDA，先确认 GPU 可用并让 model_ssa 在 cuda 上。"
+assert device == "cuda", "现在不是 CUDA。"
 
 # reproducibility (optional)
 SEED = 42
 random.seed(SEED); np.random.seed(SEED)
 torch.manual_seed(SEED); torch.cuda.manual_seed_all(SEED)
 
-EPOCHS = 5               # 先用 5 确认速度/流程，没问题再改 100
+EPOCHS = 5               
 LR_START = 4e-5
 LR_END = 1e-6
 WEIGHT_DECAY = 0.01
@@ -169,23 +156,23 @@ SEED = 42
 random.seed(SEED); np.random.seed(SEED)
 torch.manual_seed(SEED); torch.cuda.manual_seed_all(SEED)
 
-# ------------------ speed knobs (RTX 4060 8GB friendly) ------------------
-EPOCHS = 10                       # 先 20 看趋势；稳定后可加到 30~50
-MAX_TRAIN_STEPS_PER_EPOCH = 200   # 每个 epoch 只跑这么多 doc（关键加速）
+# ------------------ speed knobs (RTX 4060 8GB) ------------------
+EPOCHS = 10                       
+MAX_TRAIN_STEPS_PER_EPOCH = 200   
 PRINT_EVERY_STEP = 20
 
-TRAIN_MAX_CHUNKS = 16             # 训练 cap（论文 32；你这张卡建议 16）
-TEST_MAX_CHUNKS  = 64             # 测试 cap（可先 64；最终可回 128）
+TRAIN_MAX_CHUNKS = 16             
+TEST_MAX_CHUNKS  = 64             
 
-EVAL_EVERY_EPOCH = 1              # 每个 epoch 都算 F1
-EVAL_TEDS_EVERY  = 5              # 每 5 个 epoch 才算一次 TEDS（关键加速）
+EVAL_EVERY_EPOCH = 1              
+EVAL_TEDS_EVERY  = 5              
 
 # ------------------ optimization ------------------
 LR_START = 4e-5
 LR_END = 1e-6
 WEIGHT_DECAY = 0.01
 WARMUP_RATIO = 0.05
-GRAD_ACCUM_STEPS = 2              # 8GB 上建议 2；如果显存更紧就 1
+GRAD_ACCUM_STEPS = 2              
 MAX_GRAD_NORM = 1.0
 ROOT_ID = 0
 
