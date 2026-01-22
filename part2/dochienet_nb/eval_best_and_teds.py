@@ -1,12 +1,3 @@
-"""
-Auto-generated split from notebook: 2.ipynb
-File: dochienet_nb/eval_best_and_teds.py
-Cells: [19, 20, 23, 24, 25]
-
-Notes:
-- This code is intentionally kept close to the original notebook to preserve behavior.
-- Some "TRAIN CELL" blocks in the notebook were already wrapped in triple-quotes; they remain non-executing reference code here.
-"""
 
 
 # === Notebook cell 19 ===
@@ -66,10 +57,8 @@ p2, r2, f12, tp2, pred_n2, gt_n2 = micro_prf(model_ssa, test_loader, exclude_roo
 print(f"[NONROOT] TP={tp2} Pred={pred_n2} GT={gt_n2} | P={p2:.4f} R={r2:.4f} F1={f12:.4f}")
 
 
-# === Notebook cell 20 ===
-# CELL TEDS_LABEL: semantic-label TEDS via zss (closer to paper than id-sensitive)
 
-import torch
+
 import sys
 import subprocess
 
@@ -175,8 +164,6 @@ avg_teds = sum(scores) / max(len(scores), 1)
 print(f"Test docs: {len(scores)}")
 print(f"Avg TEDS (semantic-label): {avg_teds:.4f}")
 
-
-# === Notebook cell 23 ===
 try:
     import zss
 except ImportError:
@@ -296,8 +283,6 @@ def eval_semantic_teds(model, loader):
                 semantic_teds_one(doc_id, batch["doc_elem_ids"], batch["parent_map"], pred_parent_map)
             )
     return sum(scores)/max(len(scores), 1)
-
-# Final metrics on test_loader
 p_all, r_all, f1_all = micro_prf(model_ssa, test_loader, exclude_root=False, root_id=ROOT_ID)
 p_nr,  r_nr,  f1_nr  = micro_prf(model_ssa, test_loader, exclude_root=True,  root_id=ROOT_ID)
 teds_sem = eval_semantic_teds(model_ssa, test_loader)
@@ -307,13 +292,9 @@ print(f"F1_all     : {f1_all:.4f} (P={p_all:.4f}, R={r_all:.4f})")
 print(f"F1_nonroot : {f1_nr:.4f} (P={p_nr:.4f}, R={r_nr:.4f})")
 print(f"TEDS_sem   : {teds_sem:.4f}")
 
-# === Notebook cell 24 ===
-# CELL ABLATION: w/o Page Embedding / w/o Inner-layout Embedding on model_ssa, report F1_all/F1_nonroot/TEDS_sem
-
 import math
 import json
 from pathlib import Path
-import torch
 import types
 import sys
 import subprocess
@@ -504,7 +485,5 @@ print("\n===== SUMMARY (copy to report) =====")
 for r in res:
     print(f'{r["name"]}: F1_all={r["F1_all"]:.4f} | F1_nonroot={r["F1_nonroot"]:.4f} | TEDS_sem={r["TEDS_sem"]:.4f}')
 
-
-# === Notebook cell 25 ===
 
 
