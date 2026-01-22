@@ -21,18 +21,15 @@ def main() -> None:
     seed_everything(42)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # ===== dataset roots (edit as needed) =====
     HRDH_ROOT = os.environ.get("HRDH_ROOT", r"C:\Users\tomra\Desktop\PAPER\final OBJ\HRDH")
     HRDS_ROOT = os.environ.get("HRDS_ROOT", r"C:\Users\tomra\Desktop\PAPER\final OBJ\HRDS")
     RUN_ROOT  = os.environ.get("RUN_ROOT", "hrds_runs")
 
-    # ===== config =====
     cfg = CFG()
     # The notebook overrides:
     cfg.epochs = 2
     cfg.num_workers = 0
 
-    # ===== dataset =====
     train_ds = HRDHDataset(HRDH_ROOT, split="train", cfg=cfg)
     test_ds  = HRDHDataset(HRDH_ROOT, split="test",  cfg=cfg)
 
@@ -43,12 +40,12 @@ def main() -> None:
         test_ds, batch_size=1, shuffle=False, num_workers=cfg.num_workers, collate_fn=collate_doc
     )
 
-    # ===== priors / sizes =====
+
     num_classes = len(LABEL2ID_14)
     num_rel = len(REL3)
     M_cp = compute_M_cp_from_dataset(train_ds, num_classes=num_classes)
 
-    # ===== model =====
+
     model = DSPSModel(
         num_classes=num_classes,
         num_rel=num_rel,
@@ -71,7 +68,6 @@ def main() -> None:
             torch.save(model.state_dict(), "dsps_hrdh_best.pt")
             print("saved: dsps_hrdh_best.pt")
 
-    # ===== export predictions (notebook step) =====
     if os.path.exists("dsps_hrdh_best.pt"):
         model.load_state_dict(torch.load("dsps_hrdh_best.pt", map_location=device))
     export_split_predictions(model, test_loader, save_dir="exports_hrdh_test", device=device)
