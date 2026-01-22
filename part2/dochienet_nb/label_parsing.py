@@ -26,7 +26,6 @@ print("first element keys:", elements[0].keys())
 print("first 3 edges:", edges[:3])
 
 
-# === Notebook cell 3 ===
 def build_parent_map(elements, edges, root_id=0):
     parent = {}
     for p, c in edges:
@@ -51,7 +50,6 @@ for cid in list(parent_map.keys())[:10]:
     print(cid, "->", parent_map[cid])
 
 
-# === Notebook cell 4 ===
 def norm_box_0_1000(box, page_w, page_h):
     x0, y0, x1, y1 = box
     
@@ -64,7 +62,7 @@ def norm_box_0_1000(box, page_w, page_h):
     nx1, ny1 = min(1000,nx1), min(1000,ny1)
     return [nx0, ny0, nx1, ny1]
 
-# test first 5 elements on their pages
+
 def page_size(pages_meta, page_num):
     p = pages_meta[f"page{page_num}"]
     return p["width"], p["height"]
@@ -74,7 +72,6 @@ for e in elements[:5]:
     print(e["id"], e["page"], e["label"], norm_box_0_1000(e["box"], w, h))
 
 
-# === Notebook cell 5 ===
 def parse_document(label_path):
 
     obj = json.loads(Path(label_path).read_text(encoding="utf-8"))
@@ -111,7 +108,7 @@ def parse_document(label_path):
     return pages_meta, elements
 
 
-# sanity check
+
 row = index_df.iloc[0]
 pages_meta, elements = parse_document(row["label_path"])
 print("elements:", len(elements))
@@ -152,7 +149,6 @@ def build_parent_map(elements, root_id=0):
     return parent_map
 
 
-# ====== sanity check ======
 parent_map = build_parent_map(elements)
 
 bad = [cid for cid, p in parent_map.items() if p < 0]
