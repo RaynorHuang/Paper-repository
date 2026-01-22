@@ -7,11 +7,7 @@ from .dataset import HRDHDataset
 
 
 def compute_M_cp_from_dataset(dataset: HRDHDataset, num_classes: int, pseudo_count: float = 5.0):
-    """
-    返回 M_cp: shape (num_classes+1, num_classes)
-    行：parent_class + ROOT
-    列：child_class
-    """
+
     ROOT = num_classes  # extra row index
     counts = np.zeros((num_classes + 1, num_classes), dtype=np.float64)
 
@@ -38,12 +34,7 @@ def compute_M_cp_from_dataset(dataset: HRDHDataset, num_classes: int, pseudo_cou
     return M_cp
 
 def compute_M_cp_from_dataset(dataset, num_classes: int, pseudo_count: float = 5.0):
-    """
-    M_cp shape: (num_classes+1, num_classes)
-      rows: parent_class + ROOT(row = num_classes)
-      cols: child_class
-    Column-normalized: sum over rows for each col = 1
-    """
+
     ROOT = num_classes
     counts = np.zeros((num_classes + 1, num_classes), dtype=np.float64)
 
