@@ -1,17 +1,3 @@
-"""
-Auto-generated split from notebook: 2.ipynb
-File: dochienet_nb/fixes_and_utils.py
-Cells: [15, 16, 17, 21]
-
-Notes:
-- This code is intentionally kept close to the original notebook to preserve behavior.
-- Some "TRAIN CELL" blocks in the notebook were already wrapped in triple-quotes; they remain non-executing reference code here.
-"""
-
-
-# === Notebook cell 15 ===
-# CELL FIX_BBOX: clamp bbox to [0,1000] before feeding into LayoutLMv3 encoder
-
 import types
 import torch
 import math
@@ -48,14 +34,10 @@ def _encode_one_chunk_clamped(self, c):
 
     return hidden + page_e + inner_e
 
-# 把补丁方法绑定到当前 model_ssa 实例
 model_ssa._encode_one_chunk = types.MethodType(_encode_one_chunk_clamped, model_ssa)
 
 print("Patched model_ssa: bbox will be clamped to [0,1000] before encoder.")
 
-
-# === Notebook cell 16 ===
-# CELL CHUNKCAP_FIX: fix LayoutLMv3TokenizerFast usage (needs words list + boxes)
 
 from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer
@@ -268,10 +250,6 @@ if torch.cuda.is_available():
 
 print("cleanup done")
 
-
-# === Notebook cell 21 ===
-# CELL PARENTMAP_FIX: after chunk truncation, remap missing parents to ROOT to avoid KeyError
-
 from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer
 from pathlib import Path
@@ -281,7 +259,6 @@ from collections import OrderedDict
 MODEL_NAME = "microsoft/layoutlmv3-base"
 MAX_TOKENS = 512
 
-# you can set these to your current speed config
 MAX_CHUNKS_TRAIN = 16   # e.g., 16 for RTX 4060 8GB
 MAX_CHUNKS_TEST  = 64   # e.g., 64 (can raise later)
 
@@ -470,7 +447,6 @@ test_ds  = DocHieNetDocDataset(index_df, split="test")
 train_loader = DataLoader(train_ds, batch_size=1, shuffle=True, collate_fn=collate_fn)
 test_loader  = DataLoader(test_ds, batch_size=1, shuffle=False, collate_fn=collate_fn)
 
-# quick sanity: try one forward to ensure no KeyError
 b = next(iter(train_loader))
 print("sample:", b["doc_id"], "| chunks:", b["n_chunks"], "| elems:", b["n_elems"])
 print("parents missing after fix:",
