@@ -78,7 +78,7 @@ import time
 
 
 def run_experiment(exp_name: str, use_softmask: bool, train_loader, test_loader, M_cp, cfg, seed=42, save_root="ablation_runs"):
-    # 固定随机种子
+  
     import random
     random.seed(seed)
     np.random.seed(seed)
@@ -88,7 +88,7 @@ def run_experiment(exp_name: str, use_softmask: bool, train_loader, test_loader,
     exp_dir = os.path.join(save_root, exp_name)
     os.makedirs(exp_dir, exist_ok=True)
 
-    # 建模：只改变 use_softmask
+    
     model = DSPSModel(
         num_classes=len(ID2LABEL_14),
         num_rel=len(REL2ID),
@@ -117,7 +117,7 @@ def run_experiment(exp_name: str, use_softmask: bool, train_loader, test_loader,
             torch.save(model.state_dict(), best_path)
             print(f"[{exp_name}] saved -> {best_path}")
 
-    # 导出与评测
+    
     state = torch.load(best_path, map_location=device, weights_only=True)
     model.load_state_dict(state)
 
