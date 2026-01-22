@@ -1,0 +1,6261 @@
+{
+  "doc_id": "1604.00125",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "AttSum: Joint Learning of Focusing and Summarization with Neural",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Attention",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Ziqiang Cao1 Wenjie Li1 Sujian Li2 Furu Wei3 Yanran Li1",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "1Department of Computing, The Hong Kong Polytechnic University, Hong Kong",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "2Key Laboratory of Computational Linguistics, Peking University, MOE, China",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "3 Microsoft Research, Beijing, China",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "{cszqcao, cswjli, csyli}@comp.polyu.edu.hk",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "lisujian@pku.edu.cn",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "furu@microsoft.com",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Abstract",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Query relevance ranking and sentence saliency ranking are the two main tasks in extractive",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 9,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "query-focused summarization. Previous supervised summarization systems often perform the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 10,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "two tasks in isolation. However, since reference summaries are the trade-off between relevance",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 11,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "and saliency, using them as supervision, neither of the two rankers could be trained well. This pa-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 12,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "per proposes a novel summarization system called AttSum, which tackles the two tasks jointly.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 13,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "It automatically learns distributed representations for sentences as well as the document clus-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 14,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "ter. Meanwhile, it applies the attention mechanism to simulate the attentive reading of human",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 15,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "behavior when a query is given. Extensive experiments are conducted on DUC query-focused",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 16,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "summarization benchmark datasets. Without using any hand-crafted features, AttSum achieves",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 17,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "competitive performance. We also observe that the sentences recognized to focus on the query",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 18,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "indeed meet the query need.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 19,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "1 Introduction",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 9,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Query-focused summarization (Dang, 2005) aims to create a brief, well-organized and fluent summary",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 21,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "that answers the need of the query. It is useful in many scenarios like news services and search engines,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 22,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "etc. Nowadays, most summarization systems are under the extractive framework which directly selects",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 23,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "existing sentences to form the summary. Basically, there are two major tasks in extractive query-focused",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 24,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "summarization, i.e., to measure the saliency of a sentence and its relevance to a user’s query.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 25,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "After a long period of research, learning-based models like Logistic Regression (Li et al., 2013) etc.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 22,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "have become growingly popular in this area. However, most current supervised summarization systems",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 27,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "often perform the two tasks in isolation. Usually, they design query-dependent features (e.g., query word",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 28,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "overlap) to learn the relevance ranking, and query-independent features (e.g., term frequency) to learn",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 29,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "the saliency ranking. Then, the two types of features are combined to train an overall ranking model.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 30,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "Note that the only supervision available is the reference summaries. Humans write summaries with the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 31,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "trade-off between relevance and saliency. Some salient content may not appear in reference summaries",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 32,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "if it fails to respond to the query. Likewise, the content relevant to the query but not representative of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 33,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "documents will be excluded either. As a result, in an isolated model, weights for neither query-dependent",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 34,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "nor query-independent features could be learned well from reference summaries.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 35,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "In addition, when measuring the query relevance, most summarization systems merely make use of",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 27,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "surface features like the TF-IDF cosine similarity between a sentence and the query (Wan and Xiao,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 37,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "2009). However, relevance is not similarity. Take the document cluster “d360f ” in DUC1 2005 as an ex-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 38,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "ample. It has the following query: What are the benefits of drug legalization? Here, “Drug legalization”",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 39,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "are the key words with high TF-IDF scores. And yet the main intent of the query is to look for “benefit”,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 40,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "which is a very general word and does not present in the source text at all. It is not surprising that when",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 41,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "measured by the TF-IDF cosine similarity, the sentences with top scores all contain the words “drug”",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 42,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "1 http://www-nlpir.nist.gov/projects/duc/",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "IMAGE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "Figure 1: Generation of sentence and document cluster embeddings. “⊕” stands for a pooling operation,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 45,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "while “⊗” represents a relevance measurement function.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 46,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "or “legalization”. Nevertheless, none of them provides advantages of drug legalization. See Section 4.6",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 43,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "for reference. Apparently, even if a sentence is exactly the same as the query, it is still totally useless",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 48,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "in the summary because it is unable to answer the query need. Therefore, the surface features are in-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 49,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "adequate to measure the query relevance, which further augments the error of the whole summarization",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 50,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "system. This drawback partially explains why it might achieve acceptable performance to adopt generic",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 51,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "summarization models in the query-focused summarization task (e.g., (Gillick and Favre, 2009)).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 52,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "Intuitively, the isolation problem can be solved with a joint model. Meanwhile, neural networks",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 37,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "have shown to generate better representations than surface features in the summarization task (Cao et",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 54,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "al., 2015b; Yin and Pei, 2015). Thus, a joint neural network model should be a nice solution to ex-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 55,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "tractive query-focused summarization. To this end, we propose a novel summarization system called",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 56,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "AttSum, which joints query relevance ranking and sentence saliency ranking with a neural attention",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 57,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "model. The attention mechanism has been successfully applied to learn alignment between various",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 58,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "modalities (Chorowski et al., 2014; Xu et al., 2015; Bahdanau et al., 2014). In addition, the work of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 59,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "(Kobayashi et al., 2015) demonstrates that it is reasonably good to use the similarity between the sen-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 60,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "tence embedding and document embedding for saliency measurement, where the document embedding",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 61,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "is derived from the sum pooling of sentence embeddings. In order to consider the relevance and saliency",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 62,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "simultaneously, we introduce the weighted-sum pooling over sentence embeddings to represent the doc-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 63,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "ument, where the weight is the automatically learned query relevance of a sentence. In this way, the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 64,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "document representation will be biased to the sentence embeddings which match the meaning of both",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 65,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "query and documents. The working mechanism of AttSum is consistent with the way how humans read",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 66,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "when having a particular query in their minds. Naturally, they pay more attention to the sentences that",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 67,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "meet the query need. It is noted that, unlike most previous summarization systems, our model is totally",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 68,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "data-driven, i.e., all the features are learned automatically.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 69,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "We verify AttSum on the widely-used DUC 2005 ∼ 2007 query-focused summarization benchmark",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 54,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "datasets. AttSum outperforms widely-used summarization systems which rely on rich hand-crafted fea-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 71,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "tures. We also conduct qualitative analysis for those sentences with large relevance scores to the query.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 72,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "The result reveals that AttSum indeed focuses on highly query relevant content.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 73,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "The contributions of our work are as follows:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 74,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "• We apply the attention mechanism that tries to simulate human attentive reading behavior for query-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 75,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "focused summarization;",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 76,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "• We propose a joint neural network model to learn query relevance ranking and sentence saliency",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 77,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "ranking simultaneously.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 78,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "2 Query-Focused Sentence Ranking",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 21,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "For generic summarization, people read the text with almost equal attention. However, given a query,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 80,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "people will naturally pay more attention to the query relevant sentences and summarize the main ideas",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 81,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "from them. Similar to human attentive reading behavior, AttSum, the system to be illustrated in this",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 82,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "section, ranks the sentences with its focus on the query. The overall framework is shown in Fig. 1. From",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 83,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "the bottom to up, AttSum is composed of three major layers.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 84,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "CNN Layer Use Convolutional Neural Networks to project the sentences and queries onto the embed-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 81,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "dings.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 86,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "Pooling Layer With the attention mechanism, combine the sentence embeddings to form the document",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 86,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "embedding in the same latent space.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 88,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "Ranking Layer Rank a sentence according to the similarity between its embedding and the embedding",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 88,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "of the document cluster.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 90,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "The rest of this section describes the details of the three layers.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 90,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "2.1 CNN Layer",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 80,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "Convolutional Neural Networks (CNNs) have been widely used in various Natural Language Processing",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 93,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "(NLP) areas including summarization (Cao et al., 2015b; Yin and Pei, 2015). They are able to learn",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 94,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "the compressed representations of n-grams effectively and tackle the sentences with variable lengths",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 95,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "naturally. We use CNNs to project both sentences and the query onto distributed representations, i.e.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 96,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "v(s) = CNN(s) v(q ) = CNN(q)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 97,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "A basic CNN contains a convolution operation on the top of word embeddings, which is followed",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 94,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "by a pooling operation. Let v (wi ) ∈ Rk refer to the k-dimensional word embedding corresponding",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 99,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "to the ith word in the sentence. Assume v(wi : wi+j ) to be the concatenation of word embeddings",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 100,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "[v(wi ), · · · , v(wi+j )]. A convolution operation involves a filter Wht ∈ Rl×hk , which is applied to a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 101,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "window of h words to produce the abstract features chi ∈ Rl :",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 102,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "chi = f (Wht × v(wi : wi+j )), (1)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 103,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "where f (·) is a non-linear function and the use of tanh is the common practice. To simplify, the bias",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 104,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "term is left out. This filter is applied to each possible window of words in the sentence to produce",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 105,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "a feature map. Subsequently, a pooling operation is applied over the feature map to obtain the final",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 106,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "features ˆch ∈ Rl of the filter. Here we use the max-over-time pooling (Collobert et al., 2011).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 107,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "ˆch = max{ch1 , ch2 , · · · } (2)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 108,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "The idea behind it is to capture the most important features in a feature map. ˆch is the output of CNN",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 99,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "Layer, i.e., the embeddings of sentences and queries.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 110,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "2.2 Pooling Layer",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 93,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "With the attention mechanism, AttSum uses the weighted-sum pooling over the sentence embeddings",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 112,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "to represent the document cluster. To achieve this aim, AttSum firstly learns the query relevance of a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 113,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "sentence automatically:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 114,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "r(s, q) = σ (v(s)Mv(q )T ), (3)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 115,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "where v(s)Mv(q )T , M ∈ Rl×l is a tensor function, and σ stands for the sigmoid function. The tensor",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 116,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "function has the power to measure the interaction between any two elements of sentence and query",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 117,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "embeddings. Therefore, two identical embeddings will have a low score. This characteristic is exactly",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 118,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "what we need. To reiterate, relevance is not equivalent to similarity. Then with r (s, q) as weights, we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 119,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "introduce the weighted-sum pooling to calculate the document embedding v (d|q ):",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 120,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "v (d|q ) = (cid:88) s∈d r (s, q)v(s) (4)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 121,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "Notably, a sentence embedding plays two roles, both the pooling item and the pooling weight. On",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 113,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "the one hand, if a sentence is highly related to the query, its pooling weight is large. On the other",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 123,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "hand, if a sentence is salient in the document cluster, its embedding should be representative. As a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 124,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "result, the weighted-sum pooling generates the document representation which is automatically biased",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 125,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "to embeddings of sentences match both documents and the query.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 126,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "AttSum simulates human attentive reading behavior, and the attention mechanism in it has actual",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 123,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "meaning. The experiments to be presented in Section 4.6 will demonstrate its strong ability to catch",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 128,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "query relevant sentences. Actually, the attention mechanism has been applied in one-sentence summary",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 129,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "generation before (Rush et al., 2015; Hu et al., 2015). The success of these works, however, heavily",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 130,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "depends on the hand-crafted features. We believe that the attention mechanism may not be able to play",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 131,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "its anticipated role if it is not used appropriately.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 132,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "2.3 Ranking Layer",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 112,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "Since the semantics directly lies in sentence and document embeddings, we rank a sentence according to",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 134,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "its embedding similarity to the document cluster, following the work of (Kobayashi et al., 2015). Here",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 135,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "we adopt cosine similarity:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 136,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "cos(d, s|q) = v(s) • v (d|q )T ||v(s)|| • ||v(d|q)|| (5)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 137,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "Compared with Euclidean distance, one advantage of cosine similarity is that it is automatically scaled.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 135,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "According to (K ˚ageb¨ack et al., 2014), cosine similarity is the best metrics to measure the embedding",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "similarity for summarization.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 140,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "In the training process, we apply the pairwise ranking strategy (Collobert et al., 2011) to tune model",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "parameters. Specifically, we calculate the ROUGE-2 scores (Lin, 2004) of all the sentences in the training",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 142,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "dataset. Those sentences with high ROUGE-2 scores are regarded as positive samples, and the rest as",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 143,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "negative samples. Afterwards, we randomly choose a pair of positive and negative sentences which",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 144,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "are denoted as s+ and s−, respectively. Through the CNN Layer and Pooling Layer, we generate the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 145,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "embeddings of v(s+ ), v(s− ) and v(d|q ). We can then obtain the ranking scores of s+ and s− according",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 146,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "to Eq. 5. With the pairwise ranking criterion, AttSum should give a positive sample a higher score in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 147,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "comparison with a negative sample. The cost function is defined as follows:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 148,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "ϵ(d, s+ , s− |q) (6) = max(0, Ω − cos(d, s+ |q) + cos(d, s−|q)),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 149,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "where Ω is a margin threshold. With this cost function, we can use the gradient descent algorithm to up-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 150,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "date model parameters. In this paper, we apply the diagonal variant of AdaGrad with mini-batches (Duchi",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 151,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "et al., 2011). AdaGrad adapts the learning rate for different parameters at different steps. Thus it is less",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 152,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "sensitive to initial parameters than the stochastic gradient descent.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 153,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "3 Sentence Selection",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 80,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "A summary is obliged to offer both informative and non-redundant content. While AttSum focuses on",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 155,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "sentence ranking, it employs a simple greedy algorithm, similar to the MMR strategy (Carbonell and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 156,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "Goldstein, 1998), to select summary sentences. At first, we discard sentences less than 8 words like the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 157,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "work of (Erkan and Radev, 2004). Then we sort the rest in descending order according to the derived",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 158,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "ranking scores. Finally, we iteratively dequeue the top-ranked sentence, and append it to the current",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 159,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "summary if it is non-redundant. A sentence is considered non-redundant if it contains significantly new",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 160,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "bi-grams compared with the current summary content. We empirically set the cut-off of the new bi-gram",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 161,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "ratio to 0.5.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 162,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "4 Experiments",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 155,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "4.1 Dataset",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 164,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "In this work, we focus on the query-focused multi-document summarization task. The experiments are",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 165,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "conducted on the DUC 2005 ∼ 2007 datasets. All the documents are from news websites and grouped",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 166,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "into various thematic clusters. In each cluster, there are four reference summaries created by NIST asses-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 167,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "sors. We use Stanford CoreNLP2 to process the datasets, including sentence splitting and tokenization.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 168,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "Our summarization model compiles the documents in a cluster into a single document. Table 1 shows the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 169,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "basic information of the three datasets. We can find that the data sizes of DUC are quite different. The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 170,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "sentence number of DUC 2007 is only about a half of DUC 2005’s. For each cluster, a summarization",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 171,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "system is requested to generate a summary with the length limit of 250 words. We conduct a 3-fold",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 172,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "cross-validation on DUC datasets, with two years of data as the training set and one year of data as the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 173,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "test set.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 174,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "Year Clusters Sentences Data Source2005 50 45931 TREC2006 59 34560 AQUAINT2007 30 24282 AQUAINT",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "Table 1: Statistics of the DUC datasets.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 176,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "4.2 Model Setting",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 165,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "For the CNN layer, we introduce a word embedding set which is trained on a large English news corpus",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 178,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "(1010 tokens) with the word2vec model (Mikolov et al., 2013). The dimension of word embeddings is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 179,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "set to 50, like many previous work (e.g., (Collobert et al., 2011)). Since the summarization dataset is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 180,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "quite limited, we do not update these word embeddings in the training process, which greatly reduces",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 181,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "the model parameters to be learned. There are two hyper-parameters in our model, i.e., the word window",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 182,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "size h and the CNN layer dimension l. We set h = 2, which is consistent with the ROUGE-2 evaluation.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 183,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "As for l , we explore the change of model performance with l ∈ [5, 100]. Finally, we choose l = 50 for all",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 184,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "the rest experiments. It is the same dimension as the word embeddings. During the training of pairwise",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 185,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "ranking, we set the margin Ω = 0.5. The initial learning rate is 0.1 and batch size is 100.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 186,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "4.3 Evaluation Metric",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 178,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "For evaluation, we adopt the widely-used automatic evaluation metric ROUGE (Lin, 2004) 3 . It measures",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 188,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "the summary quality by counting the overlapping units such as the n-grams, word sequences and word",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 189,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "pairs between the peer summary and reference summaries. We take ROUGE-2 as the main measures due",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 190,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "to its high capability of evaluating automatic summarization systems (Owczarzak et al., 2012). During",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 191,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "the training data of pairwise ranking, we also rank the sentences according to ROUGE-2 scores.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 192,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "4.4 Baselines",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 188,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "To evaluate the summarization performance of AttSum, we implement rich extractive summarization",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 194,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "methods. Above all, we introduce two common baselines. The first one just selects the leading sentences",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 195,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "to form a summary. It is often used as an official baseline of DUC, and we name it “LEAD”. The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 196,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "other system is called “QUERY SIM”, which directly ranks sentences according to its TF-IDF cosine",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 197,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "similarity to the query. In addition, we implement two popular extractive query-focused summarization",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 198,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "methods, called MultiMR (Wan and Xiao, 2009) and SVR (Ouyang et al., 2011). MultiMR is a graph-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 199,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "based manifold ranking method which makes uniform use of the sentence-to-sentence relationships and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 200,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "the sentence-to-query relationships. SVR extracts both query-dependent and query-independent features",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 201,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "and applies Support Vector Regression to learn feature weights. Note that MultiMR is unsupervised while",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 202,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "2 http://stanfordnlp.github.io/CoreNLP/",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "3 ROUGE-1.5.5 with options: -n 2 -m -u -c 95 -l 250 -x -r 1000 -f A -p 0.5 -t 0",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "SVR is supervised. Since our model is totally data-driven, we introduce a recent summarization system",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 195,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "DocEmb (Kobayashi et al., 2015) that also just use deep neural network features to rank sentences.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 206,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "It initially works for generic summarization and we supplement the query information to compute the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 207,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "document representation.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 208,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "To verify the effectiveness of the joint model, we design a baseline called ISOLATION, which per-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 206,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "forms saliency ranking and relevance ranking in isolation. Specifically, it directly uses the sum pool-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 210,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "ing over sentence embeddings to represent the document cluster. Therefore, the embedding similarity",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 211,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "between a sentence and the document cluster could only measure the sentence saliency. To include",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 212,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "the query information, we supplement the common hand-crafted feature TF-IDF cosine similarity to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 213,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "the query. This query-dependent feature, together with the embedding similarity, are used in sentence",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 214,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "ranking. ISOLATION removes the attention mechanism, and mixtures hand-crafted and automatically",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 215,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "learned features. All these methods adopt the same sentence selection process illustrated in Section 3",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 216,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "for a fair comparison.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 217,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "4.5 Summarization Performance",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 194,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "The ROUGE scores of the different summarization methods are presented in Table 2. We consider",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 219,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "ROUGE-2 as the main evaluation metrics, and also provide the ROUGE-1 results as the common prac-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 220,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "tice. As can be seen, AttSum always enjoys a reasonable increase over ISOLATION, indicating that the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 221,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "joint model indeed takes effects. With respect to other methods, AttSum largely outperforms two base-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 222,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "lines (LEAD and QUERY SIM) and the unsupervised neural network model DocEmb. Although AttSum",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 223,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "is totally data-driven, its performance is better than the widely-used summarization systems MultiMR",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 224,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "and SVR. It is noted that SVR heavily depends on hand-crafted features. Nevertheless, AttSum almost",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 225,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "outperforms SVR all the time. The only exception is DUC 2005 where AttSum is slightly inferior to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 226,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "SVR in terms of ROUGE-2. Over-fitting is a possible reason. Table 1 demonstrates the data size of DUC",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 227,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "2005 is highly larger than the other two. As a result, when using the 3-fold cross-validation, the number",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 228,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "of training data for DUC 2005 is the smallest among the three years. The lack of training data impedes",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 229,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "the learning of sentence and document embeddings.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 230,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "It is interesting that ISOLATION achieves competitive performance but DocEmb works terribly. The",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 220,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "pre-trained word embeddings seem not to be able to measure the sentence saliency directly. In compari-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 232,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "son, our model can learn the sentence saliency well.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 233,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "Year Model ROUGE-1 ROUGE-22005 LEAD 29.71 4.69QUERY SIM 32.95 5.91SVR 36.91 7.04MultiMR 35.58 6.81DocEmb 30.59 4.69ISOLATION 35.72 6.79AttSum 37.01 6.992006 LEAD 32.61 5.71QUERY SIM 35.52 7.10SVR 39.24 8.87MultiMR 38.57 7.75DocEmb 32.77 5.61ISOLATION 40.58 8.96AttSum 40.90 9.402007 LEAD 36.14 8.12QUERY SIM 36.32 7.94SVR 43.42 11.10MultiMR 41.59 9.34DocEmb 33.88 6.46ISOLATION 42.76 10.79AttSum 43.92 11.55",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "Table 2: ROUGE scores (%) of different models. We draw a line to distinguish models with or without",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 235,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "hand-crafted features.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 236,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "4.6 Query Relevance Performance",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 219,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "We check the feature weights in SVR and find the query-dependent features hold extremely small",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 238,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "weights. Without these features, the performance of SVR only drops 1%. Therefore, SVR fails to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 239,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "learn query relevance well. The comparison of AttSum and ISOLATION has shown that our method",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 240,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "can learn better query relevance than hand-crafted features. In this section, we perform the qualitative",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 241,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "analysis to inspect what AttSum actually catches according to the learned query relevance. We randomly",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 242,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "choose some queries in the test datasets and calculate the relevance scores of sentences according to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 243,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "Eq. 3. We then extract the top ranked sentences and check whether they are able to meet the query need.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 244,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "Examples for both one-sentence queries and multiple-sentence queries are shown in Table 3. We also",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 245,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "give the sentences with top TF-IDF cosine similarity to the query for comparison.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 246,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "With manual inspection, we find that most query-focused sentences in AttSum can answer the query",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 239,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "to a large extent. For instance, when asked to tell the advantages of drug legalization, AttSum catches the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 248,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "sentences about drug trafficking prevention, the control of marijuana use, and the economic effectiveness,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 249,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "etc. All these aspects are mentioned in reference summaries. The sentences with the high TF-IDF",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 250,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "similarity, however, are usually short and simply repeat the key words in the query. The advantage of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 251,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "AttSum over TF-IDF similarity is apparent in query relevance ranking.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 252,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "When there are multiple sentences in a query, AttSum may only focus on a part of them. Take the",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 248,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "second query in Table 3 as an example. Although the responses to all the four query sentences are",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 254,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "involved more or less, we can see that AttSum tends to describe the steps of wetland preservation more.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 255,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "Actually, by inspection, the reference summaries do not treat the query sentences equally either. For",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 256,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "this query, they only tell a little about frustrations during wetland preservation. Since AttSum projects a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 257,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "query onto a single embedding, it may augment the bias in reference summaries. It seems to be hard even",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 258,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "for humans to read attentively when there are a number of needs in a query. Because only a small part",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 259,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "of DUC datasets contains such a kind of complex queries, we do not purposely design a special model",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 260,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "to handle them in our current work.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 261,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "5 Related Work",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 164,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "5.1 Extractive Summarization",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 263,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "Work on extractive summarization spans a large range of approaches. Starting with unsupervised meth-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 264,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "ods, one of the widely known approaches is Maximum Marginal Relevance (MMR) (Carbonell and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 265,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "Goldstein, 1998). It used a greedy approach to select sentences and considered the trade-off between",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 266,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "saliency and redundancy. Good results could be achieved by reformulating this as an Integer Linear",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 267,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "Programming (ILP) problem which was able to find the optimal solution (McDonald, 2007; Gillick and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 268,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "Favre, 2009). Graph-based models played a leading role in the extractive summarization area, due to its",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 269,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "ability to reflect various sentence relationships. For example, (Wan and Xiao, 2009) adopted manifold",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 270,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "ranking to make use of the within-document sentence relationships, the cross-document sentence rela-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 271,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "tionships and the sentence-to-query relationships. In contrast to these unsupervised approaches, there",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 272,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "are also various learning-based summarization systems. Different classifiers have been explored, e.g.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 273,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "conditional random field (CRF) (Galley, 2006), Support Vector Regression (SVR) (Ouyang et al., 2011),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 274,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "and Logistic Regression (Li et al., 2013), etc.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 275,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "Many query-focused summarizers are heuristic extensions of generic summarization methods by in-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 265,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "corporating the information of the given query. A variety of query-dependent features were defined",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 277,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "to measure the relevance, including TF-IDF cosine similarity (Wan and Xiao, 2009), WordNet similar-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 278,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "ity (Ouyang et al., 2011), and word co-occurrence (Prasad Pingali and Varma, 2007), etc. However, these",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 279,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "features usually reward sentences similar to the query, which fail to meet the query need.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 280,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "5.2 Deep Learning in Summarization",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 264,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "In the summarization area, the application of deep learning techniques has attracted more and more",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 282,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "interest. (Genest et al., 2011) used unsupervised auto-encoders to represent both manual and system",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 283,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "summaries for the task of summary evaluation. Their method, however, did not surpass ROUGE. Re-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 284,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "cently, some works (Cao et al., 2015a; Cao et al., 2015b) have tried to use neural networks to complement",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 285,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "AttSum It acknowledges that illegal drugs cannot be kept out of the country by tougher border control and interdictionmeasures.Much greater resources, derived from taxation of the drugs that are now illegal and untaxed and from the billionssaved by not wasting money on more criminal- justice measures, must be devoted to drug treatment and drugprevention.As is the case with tobacco, legalizing marijuana, cocaine and heroin would not signify an endorsement of theiruse.The consumption and production of marijuana in the United States is on the decrease, and that criminalizationcosts society more in terms of increased law-enforcement-related costs and deprived revenues from taxes on potthan legalization would.TF-IDF Drug prices have soared.Drug addicts are not welcome.How refreshing to have so much discourse on drugs and legalization.The only solution now is a controlled policy of drug legalization.Query What are the benefits of drug legalization?AttSum Boparai also said that wetlands in many developing countries were vital to the sustenance of human beings, notjust flora and fauna.EPA says that all water conservation projects, and agriculture and forestry development along China’s major riversmust be assessed in accordance with environmental protection standards, and that no projects will be allowed ifthey pose a threat to the environment.Finland has agreed to help central China’s Hunan Province improve biodiversity protection, environmental educa-tion, subtropical forestry and wetlands protection, according to provincial officials.The EPA had sought as early 1993 to subject all development on wetlands to strict environmental review, but thatapproach was rejected by the courts, which ruled in favor of arguments made by developers and by the NationalMining Association.TF-IDF Statistics on wetlands loss vary widely.Mitigation of any impact on wetlands by creating or enhancing other wetlands.The new regulations would cover about one-fourth of all wetlands.Now more and more people have recognized wetlands’ great ecological and economic potential and the conserva-tion and utilization of wetlands has become an urgent task.Query Why are wetlands important? Where are they threatened? What steps are being taken to preserve them? Whatfrustrations and setbacks have there been?",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "Table 3: Sentences recognized to focus on the query.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 287,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "sentence ranking features. Although these models achieved the state-of-the-art performance, they still",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 286,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "heavily relied on hand-crafted features. A few researches explored to directly measure similarity based",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 289,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "on distributed representations. (Yin and Pei, 2015) trained a language model based on convolutional",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 290,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "neural networks to project sentences onto distributed representations. (Cheng and Lapata, 2016) treated",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 291,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "single document summarization as a sequence labeling task and modeled it by the recurrent neural net-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 292,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "works. Others like (Kobayashi et al., 2015; K˚ageb ¨ack et al., 2014) just used the sum of trained word",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 293,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "embeddings to represent sentences or documents.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 294,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "In addition to extractive summarization, deep learning technologies have also been applied to com-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 283,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "pressive and abstractive summarization. (Filippova et al., 2015) used word embeddings and Long Short",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 296,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "Term Memory models (LSTMs) to output readable and informative sentence compressions. (Rush et",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 297,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "al., 2015; Hu et al., 2015) leveraged the neural attention model (Bahdanau et al., 2014) in the machine",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 298,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "translation area to generate one-sentence summaries. We have described these methods in Section 2.2.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 299,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "6 Conclusion and Future Work",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 263,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "This paper proposes a novel query-focused summarization system called AttSum which jointly han-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 301,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "dles saliency ranking and relevance ranking. It automatically generates distributed representations for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 302,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "sentences as well as the document cluster. Meanwhile, it applies the attention mechanism that tries to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 303,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "simulate human attentive reading behavior when a query is given. We conduct extensive experiments on",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 304,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "DUC query-focused summarization datasets. Using no hand-crafted features, AttSum achieves competi-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 305,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "tive performance. It is also observed that the sentences recognized to focus on the query indeed meet the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 306,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "query need.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 307,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "Since we have obtained the semantic representations for the document cluster, we believe our system",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 302,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "can be easily extended into abstractive summarization. The only additional step is to integrate a neural",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 309,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "language model after document embeddings. We leave this as our future work.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 310,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "References",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 301,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "text": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2014. Neural machine translation by jointly learning to",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 312,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "text": "align and translate. arXiv preprint arXiv:1409.0473.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 313,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "text": "Ziqiang Cao, Furu Wei, Li Dong, Sujian Li, and Ming Zhou. 2015a. Ranking with recursive neural networks and",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 313,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 316,
+      "text": "its application to multi-document summarization. In Proceedings of AAAI.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 315,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 317,
+      "text": "Ziqiang Cao, Furu Wei, Sujian Li, Wenjie Li, Ming Zhou, and Houfeng Wang. 2015b. Learning summary prior",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 315,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 318,
+      "text": "representation for extractive summarization. Proceedings of ACL: Short Papers, pages 829–833.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 317,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "text": "Jaime Carbonell and Jade Goldstein. 1998. The use of mmr, diversity-based reranking for reordering documents",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 317,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "text": "and producing summaries. In Proceedings of SIGIR, pages 335–336.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 319,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 321,
+      "text": "Jianpeng Cheng and Mirella Lapata. 2016. Neural summarization by extracting sentences and words. arXiv",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 319,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 322,
+      "text": "preprint arXiv:1603.07252.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 321,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 323,
+      "text": "Jan Chorowski, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2014. End-to-end continuous speech",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 321,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "text": "recognition using attention-based recurrent nn: First results. arXiv preprint arXiv:1412.1602.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 323,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 325,
+      "text": "Ronan Collobert, Jason Weston, L´eon Bottou, Michael Karlen, Koray Kavukcuoglu, and Pavel Kuksa. 2011.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 323,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "text": "Natural language processing (almost) from scratch. The Journal of Machine Learning Research, 12:2493–2537.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 325,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "text": "Hoa Trang Dang. 2005. Overview of duc 2005. In Proceedings of DUC, pages 1–12.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 325,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "text": "John Duchi, Elad Hazan, and Yoram Singer. 2011. Adaptive subgradient methods for online learning and stochas-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 327,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "text": "tic optimization. The Journal of Machine Learning Research, 12:2121–2159.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 328,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "text": "G ¨unes Erkan and Dragomir R Radev. 2004. Lexrank: Graph-based lexical centrality as salience in text summa-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 328,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "text": "rization. JAIR, 22(1):457–479.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 330,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "text": "Katja Filippova, Enrique Alfonseca, Carlos A. Colmenares, Lukasz Kaiser, and Oriol Vinyals. 2015. Sentence",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 330,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "text": "compression by deletion with lstms. In Proceedings of EMNLP, pages 360–368.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 332,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "text": "Michel Galley. 2006. A skip-chain conditional random field for ranking meeting utterances by importance. In",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 332,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "text": "Proceedings of EMNLP, pages 364–372.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 334,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "text": "Pierre-Etienne Genest, Fabrizio Gotti, and Yoshua Bengio. 2011. Deep learning for automatic summary scoring.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 334,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "text": "In Proceedings of the Workshop on Automatic Text Summarization, pages 17–28.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 336,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "text": "Dan Gillick and Benoit Favre. 2009. A scalable global model for summarization. In Proceedings of the Workshop",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 336,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "text": "on ILP for NLP, pages 10–18.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 338,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "text": "Baotian Hu, Qingcai Chen, and Fangze Zhu. 2015. Lcsts: A large scale chinese short text summarization dataset.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 338,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "text": "In Proceedings of EMNLP, pages 1967–1972.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 340,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "text": "Mikael K˚ageb ¨ack, Olof Mogren, Nina Tahmasebi, and Devdatt Dubhashi. 2014. Extractive summarization using",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 340,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "text": "continuous vector space models. In Proceedings of EACL Workshop, pages 31–39.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 342,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "text": "Hayato Kobayashi, Masaki Noguchi, and Taichi Yatsuka. 2015. Summarization based on embedding distributions.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 342,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 345,
+      "text": "In Proceedings of EMNLP, pages 1984–1989.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 344,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "text": "Chen Li, Xian Qian, and Yang Liu. 2013. Using supervised bigram-based ilp for extractive summarization. In",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 344,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "text": "Proceedings of ACL, pages 1004–1013.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 346,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "text": "Chin-Yew Lin. 2004. Rouge: A package for automatic evaluation of summaries. In Proceedings of the ACL",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 346,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "text": "Workshop, pages 74–81.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 348,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 350,
+      "text": "Ryan McDonald. 2007. A study of global inference algorithms in multi-document summarization. Springer.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 348,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 351,
+      "text": "Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Efficient estimation of word representations in",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 350,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 352,
+      "text": "vector space. arXiv preprint arXiv:1301.3781.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 351,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 353,
+      "text": "You Ouyang, Wenjie Li, Sujian Li, and Qin Lu. 2011. Applying regression models to query-focused multi-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 351,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 354,
+      "text": "document summarization. Information Processing & Management, 47(2):227–237.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 353,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 355,
+      "text": "Karolina Owczarzak, John M Conroy, Hoa Trang Dang, and Ani Nenkova. 2012. An assessment of the accuracy",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 353,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 356,
+      "text": "of automatic evaluation in summarization. In Proceedings of Workshop on Evaluation Metrics and System",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 355,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 357,
+      "text": "Comparison for Automatic Summarization, pages 1–9.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 356,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 358,
+      "text": "Rahul K Prasad Pingali and Vasudeva Varma. 2007. Iiit hyderabad at duc 2007. Proceedings of DUC 2007.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 355,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 359,
+      "text": "Alexander M. Rush, Sumit Chopra, and Jason Weston. 2015. A neural attention model for abstractive sentence",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 358,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "text": "summarization. In Proceedings of EMNLP, pages 379–389.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 359,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "text": "Xiaojun Wan and Jianguo Xiao. 2009. Graph-based multi-modality learning for topic-focused multi-document",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 359,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 362,
+      "text": "summarization. In IJCAI, pages 1586–1591.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 361,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 363,
+      "text": "Kelvin Xu, Jimmy Ba, Ryan Kiros, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, and Yoshua Ben-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 361,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "text": "gio. 2015. Show, attend and tell: Neural image caption generation with visual attention. arXiv preprint",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 363,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "text": "arXiv:1502.03044.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 364,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 366,
+      "text": "Wenpeng Yin and Yulong Pei. 2015. Optimizing sentence modeling and selection for document summarization.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 363,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 367,
+      "text": "In Proceedings of IJCAI, pages 1383–1389.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 366,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

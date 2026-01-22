@@ -1,0 +1,6941 @@
+{
+  "doc_id": "1808.06289",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "Multi-Perspective Context Aggregation for",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Semi-supervised Cloze-style Reading Comprehension",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Liang Wang1 , Sujian Li2, Wei Zhao1,",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Kewei Shen1 , Meng Sun1 , Ruoyu Jia1 , Jingming Liu1",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "1Yuanfudao Research, Beijing, China",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "2Key Laboratory of Computational Linguistics, Peking University, MOE, China",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "{wangliang01,zhaowei01,shenkw,sunmeng,jiary,liujm}@fenbi.com",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "lisujian@pku.edu.cn",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Abstract",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Cloze-style reading comprehension has been a popular task for measuring the progress of natural",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 8,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "language understanding in recent years. In this paper, we design a novel multi-perspective frame-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 9,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "work, which can be seen as the joint training of heterogeneous experts and aggregate context",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 10,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "information from different perspectives. Each perspective is modeled by a simple aggregation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 11,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "module. The outputs of multiple aggregation modules are fed into a one-timestep pointer net-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 12,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "work to get the final answer. At the same time, to tackle the problem of insufficient labeled data,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 13,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "we propose an efficient sampling mechanism to automatically generate more training examples",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 14,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "by matching the distribution of candidates between labeled and unlabeled data. We conduct our",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 15,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "experiments on a recently released cloze-test dataset CLOTH (Xie et al., 2017), which consists of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 16,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "nearly 100k questions designed by professional teachers. Results show that our method achieves",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 17,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "new state-of-the-art performance over previous strong baselines.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 18,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "1 Introduction",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 8,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Reading comprehension is a challenging task which requires the deep understanding of natural language.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 20,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Cloze test is a particular form of reading comprehension: given a passage with blanks, an examinee is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 21,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "required to fill in the missing word (or phrase) that best fits the context surrounding the blank. Recently,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 22,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "cloze-style reading comprehension has drawn growing interests from NLP research communities, since",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 23,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "such a task meets the practical requirements and is relatively easy to design.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 24,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "The research of cloze-style reading comprehension is first advanced by two large-scale corpora: the",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 21,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "CNN/Daily Mail (Hermann et al., 2015) and CBT (Hill et al., 2015) datasets, which are automatically",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 26,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "constructed by randomly or periodically deleting a word from original passage. Though the automatically",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 27,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "generated datasets usually consist of a large quantity of labeled data and make it possible to train large",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 28,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "neural network models, they are in nature far away from real-world language understanding problems",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 29,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "and have serious ambiguity issues (Chen et al., 2016). As a result, the state-of-the-art system of cloze",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 30,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "test almost reaches the performance ceiling and loses its improvement direction due to the limitation of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 31,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "the corpus (Chen et al., 2016). In such situation, Xie et al. (2017) argues that it is a more reliable means",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 32,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "to assess language proficiency with carefully designed questions by professional teachers, and releases",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 33,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "a novel corpus CLOTH. The CLOTH dataset brings the new challenge of exploring a comprehensive",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 34,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "evaluation of language proficiency and specifically divides the questions into several types including",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 35,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "matching, reasoning and grammar etc. Table 1 shows several example questions from CLOTH.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 36,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "From experiments by Xie et al. (2017), we can see that the Stanford attention reader (Chen et al.,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 26,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "2016) of having the near state-of-the-art performance (with an accuracy of about 0.74) on CNN/Daily",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 38,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "Mail only gets an accuracy of 0.487 on CLOTH and there exists a huge performance gap between human",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 39,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "and popular machine learning models. The main reason is that attention models are mainly good at",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 40,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "processing matching questions (e.g., the first example in Table 1 has matching between “police” and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 41,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "“accident”, “man died”), which occupy a less percentage in CLOTH than in CNN/Daily Mail. Xie",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 42,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "This work is licensed under a Creative Commons Attribution 4.0 International License. License details: http://",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "creativecommons.org/licenses/by/4.0/",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "question type...... As a Senior student, I have to many exams. ......A: finish B: win C: take D: join collocationI am calling from the station .......“ There was an accident, and a man died .” ......A: post B: bus C: police D: railway matchinga student reported that I made an error ...... He wasand after thanking him for his honesty ...... he said angrily .A: wise B: right C: rigid D: angry reasoning...... They are used to messages by computersand smart phones. ......A: sending B: send C: sent D: sends grammar",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "Table 1: Example questions and their corresponding types from the CLOTH dataset. “......” represents some omitted irrelevant",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 46,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "sentences.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 47,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "et al. (2017) also present the word-predicting potential of language models (LM) which can well tackle",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 43,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "lexical collocation (e.g., “take” and “exam” in the second example), given a large volume of unlabeled",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 49,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "data and high computation power. Furthermore, Xie et al. (2017) points out that the most difficult",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 50,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "questions belong to the long-term-reasoning type (e.g., the third example question), which constitutes",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 51,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "approximately 22.4% in CLOTH and needs more semantics to deal with.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 52,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "To comprehensively consider the progress and questions in CLOTH, we come up with the idea of",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 38,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "modeling multiple perspectives to arrive at the correct answer, given limited computation power. Our",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 54,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "multi-perspective network consists of several parallel modules, where each module aggregates context",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 55,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "information from a unique perspective. We model long-distance matching with attentive readers, global",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 56,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "semantics with iterative dilated convolutions and lexical collocation with both n-gram and neural lan-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 57,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "guage model(LM). The outputs of aggregation modules are further integrated and fed into a one-timestep",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 58,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "pointer network (Vinyals et al., 2015) to get the final answer.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 59,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "Next, one challenging problem is how to effectively train our multi-perspective network due to the",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 54,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "insufficiency of labeled data. To overcome this problem, Xie et al. (2017) present a representativeness-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 61,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "based weighted loss function. Their approach has two drawbacks: first, it requires to train another model",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 62,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "for predicting a candidate’s representativeness score; second, it is not a sample-efficient way since each",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 63,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "word including uninformative stop words becomes a training example. In this paper, we improve on Xie",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 64,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "et al. (2017)’s approach and develop a semi-supervised learning method by matching the distribution of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 65,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "candidates between labeled and unlabeled data. The intuition is to make automatically constructed data",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 66,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "as similar as possible to existing labeled data. Stop words, named entities and out-of-vocabulary words",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 67,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "should be downsampled while meaningful content words should be kept for training.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 68,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "Our method is simple, straightforward and shows better performance with only a fraction of training",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 61,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "examples. Experiments show that our semi-supervised multi-perspective network is able to outperform",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 70,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "state-of-the-art results on the CLOTH dataset by 4.2%.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 71,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "2 Model",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 20,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "Formally, the task of cloze-style reading comprehension requires choosing the correct answer from |c|",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 73,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "candidates {ci }|c|i=1 given a sequence of words {wi}ni=1 as context. Candidate ci could be a word or a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 74,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "phrase. For the CLOTH dataset, each question has |c| = 4 candidates.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 75,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "2.1 MPNet: Multi-Perspective Context Aggregation Network",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 73,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "The overall architecture of our proposed MPNet is shown in Figure 1. It consists of an input layer, a",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 77,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "multi-perspective aggregation layer and an output layer.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 78,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "Input Layer Given the passage as a variable-length word sequence {wi}ni=1 , we embed each word",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 79,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "into 300-dimensional word embeddings {ei }ni=1 using GloVe vectors. Then, we apply bidirectional",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 80,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "GRU(BiGRU) on {ei}ni=1 to get contextualized word representations {hi }ni=1 (McCann et al., 2017)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 81,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "muchsohim____newsThe M1 M2 Mt-1 Mt……BiGRU P1 P2 Pt-1 PtCandidatesPointer Net",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "Figure 1: MPNet: Multi-Perspective context aggregation network. We only show part of the context “The news him so",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 83,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "much” and “ ” is the blank to fill in.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 84,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "(Peters et al., 2018), since GRU is computationally more efficient and shows slightly better performance",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 82,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "than LSTM.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 86,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "−→h i = −−−→GRU (−→h i−1, ei)←−h i = ←−−−GRU (←−h i+1, ei)hi = [−→h i; ←−h i ] (1)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 87,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "We also use another GRU to encode candidates {ci}|c|i=1 into fixed-length vectors {ui}|c|i=1 , as",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 78,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "candidates may be multi-word phrases.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 89,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "Multi-Perspective Aggregation Layer This layer consists of several independent aggregation modules",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 89,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "{Mi }ti=1 . Computation can be easily parallelized since modules are independent. Each module Mi takes",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 91,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "contextualized word representations {hi}ni=1 and candidates’ encoding {ui}|c|i=1 as input and outputs a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 92,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "vector pi, which reflects the information from module Mi ’s perspective. We also assume aggregation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 93,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "modules can have access to {wi }ni=1 and {ci }|c|i=1. For cloze-style reading comprehension, each module",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 94,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "should be able to distill some knowledge which can judge whether a candidate fits a given context from",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 95,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "a perspective.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 96,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "The aggregation modules that we use are listed below:",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 91,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "• Selective Copying Assuming the index of the blank is j , this module simply selects the hidden",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 98,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "representation of the blank hj, directly copies it to the output psc and ignores everything else. Note",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 99,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "that hj is the output of BiGRU and already incorporates context information from both forward and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 100,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "backward directions. This resembles a bidirectional language model without softmax output layer.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 101,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "Words near the blank are paid more attention which is consistent with our intuition of filling in the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 102,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "blank.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 103,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "• Attentive Reader A large portion of questions involve matching candidates with related words",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 99,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "which may be far away from each other such as the second example in Table 1. Attentive reader",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 105,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "proposed by Chen et al. (2016) directly attends to the entire context and therefore avoids the diffi-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 106,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "culty of modeling long-range dependence. Original bilinear attention function (Chen et al., 2016)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 107,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "is slightly modified by introducing bar to model attention bias towards the ith word. u is the vector",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 108,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "representation of a candidate, we omit its subscript for simplicity.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 109,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "αi = softmaxi (uT Warhi + bTar hi ), i ∈ [1, n] par = n (cid:88) i=1 αihi (2)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 110,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "• Iterative Dilated Convolution Convolutional neural networks have been a successful method for",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 105,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "modeling both natural language (Kim, 2014) and images. Multiple layers of CNNs can extract",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 112,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "features in a hierarchical way, which shares similarity with the compositional property of natu-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 113,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "ral language. Dilated convolution is a variant of traditional convolution and is more efficient for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 114,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "multi-scale context aggregation (Yu and Koltun, 2015; Strubell et al., 2017). In this work, we use",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 115,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "two blocks where each block consists of two dilated convolutions with dilation rate set to 1 and 3",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 116,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "respectively. Max pooling across filters is applied to get the final output pidc .",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 117,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "• N-gram Statistics To explicitly incorporate collocation information, we use this module to output",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 112,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "logarithmic n-gram counts png from English Wikipedia with n ∈ [1, 5]. Logarithmic function",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 119,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "avoids the optimization difficulty with extremely large numbers.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 120,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "Note that the output psc from selective copying module and pidc from iterative dilated convolution",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 119,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "module don’t depend on the candidates. We therefore get context representation Pctx = [psc ; pidc]",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 122,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "by concatenating psc and pidc. Similarly, we can get the representation vector Ci for ith candidate by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 123,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "concatenating the output piar from attentive reader module, ping from n-gram statistics and ui from the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 124,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "candidate encoder: Ci = [ui; piar ; ping ], i ∈ [1, |c|].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 125,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "Output Layer We use a one-timestep pointer network (Vinyals et al., 2015) to choose the correct",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 122,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "answer from |c| candidates {ci }i=1. Given context representation Pctx and candidates representation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 127,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "{Ci}|c|i=1, we first refine candidates representation with a gating mechanism:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 128,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "gi = σ (W1Pctx + W2Ci + b), i ∈ [1, |c|] C′ i = Ci ⊙ gi , i ∈ [1, |c|] (3)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 129,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "σ is the sigmoid function and ⊙ denotes pointwise multiplication. Then we calculate the distribution of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 130,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "being the correct answer over candidates with bilinear function:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 131,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "ˆyi = softmaxi (C′Ti WoPctx + bTo C′i ), i ∈ [1, |c|] (4)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 132,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "{ ˆyi }|c|i=1 is a probability distribution and the pointer points to the candidate arg maxi(ˆyi).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 133,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "Model Learning The model is trained by minimizing the standard cross-entropy loss.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 127,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "Discussion Different aggregation modules summarize context from different perspectives. In order to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 135,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "precisely locate the correct answer, a set of complementary aggregation modules are preferred where",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 136,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "one module may only focus on lexical collocation and another module may be sensitive to the global",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 137,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "matching. It is worth noting that our MPNet framework can be easily extended by adding other effective",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 138,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "aggregation modules.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "In addition, the main idea of MPNet is to some extent connected with the mixture of experts (MoE)",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 135,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "(Masoudnia and Ebrahimpour, 2014). If each aggregation module can be seen as an expert, then multi-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 141,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "ple aggregation modules become MoE. One key difference is that aggregation modules in MPNet have",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 142,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "heterogeneous network structures while traditional MoE models usually consist of homogeneous experts.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 143,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "2.2 SemiMPNet: Semi-supervised Learning with Distribution Matching",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 77,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "SemiMPNet is the semi-supervised variant of our proposed MPNet in Section 2.1, with exactly the same",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 145,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "network architecture. Though CLOTH consists of nearly 100k questions, it is generally not enough to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 146,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "train large neural models. Semi-supervised learning comes to the rescue. We propose to sample from",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 147,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "unlabeled text to construct training examples automatically. In order to train effectively, we need to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 148,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "make the automatically generated data similar to labeled data and ensure that candidates should have a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 149,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "similar distribution in original labeled data to that in the generated data. Then, we formulate candidates",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 150,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "distribution matching in two datasets as two sampling problems as follows:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 151,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "How to sample positive candidates? We assume Du is a collection of unlabeled documents, Dc is",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 146,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "the collection of all candidates in the CLOTH dataset and V is the vocabulary which is composed of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 153,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "all the candidates occurring in CLOTH. Each word wi ∈ V is associated with an unknown sampling",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 154,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "probability p(wi ). To match the distribution of candidates between Du and Dc, the following constraints",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 155,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "about p(wi), i ∈ [1, |V |] should be satisfied:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 156,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "p(wi)#(wi , Du) (cid:80)|V | j=1 p(wj )#(wj , Du) = #(wi , Dc ) (cid:80)|V | j =1 #(wj , Dc) , i ∈ [1, |V |] 0 ≤ p(wi) ≤ 1, i ∈ [1, |V |] max {p(wi )| i ∈ [1, |V |]} = 1 (5)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 157,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "Function #(wi , D) returns the frequency of wi in corpus D. The second constraint is to make sure",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 153,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "{p(wi )}|V |i=1 is a valid probability distribution and the third constraint is to make full use of data. There is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 159,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "generally no exact solution to Equation(5) as #(wi , Du ) = 0 and #(wi , Dc ) > 0 may hold for some i.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 160,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "Instead, we use an approximate solution:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 161,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "p(wi) = min(1, #(wi , Dc ) #(wi, Du) × γ (cid:80)|V |j =1 #(wj , Du ) (cid:80)|V | j=1 #(wj , Dc) ) (6)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 162,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "The coefficient γ can be interpreted as the average probability of sampling a word. We set γ = 0.5",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 159,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "based on validation data. With this strategy, we sample the positive candidates and use the corresponding",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 164,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "passages as their contexts.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 165,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "How to sample negative candidates? Given a positive candidate wp , the probability of wi being",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 164,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "sampled as a negative candidate p(wi|wp) can be calculated as follows:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 167,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "p(wi|wp ) = λ |V | + (1 − λ) #(wi, wp ) (cid:80)|V | j =1 #(wj , wp ) (7)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 168,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "#(wi , wp) is the co-occurrence counts of wi and wp as candidates in labeled dataset Dc. Intuitively,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 169,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "the co-occurrence probability of wi and wp should match between constructed data and labeled data. λ",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 170,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "is the probability of randomly selecting a word from the entire vocabulary, similar to the exploration",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 171,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "mechanism in reinforcement learning. It makes our model more robust to overfitting and we set λ = 0.1",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 172,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "throughout the experiments.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 173,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "In the case that candidates are multi-word phrases, our method is also applicable by simply expanding",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 167,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "the vocabulary V to include phrases in Dc .",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 175,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "3 Experiments",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 73,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "3.1 Experimental Setup",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 177,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "Dataset and Evaluation Metrics We use the CLOTH (Xie et al., 2017) dataset for training and eval-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 178,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "uation. RACE (Lai et al., 2017) dataset and English Wikipedia 1 serve as background text corpora for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 179,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "semi-supervised learning. RACE dataset consists of nearly 28k reading comprehension passages from",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 180,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "high-school examinations. We delete passages that have a Jaccard similarity over 0.85 with passages",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 181,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "in the CLOTH dataset. Furthermore, background text corpora also include training passages from the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 182,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "CLOTH dataset by filling the correct answer back into the corresponding blank.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 183,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "Accuracy is used as the evaluation metric. To make a fair comparison with Xie et al. (2017), we also",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 179,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "report performance on CLOTH-M(middle school questions) and CLOTH-H(high school questions).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 185,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "Hyperparameters Our model is implemented with Tensorflow (Abadi et al., 2016). Hyperparameters",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 186,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "are optimized with random search based on validation data. All our models are run on a single GPU(Tesla",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 187,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "1 https://dumps.wikimedia.org/enwiki/",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "P40). NLTK (Bird and Loper, 2004) is used for tokenization. Word embeddings are initialized with",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 185,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "300-dimensional GloVe (Pennington et al., 2014) vectors. Only vectors of top 1000 frequent words are",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 190,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "fine-tuned during training. Our network is trained with Adam algorithm (Kingma and Ba, 2014). The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 191,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "initial learning rate is set to 10−3. We decrease learning rate to 10−4 after 15k iterations and further",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 192,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "decrease it to 10−5 after 50k iterations. Both forward and backward GRU have 128 hidden units. For",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 193,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "input, we use a context window of 80 words. For 1D dilated convolution, we use 2 blocks, the number",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 194,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "of filters is 128 and the convolution width is 3 for all layers. Batch normalization and ReLU are applied",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 195,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "on top of convolution. Gradients are clipped to have a maximum L2 norm of 5. Dropout with probability",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 196,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "0.5 is applied to the output of BiGRU.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 197,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "Model + constructed data? CLOTH CLOTH-M CLOTH-HRandom No 25.0% 25.0% 25.0%LSTM (Xie et al., 2017) No 48.4% 51.8% 47.1%Stanford Attention Reader (Chen et al., 2016) No 48.7% 52.9% 47.1%MPNet - ngram No 50.1% 53.2% 49.0%Language Model (Xie et al., 2017) Yes 54.8% 64.6% 50.6%Representativeness (Xie et al., 2017) Yes 56.5% 66.5% 52.6%LSTM + Representativeness (Xie et al., 2017) Yes 58.3% 67.3% 54.9%SemiMPNet - ngram Yes 60.9% 67.6% 58.3%Human – 86.0% 89.7% 84.5%",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "Table 2: Experimental results without using external data. We exclude n-gram as n-gram is calculated based on external corpus",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 199,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "Wikipedia. SemiMPNet uses passages from CLOTH for semi-supervised data augmentation. Human performance is from Xie",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 200,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "et al. (2017).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 201,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "3.2 Baselines",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 178,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "LSTM is a baseline model by Xie et al. (2017). First, a BiLSTM layer is applied to context word",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 203,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "embeddings. Then it uses the outputs near the blank to calculate the probability of being the correct",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 204,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "answer for each candidate.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 205,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "Stanford Attention Reader is an attention-based neural model for reading comprehension presented",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 206,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "by Chen et al. (2016). Experimental results are from Xie et al. (2017).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 207,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "Language Model To overcome the difficulty of insufficient labeled data. Xie et al. (2017) propose to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 208,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "train a neural language model on passages from the CLOTH dataset. The candidate that results in the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 209,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "highest probability is chosen as the predicted answer. It’s fair to say Language Model is a simple data",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 210,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "augmentation approach that treats every word as a training example with equal weight.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 211,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "Representativeness is another semi-supervised data augmentation approach by Xie et al. (2017). It",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 212,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "assigns different weights to different constructed examples based on Representativeness score. Repre-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 213,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "sentativeness can be interpreted as the probability of a given word being selected as a blank by human.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 214,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "For more technical details, please refer to Xie et al. (2017).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 215,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "One-billion-word-LM is a state-of-the-art neural language model (Jozefowicz et al., 2016) trained on",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 216,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "one-billion-word benchmark (Chelba et al., 2013). It has more than 1 billion parameters and is publicly",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 217,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "available2 .",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 218,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "3.3 Main Results",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 203,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "We evaluate our model’s performance in two experimental settings: use external data or not. For the",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 220,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "setting without external data, we only use passages from CLOTH for training and semi-supervised data",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 221,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "augmentation. Though GloVe vectors are trained on external text corpora, it has become a standard",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 222,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "practice for NLP to use pretrained embeddings. Therefore, GloVe vectors are used in both settings and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 223,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "so does the work by Xie et al. (2017).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 224,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "2 https://github.com/tensorflow/models/tree/master/research/lm_1b",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "Results w/o External Data Results are shown in Table 2. When trained only on labeled data, both",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 221,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "LSTM by Xie et al. (2017) and our proposed MPNet perform poorly, though MPNet slightly outper-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 227,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "forms LSTM by 1.7% in overall accuracy. The accuracy of middle school questions (CLOTH-M) is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 228,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "consistently higher than high school questions (CLOTH-H) across all of our experiments, since middle",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 229,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "school questions are relatively easier.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 230,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "w p(w) w p(w) w p(w)I 0.04 festivals 0.75 California 0.13the 0.03 birthday 1.0 thank you 0.26Frank 0.09 8 0.09 congratulation 1.0",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "Table 3: Sample probability for some words. p(w ) is the probability of sampling w to construct a training example. Stop words,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 232,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "named entities usually have low probability. See Section 2.2 for details.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 233,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "Table 2 clearly shows that constructed data can significantly boost both models’ performance. Xie",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 227,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "et al. (2017) explore several different ways for data augmentation: Language Model treats every word",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 235,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "equally, while Representativeness method assigns different weights to different words by training an",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 236,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "representativeness prediction network. This mechanism improves the accuracy from 48.4% to 58.3%.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 237,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "Further, our proposed method adopts a new sampling method and requires sampling words with",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 238,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "distribution constraints, which makes training more efficient. As shown in Table 3, stop words (e.g., “I”",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 239,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "and “the”), named entities (e.g., “Frank” and “California”) and common phrases (e.g., “thank you”)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 240,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "have low probability of being sampled. Content words such as “festivals” and “birthday” are more",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 241,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "likely to be sampled. One limitation of our sampling method is its inability to handle synonyms. Since",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 242,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "synonyms tend to co-occur as candidates in the labeled dataset, this problem is not as severe as it looks",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 243,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "like to be. “SemiMPNet - ngram” beats all baseline methods and achieves the highest accuracy 60.9%.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 244,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "Human performance is 86.0% which is much higher than “SemiMPNet - ngram”. The effectiveness of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 245,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "constructed data indicates that the lack of labeled data has become a bottleneck.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 246,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "Model CLOTH CLOTH-M CLOTH-HOne-billion-word-LM 70.7% 74.5% 69.3%MPNet 65.3% 70.0% 63.6%SemiMPNet 70.4% 75.5% 68.5%SemiMPNet + One-billion-word-LM 74.9% 79.0% 73.3%Human 86.0% 89.7% 84.5%",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "Table 4: Experimental results with external data. SemiMPNet use passages from the RACE dataset for semi-supervised data",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 248,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "augmentation.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 249,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "Results with External Data As shown in Table 4, incorporation of the RACE dataset for semi-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 235,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "supervised learning improves accuracy from 65.3% to 70.4%. However, MPNet and SemiMPNet still",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 251,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "underperform a pretrained state-of-the-art neural language model One-billion-word-LM (Jozefowicz et",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 252,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "al., 2016). It is trained on a large corpus with nearly 1 billion words and achieves an accuracy of 70.7%.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 253,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "In contrast, SemiMPNet is trained on only ∼ 10 million words and has a 0.3% gap in accuracy, which",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 254,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "is pretty impressive given that the sizes of two corpora differ by two orders of magnitude. Once again it",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 255,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "shows the power of transferring knowledge from unlabeled text corpora.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 256,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "As a further discussion, we’d like to point out that although language model can achieve good re-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 251,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "sults, it is not the most efficient way. Actually, experimental results in Table 2 show that language",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 258,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "model underperforms SemiMPNet given the same amount of text. A fair comparison would be training",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 259,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "SemiMPNet on the one-billion-word benchmark. Considering the size of the one-billion-word corpus,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 260,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "applying our semi-supervised method directly on the one-billion-word corpus would require a sizable",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 261,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "amount of computing power. Here we design an approximate method “SemiMPNet + One-billion-word-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 262,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "LM” and combine MPNet and One-billion-word-LM by linear interpolation of their output probabilities:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 263,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "p = β pmp + (1 − β )plm (8)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 264,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "pmp is the output probability by SmiMPNet and plm is the normalized probability by One-billion-word-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 265,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "LM3 . Setting β = 0.5 yields empirically good results. Hyper-parameter search shows the results are quite",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 266,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "robust to a wide range of β values. We can see that our model “SemiMPNet + One-billion-word-LM”",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 267,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "achieves a new state-of-the-art performance of 74.9%, which improves One-billion-word-LM by 4.2%.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 268,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "This also shows the complementarity of SemiMPNet and One-billion-word-LM. Two models can learn",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 269,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "different aspects of the contexts.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 270,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "3.4 Ablation Study",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 220,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "Our proposed MPNet consists of four aggregation modules. To examine the effect of each module, we",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 272,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "conduct an ablation study. The results are shown in Table 5.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 273,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "Model CLOTHSemiMPNet 70.4%w/o selective copying 69.4% (-1.0)w/o attentive reader 67.6% (-2.8)w/o dilated convolution 69.6% (-0.8)w/o n-gram statistics 63.0% (-7.4)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "Table 5: Results for SemiMPNet ablation study. RACE dataset is used for semi-supervised data augmentation.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 275,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "N-gram statistics turn out to be the single most influential factor. Overall performance decreases by",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 273,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "7.4% without n-gram statistics. On one hand, this result further highlights the importance of distilling",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 277,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "knowledge from large text corpora. On the other hand, it proves that our background corpus is not large",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 278,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "enough for neural models to learn reliable lexical collocation information.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 279,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "Attentive reader also has a significant impact on overall performance. Attention mechanism is able to",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 277,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "locate useful information regardless of its positional distance from the blank. In contrast, RNNs need to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 281,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "preserve such information over a long distance which is nontrivial.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 282,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "Besides, the results in Table 5 support an important intuition in this paper: different modules capture",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 281,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "context information from different perspectives, and removing any one of them would result in decreased",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 284,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "performance.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 285,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "0.4 0.6 0.8 1.0 1.2 1.4words (million)4045505560Accuracy RACECLOTHWiki",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "Figure 2: Examining effects of different text corpora. The x-axis is the number of words in background corpus, and the y-axis",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 287,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "is the accuracy on test data. To avoid the influence of external data, we report model performance with “SemiMPNet - ngram”.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 288,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "3 The normalization makes sure the probabilities for all candidates sum to 1.",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "3.5 Examining Effects of Background Corpus",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 272,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "For our semi-supervised learning model SemiMPNet, background corpus is used to construct training",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 291,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "examples. The choice of background corpus can make a big difference. In this section, we conduct an",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 292,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "experiment to examine such effects. Three different corpora are used: passages from the training set of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 293,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "CLOTH, RACE and English Wikipedia.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 294,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "Results are shown in Figure 2. Unsurprisingly, more data lead to better performance. Moreover, given",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 292,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "the same amount of text, CLOTH consistently beats RACE and RACE consistently beats Wikipedia. As",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 296,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "we know, CLOTH and RACE consists of passages designed for high school students, while Wikipedia",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 297,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "entries are for the general public and therefore have a different word distribution. Thus, how to make use",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 298,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "of huge unlabeled data to help training is a key for performance improvement, since training corpora of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 299,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "higher quality are generally smaller in scale.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 300,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "4 Related Work",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 177,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "Reading Comprension or machine reading is drawing more and more interests among NLP research",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 302,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "communities. The CNN/Daily Mail (Hermann et al., 2015) and CBT (Hill et al., 2015) are two auto-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 303,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "matically generated cloze-style datasets. Though they can be large in scale, the quality of automatically",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 304,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "generated questions is generally lower than manually labeled ones. Instead, SQuAD (Rajpurkar et al.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 305,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "2016) adopts a crowd-sourcing approach to ensure its quality. In SQuAD, each passage accompanies one",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 306,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "or more questions and the answer is a text span of the given passage for the convenience of automatic",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 307,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "evaluation. Rapid progress has been made with neural network based models (Wang et al., 2016). The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 308,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "performances of state-of-the-art models on SQuAD such as QANet (Yu et al., 2018) and ELMo (Peters",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 309,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "et al., 2018) are already very close to human. There are also some datasets focusing on answering",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 310,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "questions from real-world scenarios. MS MARCO (Nguyen et al., 2016) and DuReader (He et al.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 311,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "text": "2017) are two typical examples. Such datasets are usually harder as they require the ability of both",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 312,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "text": "comprehension and language generation. BLEU and ROUGE are often used as evaluation metrics. One",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 313,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "text": "potential problem is that answers with high BLEU scores may have very different semantic meanings.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 314,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 316,
+      "text": "Cloze Test is a particular form of reading comprehension task and has been widely adopted as a method",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 303,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 317,
+      "text": "for assessing students’ language proficiency. Zweig and Burges (2011) presented a challenging dataset",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 316,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 318,
+      "text": "for sentence completion but its scale is too small with only 1040 questions. CNN/Daily Mail (Hermann",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 317,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "text": "et al., 2015), CBT (Hill et al., 2015), LAMBADA (Paperno et al., 2016) and CLOTH (Xie et al.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 318,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "text": "2017) are all large-scale cloze-test datasets, with the difference that each question in CLOTH has four",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 319,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 321,
+      "text": "candidate options. Recently proposed Story Cloze (Mostafazadeh et al., 2017) is a cloze-test dataset",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 320,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 322,
+      "text": "that goes beyond words and phrases, and requires choosing a sentence as the appropriate story ending.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 321,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 323,
+      "text": "Semi-supervised Methods for reading comprehension are widely studied due to the fact that labeled",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 316,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "text": "data is scarce. One major approach is pretraining a model for text representation and reusing the weights",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 323,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 325,
+      "text": "during supervised learning. Autoencoders (Hewlett et al., 2017), machine translation (McCann et al.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 324,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "text": "2017) and language model (Peters et al., 2018) can be used for representation learning. Another approach",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 325,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "text": "aims to directly construct training examples from unlabeled text corpora. Weighted loss function (Xie et",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 326,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "text": "al., 2017) and reinforcement learning (Yang et al., 2017) can be used to alleviate the discrepancy between",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 327,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "text": "human-labeled data and automatically-constructed data.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 328,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "text": "5 Conclusion",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 302,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "text": "In this paper, we propose a multi-perspective network MPNet for cloze-style reading comprehension.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 330,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "text": "MPNet consists of several parallel context aggregation modules. Each module summarizes the variable-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 331,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "text": "length context and candidates into a fixed-length vector from a unique perspective. We explore four",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 332,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "text": "effective implementations of aggregation modules in experiments. The architecture of MPNet is very",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 333,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "text": "flexible and can be easily extended by adding more task-specific modules.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 334,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "text": "To overcome the difficulty of limited labeled data, we turn to semi-supervised learning by automati-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 331,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "text": "cally constructing training examples from unlabeled text corpora. Experiments on the CLOTH dataset",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 336,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "text": "show that our semi-supervised MPNet achieves new state-of-the-art performance. In our future work,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 337,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "text": "we’d like to come up with more effective methods to tackle this challenge.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 338,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "text": "Acknowledgements",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 330,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "text": "We would like to thank three anonymous reviewers for their insightful comments, and COLING 2018",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 340,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "text": "organizers for their efforts.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 341,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "text": "References",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 340,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "text": "Mart´ın Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 343,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 345,
+      "text": "Ghemawat, Geoffrey Irving, Michael Isard, et al. 2016. TensorFlow: A system for large-scale machine learning.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 344,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "text": "In OSDI, volume 16, pages 265–283.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 345,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "text": "Steven Bird and Edward Loper. 2004. NLTK: the natural language toolkit. In Proceedings of the ACL 2004 on",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 344,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "text": "Interactive poster and demonstration sessions, page 31. Association for Computational Linguistics.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 347,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "text": "Ciprian Chelba, Tomas Mikolov, Mike Schuster, Qi Ge, Thorsten Brants, Phillipp Koehn, and Tony Robinson.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 347,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 350,
+      "text": "2013. One billion word benchmark for measuring progress in statistical language modeling. arXiv preprint",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 349,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 351,
+      "text": "arXiv:1312.3005.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 350,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 352,
+      "text": "Danqi Chen, Jason Bolton, and Christopher D Manning. 2016. A Thorough Examination of the CNN/Daily Mail",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 349,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 353,
+      "text": "Reading Comprehension Task. In Proceedings of the 54th Annual Meeting of the Association for Computational",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 352,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 354,
+      "text": "Linguistics (Volume 1: Long Papers), volume 1, pages 2358–2367.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 353,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 355,
+      "text": "Wei He, Kai Liu, Yajuan Lyu, Shiqi Zhao, Xinyan Xiao, Yuan Liu, Yizhong Wang, Hua Wu, Qiaoqiao She,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 352,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 356,
+      "text": "Xuan Liu, et al. 2017. DuReader: a Chinese Machine Reading Comprehension Dataset from Real-world",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 355,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 357,
+      "text": "Applications. arXiv preprint arXiv:1711.05073.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 356,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 358,
+      "text": "Karl Moritz Hermann, Tomas Kocisky, Edward Grefenstette, Lasse Espeholt, Will Kay, Mustafa Suleyman, and",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 355,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 359,
+      "text": "Phil Blunsom. 2015. Teaching machines to read and comprehend. In Advances in Neural Information Process-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 358,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "text": "ing Systems, pages 1693–1701.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 359,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "text": "Daniel Hewlett, Llion Jones, Alexandre Lacoste, et al. 2017. Accurate supervised and semi-supervised machine",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 358,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 362,
+      "text": "reading for long documents. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 361,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 363,
+      "text": "Processing, pages 2001–2010.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 362,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "text": "Felix Hill, Antoine Bordes, Sumit Chopra, and Jason Weston. 2015. The goldilocks principle: Reading children’s",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 361,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "text": "books with explicit memory representations. arXiv preprint arXiv:1511.02301.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 364,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 366,
+      "text": "Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, and Yonghui Wu. 2016. Exploring the limits of",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 364,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 367,
+      "text": "language modeling. arXiv preprint arXiv:1602.02410.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 366,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 368,
+      "text": "Yoon Kim. 2014. Convolutional neural networks for sentence classification. arXiv preprint arXiv:1408.5882.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 366,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 369,
+      "text": "Diederik Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 368,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 370,
+      "text": "arXiv:1412.6980.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 369,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 371,
+      "text": "Guokun Lai, Qizhe Xie, Hanxiao Liu, Yiming Yang, and Eduard Hovy. 2017. RACE: Large-scale reading com-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 369,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 372,
+      "text": "prehension dataset from examinations. arXiv preprint arXiv:1704.04683.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 371,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 373,
+      "text": "Saeed Masoudnia and Reza Ebrahimpour. 2014. Mixture of experts: a literature survey. Artificial Intelligence",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 371,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 374,
+      "text": "Review, pages 1–19.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 373,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 375,
+      "text": "Bryan McCann, James Bradbury, Caiming Xiong, and Richard Socher. 2017. Learned in translation: Contextual-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 373,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 376,
+      "text": "ized word vectors. arXiv preprint arXiv:1708.00107.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 375,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 377,
+      "text": "Nasrin Mostafazadeh, Michael Roth, Annie Louis, Nathanael Chambers, and James F Allen. 2017. LSDSem 2017",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 375,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 378,
+      "text": "Shared Task: The Story Cloze Test. LSDSem 2017, page 46.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 377,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 379,
+      "text": "Tri Nguyen, Mir Rosenberg, Xia Song, Jianfeng Gao, Saurabh Tiwary, Rangan Majumder, and Li Deng. 2016.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 377,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 380,
+      "text": "MS MARCO: A human generated machine reading comprehension dataset. arXiv preprint arXiv:1611.09268.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 379,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 381,
+      "text": "Denis Paperno, Germ ´an Kruszewski, Angeliki Lazaridou, Quan Ngoc Pham, Raffaella Bernardi, Sandro Pezzelle,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 379,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 382,
+      "text": "Marco Baroni, Gemma Boleda, and Raquel Fern ´andez. 2016. The LAMBADA dataset: Word prediction",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 381,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 383,
+      "text": "requiring a broad discourse context. arXiv preprint arXiv:1606.06031.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 382,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 384,
+      "text": "Jeffrey Pennington, Richard Socher, and Christopher Manning. 2014. GloVe: Global vectors for word represen-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 381,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 385,
+      "text": "tation. In Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 384,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 386,
+      "text": "pages 1532–1543.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 385,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 387,
+      "text": "Matthew E Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettle-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 384,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 388,
+      "text": "moyer. 2018. Deep contextualized word representations. NAACL.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 387,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 389,
+      "text": "Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016. Squad: 100,000+ questions for",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 387,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 390,
+      "text": "machine comprehension of text. arXiv preprint arXiv:1606.05250.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 389,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 391,
+      "text": "Emma Strubell, Patrick Verga, David Belanger, and Andrew McCallum. 2017. Fast and accurate entity recognition",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 389,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 392,
+      "text": "with iterated dilated convolutions. In Proceedings of the 2017 Conference on Empirical Methods in Natural",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 391,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 393,
+      "text": "Language Processing, pages 2660–2670.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 392,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 394,
+      "text": "Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. 2015. Pointer networks. In Advances in Neural Information",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 391,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 395,
+      "text": "Processing Systems, pages 2692–2700.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 394,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 396,
+      "text": "Zhiguo Wang, Haitao Mi, Wael Hamza, and Radu Florian. 2016. Multi-perspective context matching for machine",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 394,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 397,
+      "text": "comprehension. arXiv preprint arXiv:1612.04211.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 396,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 398,
+      "text": "Qizhe Xie, Guokun Lai, Zihang Dai, and Eduard Hovy. 2017. Large-scale cloze test dataset designed by teachers.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 396,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 399,
+      "text": "arXiv preprint arXiv:1711.03225.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 398,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 400,
+      "text": "Zhilin Yang, Junjie Hu, Ruslan Salakhutdinov, and William W Cohen. 2017. Semi-Supervised QA with Genera-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 398,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 401,
+      "text": "tive Domain-Adaptive Nets. arXiv preprint arXiv:1702.02206.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 400,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 402,
+      "text": "Fisher Yu and Vladlen Koltun. 2015. Multi-scale context aggregation by dilated convolutions. arXiv preprint",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 400,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 403,
+      "text": "arXiv:1511.07122.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 402,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 404,
+      "text": "Adams Wei Yu, David Dohan, Minh-Thang Luong, Rui Zhao, Kai Chen, Mohammad Norouzi, and Quoc V Le.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 402,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 405,
+      "text": "2018. Qanet: Combining local convolution with global self-attention for reading comprehension. ICLR.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 404,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 406,
+      "text": "Geoffrey Zweig and Christopher JC Burges. 2011. The Microsoft Research sentence completion challenge.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 404,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 407,
+      "text": "Technical report, Technical Report MSR-TR-2011-129, Microsoft.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 406,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 10,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8709 @@
+{
+  "doc_id": "1710.11424",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "Regret Minimization for Partially Observable Deep Reinforcement Learning",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Peter Jin 1 Kurt Keutzer 1 Sergey Levine 1",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Abstract",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Deep reinforcement learning algorithms that esti-",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "mate state and state-action value functions have",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "been shown to be effective in a variety of chal-",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "lenging domains, including learning control strate-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 5,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "gies from raw image pixels. However, algorithms",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": false,
+      "parent": 6,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "that estimate state and state-action value functions",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 7,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "typically assume a fully observed state and must",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "compensate for partial observations by using finite",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "length observation histories or recurrent networks.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "In this work, we propose a new deep reinforce-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "ment learning algorithm based on counterfactual",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "regret minimization that iteratively updates an ap-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "proximation to an advantage-like function and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 14,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "is robust to partially observed state. We demon-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 15,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "strate that this new algorithm can substantially",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 16,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "outperform strong baseline methods on several",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 17,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "partially observed reinforcement learning tasks:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 18,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "learning first-person 3D navigation in Doom and",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Minecraft, and acting in the presence of partially",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 20,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "observed objects in Doom and Pong.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "1. Introduction",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Many reinforcement learning problems of practical inter-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 23,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "There are two common workarounds for the problem of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 24,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "partial observation: (a) learning policies and value functions",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 25,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "on finite length observation histories, and (b) learning re-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 26,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "current policies and recurrent value functions. Finite length",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 27,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "observation histories concatenate the most recent raw ob-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 28,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "servations into a stack of observations, and are a simple but",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 29,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "effective technique to approximate the appearance of full",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 30,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "observability. Recurrent functions can potentially incorpo-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 31,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "rate an infinite observation history, but they can be harder to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 32,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "optimize. When using either finite length observation histo-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 33,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "ries or recurrent functions, the same value function-based",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 34,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "methods and policy gradient methods are employed with",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 35,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "their respective tradeoffs in partially observable domains.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 36,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "We are interested in developing methods that combine the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 37,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "best of both value function-based methods and policy gra-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 38,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "dient methods for partial observable domains. That is, can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 39,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "we develop methods that are sample efficient but are also",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 40,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "robust to partial observation spaces?",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 41,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "Our contribution is a new model-free deep reinforcement",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 25,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "learning algorithm based on the principle of regret mini-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 43,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "mization which does not require access to a Markovian state.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 44,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "Our method learns a policy by estimating an advantage-like",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 45,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "est have the property of partial observability, where ob-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 24,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "function which approximates a quantity called the counter-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 46,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "servations of state are generally non-Markovian. Practical",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 47,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "factual regret. Counterfactual regret is central to the family",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 48,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "deep reinforcement learning algorithms fall into two broad",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 49,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "of counterfactual regret minimization (CFR) (Zinkevich",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 50,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "classes, neither of which satisfactorily deals with partial",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 51,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "et al., 2007) algorithms for solving incomplete informa-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 52,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "observability despite the prevalance of partial observations",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 53,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "tion games. Hence we call our algorithm “advantage-based",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 54,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "in the real world. One class of algorithms consists of value",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 55,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "regret minimization” (ARM).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 56,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "function-based methods such as deep Q-learning (Mnih",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 57,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "We evaluate our approach on three partially observable vi-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 58,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "et al., 2013; 2015), which are known to be highly sample ef-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 59,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "sual reinforcement learning tasks: first-person 3D naviga-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 60,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "ficient but generally assume a Markovian observation space.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 61,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "tion in Doom and Minecraft (Kempka et al., 2016; Johnson",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 62,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "The other class of algorithms consists of Monte Carlo policy",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 63,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "et al., 2016), avoiding partially observed objects in Doom,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 64,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "gradient methods such as trust region policy optimization",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 65,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "and playing Pong with partial observation perturbations",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 66,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "(Schulman et al., 2015), which do not need to assume Marko-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 67,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "(Bellemare et al., 2013). In our experiments, we find that",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 68,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "vian observations but are less sample efficient than value",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 69,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "function-based methods. Some policy gradient methods",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 70,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "such as advantage actor-critic (Mnih et al., 2016) introduce",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 72,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "the Markov assumption through a critic or state-dependent",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 73,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "baseline to improve sample efficiency.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 74,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "our method is more robust and offers substantial improve-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 74,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "1Department of Electrical Engineering and Computer Sciences",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": 61,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "ment over prior methods on partially observable tasks.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 76,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "University of California, Berkeley. Correspondence to: Peter Jin",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": 77,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "<phj@eecs.berkeley.edu>.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": 79,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "2. Related Work",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 78,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "3. Advantage-based Regret Minimization",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 81,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "Deep reinforcement learning algorithms have been demon-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 82,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "strated to achieve excellent results on a range of complex",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 83,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "In this section, we provide some background on counterfac-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 82,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "tasks, including playing games (Mnih et al., 2015; Oh et al.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 84,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "tual regret minimization, describe ARM in detail, and give",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 85,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "2016) and continuous control (Schulman et al., 2015; Lilli-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 86,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "some intuition for why ARM works.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 87,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "crap et al., 2016; Levine et al., 2016). Prior deep reinforce-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 88,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "ment learning algorithms either learn state or state-action",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 90,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "3.1. Counterfactual Regret Minimization (CFR)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 89,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "value functions (Mnih et al., 2013), learn policies using",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 91,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "policy gradients (Schulman et al., 2015), or perform a com-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 93,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "First, we give a reinforcement learning-centric exposition of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 92,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "bination of the two using actor-critic architectures (Mnih",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 94,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "counterfactual regret minimization (CFR) (Zinkevich et al.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 95,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "et al., 2016). Policy gradient methods typically do not need",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 96,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "2007; Bowling et al., 2015).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 97,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "to assume a Markovian state, but tend to suffer from poor",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 98,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "The CFR model for partial observation is as follows. Let S",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 95,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "sample complexity, due to their inability to use off-policy",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 100,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "be the state space. Let I be the space of information sets: an",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 101,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "data. Methods based on learning Q-functions can use re-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 102,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "information set I ∈ I is a set of states s ∈ I , where s ∈ S ,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 103,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "play buffers to include off-policy data, accelerating learning",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 104,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "such that only the information set I is directly observable,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 105,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "(Lillicrap et al., 2016). However, learning Q-functions with",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 98,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "and the individual states contained in I are hidden. An",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 107,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "Bellman error minimization typically requires a Markovian",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 108,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "information set I is therefore a kind of aggregate state.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 109,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "state space. When learning from partial observations such",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 110,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "as images, the inputs might not be Markovian. Mnih et al.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 112,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "In CFR, an extensive-form game is repeatedly played be-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 92,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "(2013) introduced the concatenation of short observation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 113,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "tween N players, indexed by i. We consider an iterative",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 114,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "sequences. Prior methods (Hausknecht & Stone, 2017; Oh",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 115,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "learning setting, where at the t-th learning iteration, the i-th",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 116,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "et al., 2016; Mnih et al., 2016; Heess et al., 2015) have pro-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 117,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "player follows a fixed policy πit , choosing actions a ∈ A",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 118,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "posed to mitigate this issue by learning recurrent critics and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 119,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "conditioned on information sets I ∈ I according to their",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 120,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "Q-functions, that depend on entire histories of observations.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 121,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "policy πit(a|I). Let σt denotes the players’ joint policy",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 122,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "The recurrent deterministic policy gradient (Heess et al.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 123,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "(their strategy profile). For any strategy profile σ, the i-th",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 124,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "2015) for partially observable control uses a similar DDPG-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 125,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "player has an expected value for playing the game, J i(σ).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 126,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "style estimator as used in ARM (see Section 3.3). However,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 127,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "Let σ−it represent the joint policy of all players except the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 128,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "all of these changes increase the size of the input space,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 129,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "i-th player; similarly, let the tuple (πit, σ −it ) be the product",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 130,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "increase variance, or make the optimization problem more",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 131,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "of the i-th player’s policy πit and the other players’ joint",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 132,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "complex. Our method instead learns cumulative advantage",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 133,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "policy σ−it .",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 134,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "functions that depend only on the current observation, but",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 135,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "The i-th player’s overall regret after T learning iterations is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 134,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "can still handle non-Markovian problems.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 137,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "defined:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "The form of our advantage function update resembles pos-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "itive temporal difference methods (Peng et al., 2016; van",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 141,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "(RiT )(overall) = max πi∗ T (cid:88) t=1 J i(πi∗, σ−it ) − J i(πit , σ−it ). (1)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 132,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "Hasselt & Wiering, 2007). Additionally, our update rule for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 142,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "a modified cumulative Q-function resembles the average Q-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 144,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "function (Anschel et al., 2017) used for variance reduction",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 145,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "in Q-learning. In both cases, the theoretical foundations of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 146,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "What is the interpretation of the overall regret? It is essen-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 143,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "our method are based on cumulative regret minimization,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 147,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "tially how much better the i-th player could have done, had",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 148,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "and the motivation is substantively different. Previous work",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 149,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "it always followed an optimal policy in hindsight instead of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 150,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "by Ross et al. (2011); Ross & Bagnell (2014) has connected",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 151,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "the actual sequence of policies πit it executed. Intuitively,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 152,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "regret minimization to reinforcement learning, imitation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 153,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "the difference J i (π i∗ , σ−it ) − J i(πit , σt) is the suboptimality",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 154,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "learning, and structured prediction, although not with coun-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 155,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "of πit compared to πi∗, and the sum of the suboptimalities",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 156,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "terfactual regret minimization. Regression regret matching",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 157,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "over learning iterations yields the area inside the learning",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 158,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "(Waugh et al., 2015) is based on a closely related idea, which",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 159,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "curve. In other words, a smaller overall regret implies better",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 160,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "is to directly approximate the regret with a linear regression",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 161,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "sample efficiency.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 162,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "model, however the use of a linear model is limited in repre-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 163,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "Let Qiσt (I , a) be the counterfactual value of the i-th player,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 143,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "sentation compared to deep function approximation.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 165,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "where the i-th player is assumed to reach I and always",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 166,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "Finally, regret and value functions both typically take the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 165,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "chooses the action a in the aggregate state I , and otherwise",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 168,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "form of expectations in reinforcement learning. An alter-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 169,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "follows the policy π it , while all other players follow the strat-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 170,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "native view of value functions in RL is through the lens",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 171,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "egy profile σ−it . Similarly, let the expected counterfactual",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 172,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "of value distributions (Bellemare et al., 2017). A connec-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 173,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "value be calculated as V iσt (I ) = (cid:80)a∈A πit(a|I)Qiσt (I , a).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 174,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "tion between regret and distributional RL could lead to very",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 175,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "Let (RiT )(CF)(I , a) be the counterfactual regret of the i-th",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 176,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "interesting future work.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 177,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "player, which is the sum of the advantage-like quantities",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 178,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "Qiσt (I , a) − V iσt (I) after T learning iterations:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 179,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "(RiT )(CF)(I , a) = T (cid:88) t=1 Qiσt (I, a) − V iσt (I). (2)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 181,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "Similarly, the immediate counterfactual regret can be ob-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 180,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "tained from the counterfactual regret by maximization over",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 183,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "the player’s action space:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 143,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "(RiT )(immCF)(I) = maxa∈A T (cid:88) t=1 Qiσt (I , a) − V iσt (I ). (3)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 185,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "The immediate counterfactual regret (Equation (3)) pos-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 183,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "sesses a similar interpretation to the overall regret (Equation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 187,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "(1)), except that the immediate counterfactual regret and its",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 188,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "constituent terms are additionally functions of the aggregate",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 189,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "state I .",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 190,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "Suppose that one were to briefly consider each aggregate",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 191,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "state I as a separate, independent subproblem. By naively",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 192,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "treating the counterfactual regret (RiT )(CF) (I , a) for each I",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 193,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "as analogous to regret in an online learning setting, then at",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 194,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "each learning iteration one may simply plug the counter-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 195,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "factual regret into a regret matching policy update (Hart &",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 196,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "Mas-Colell, 2000):",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 197,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "(πit+1)RM (a|I ) = max(0, (Rit )(CF)(I, a)) (cid:80) a′ ∈A max(0, (Rit)(CF) (I , a′)) . (4)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 198,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "In the online learning setting, the regret matching policy",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 199,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "T ) in the num- achieves regret that increases with rate O(",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 200,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "ber of iterations T (Cesa-Bianchi & Lugosi, 2003; Gordon,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 201,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "2007); we can then say that the regret matching policy is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 202,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "regret minimizing.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 203,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "It turns out that updating players’ policies in the exten-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 204,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "sive game setting by iteratively minimizing the immediate",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 205,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "counterfactual regrets according to Equation (4) will also",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 206,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "3.3. From CFR and CFR+ to ARM",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 207,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "minimize the overall regret (RiT )(overall) with upper bound",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 207,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "O(|I |(cid:112)|A|T ). The overall regret’s O(√T ) dependence",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 209,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "Recall that CFR and CFR+ model partial observation in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 210,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "on the number of iterations T is not impacted by the struc-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 200,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "extensive games with a space I of information sets or aggre-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 211,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "ture of the information set space I , which is why CFR can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 212,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "gate states. Because we are interested in general observation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 213,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "be said to be robust to a certain kind of partial observabil-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 214,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "spaces O in partially observed Markov decision processes",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 215,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "ity. This result forms the basis of the counterfactual regret",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 216,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "(MDPs), we naively map CFR and CFR+ onto MDPs and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 217,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "minimization algorithm and was proved by Zinkevich et al.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 218,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "replace I with O. It is known that Markov or stochastic",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 219,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "(2007).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 220,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "games can be converted to extensive form (Littman, 1994;",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 221,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "Sandholm & Singh, 2012; Kroer & Sandholm, 2014), and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 223,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "Since we are interested in the application of CFR to re-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 210,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "CFR+ (Tammelin, 2014) consists of a modification to CFR,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 224,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "in which instead of calculating the full counterfactual re-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 226,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "gret as in Equation (6), instead the counterfactual regret is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 227,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "recursively positively clipped:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 228,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "R(CF+)T (I , a) (8) = [R(CF+)T −1 (I , a)]+ + QπT |I(cid:55)→a (I , a) − VπT |I (I )",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 229,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "where [x]+ = max(0, x) is the positive clipping opera-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 230,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "tor. Comparing Equation (6) with Equation (8), the only",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 231,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "difference in CFR+ is that the previous iteration’s quantity",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 232,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "is positively clipped in the recursion. This simple change",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 233,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "turns out to yield a large practical improvement in the perfor-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 234,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "mance of the algorithm (Bowling et al., 2015). One intuition",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 235,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "for why the positive clipping of CFR+ can improve upon",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 236,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "CFR is that because [R(CF+)T −1 ]+ is nonnegative, it provides",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 237,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "a kind of “optimism under uncertainty,” adding a bonus to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 238,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "some transitions while ignoring others. The CFR+ update",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 239,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "has also been shown to do better than CFR when the best ac-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 240,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "tion in hindsight changes frequently (Tammelin et al., 2015).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 241,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "In the rest of this work we will solely build upon the CFR+",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 242,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "update.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 243,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "an MDP is a 1-player Markov game. Because we are also",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 232,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "inforcement learning, we can write down “1-player” ver-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 200,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "interested in high dimensional observations such as images,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 245,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "sions of the components above: the counterfactual value,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 246,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "we estimate a counterfactual regret function approximation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 247,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "reinterpreted as a stationary state-action value function",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 248,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "(Waugh et al., 2015) parameterized as a neural network.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 249,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "Qπ |I(cid:55)→a (I , a), where the action a is always chosen in the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 250,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "aggregate state I , and the policy π is otherwise followed",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 252,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "The exact form of the counterfactual regret (either Equation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 251,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "(Bellemare et al., 2016); the counterfactual regret, including",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 253,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "its recursive definition:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 254,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "R(CF)T (I, a) = T (cid:88) t=1 Qπt|I (cid:55)→a(I, a) − Vπt |I (I ) (5) = R(CF)T −1(I , a) + QπT |I (cid:55)→a(I, a) − VπT |I (I ) (6)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 256,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "where Vπt |I (I ) = (cid:80)a∈A πt (a|I )Qπt|I (cid:55)→a (I , a); and the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 257,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "regret matching policy update:",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 258,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "π RMt+1 (a|I ) = max(0, R(CF)t (I , a)) (cid:80) a′ ∈A max(0, R(CF)t (I , a′)) . (7)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 259,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "3.2. CFR+",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 260,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "(6) or Equation (8)), after translating aggregate states I to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 249,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "observations o, utilizes a stationary action-value function",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 253,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "Qπ |o(cid:55)→a (o, a). It is unclear how to learn a truly stationary",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 263,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "action-value function, although Bellemare et al. (2016) pro-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 264,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "pose a family of consistent Bellman operators for learning",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 265,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "locally stationary action-value functions. We posit that the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 266,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "approximation Qπ|o(cid:55)→a (o, a) ≈ Qπ (o, a), where Qπ (o, a)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 267,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "is the usual action-value function, is acceptable when obser-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 268,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "vations are rarely seen more than once in a typical trajectory.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 269,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "The above series of approximations finally yields a learnable",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 270,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "function using deep reinforcement learning; this function is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 271,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "a “clipped cumulative advantage function”:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 272,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "A+T (o, a) = max(0, A+T −1(o, a)) + AπT (o, a) (9)",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 136,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "where Aπ (o, a) is the usual advantage function. Advantage-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 274,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "based regret minimization (ARM) is then the resulting batch-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 275,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "mode deep RL algorithm that updates the policy to the regret",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 276,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "matching distribution on the cumulative clipped advantage",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 277,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "function:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 278,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "πt+1 (a|o) = max(0, A+t (o, a)) (cid:80) a′ ∈A max(0, A+t (o, a′ )) . (10)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 279,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "At the t-th batch iteration of ARM, a batch of data is col-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 280,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "lected by sampling trajectories using the current policy πt ,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 281,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "followed by two processing steps: (a) fit A+t using Equa-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 282,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "tion (9), then (b) set the next iteration’s policy πt+1 using",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 283,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "Equation (10).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 284,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "Below, we will use the subscript k to refer to a timestep",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 285,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "Altogether, each minibatch step of the optimization sub-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 231,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "problem consists of the following three parameter updates:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 287,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "θ (ℓ+1)t ← θ(ℓ)t − α 2 ∇ θ (ℓ)t (Vπt (ok ; θ(ℓ)t ) − vk )2 (15) ω (ℓ+1)t ← ω (ℓ)t − α 2 ∇ ω(ℓ)t (Q+t (ok , ak; ω(ℓ)t ) − q+k )2 (16) φ(ℓ+1) ← φ(ℓ) + τ (θ(ℓ+1)t − φ(ℓ)). (17)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 288,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "The advantage-based regret minimization algorithm is sum-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 289,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "marized in Algorithm 1.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 287,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "We note again that we use a biased value function estimator,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 291,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "whereas only the full returns are guaranteed to be unbiased",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 292,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "in non-Markovian settings. In the high-dimensional do-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 293,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "mains we evaluated on, the most practical choice of deep ad-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 294,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "vantage or value function approximation is based on biased",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 295,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "but lower variance estimation, such as the n-step returns we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 296,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "use in practice (Schulman et al., 2016; Gu et al., 2017). We",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 297,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "also note that ARM is essentially CFR with different design",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 298,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "choices to facilitate function approximation. CFR is proven",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 299,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "to converge in domains with non-Markovian information set",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 300,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "spaces when using tabular representations, suggesting that",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 301,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "our use of biased advantage estimation does not fundamen-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 302,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "tally preclude the applicability or effectiveness of ARM on",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 303,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "non-Markovian domains.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 304,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "Algorithm 1 Advantage-based regret minimization (ARM)initialize π1 ← uniform, θ0, ω0 ← arbitraryfor t in 1, . . . docollect batch of trajectory data Dt ∼ πtinitialize θt ← θt−1, ωt ← ωt−1, φ ← θt−1for ℓ in 0, . . . dosample transitions:(ok, ak , rk , ok +1) ∼ Dtδk ← 1 − I[ok is terminal]calculate n-step returns:gnk ← (cid:80)k+n−1k′=k γ k′ −k rk′ + γn δk+n V ′ (ok+n; φ)calculate target values:if t = 1 thenϕk ← 0elseϕk ← Q+t−1 (ok, ak ; ωt−1) − Vπt−1 (ok ; θt−1 )end ifv(ok ) ← gnkq +(ok , ak) ← max(0, ϕk) + rk + γ gn−1k+1update θt (Equation (15))update ωt (Equation (16))update φ (Equation (17))end forset πt+1 (a|o) ∝ max(0, Q+t (o, a; ωt) − Vπt (o; θt))end for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 305,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "within a trajectory, while the subscript t refers to the batch",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 281,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "iteration. To implement Equation (9) with deep function ap-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 307,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "proximation, we define two value function approximations,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 308,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "Vπt (ok ; θt) and Q+t (ok , ak ; ωt ), as well as a target value",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 309,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "function V ′ (ok; φ), where θt , ωt, and φ are the learnable",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 310,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "parameters. The cumulative clipped advantage function is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 311,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "text": "represented as A+t (ok, ak ) = Q+t (ok, ak ; ωt) − Vπt (ok ; θt).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 312,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "text": "Within each sampling iteration, the value functions are fitted",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 313,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "text": "using stochastic gradient descent by sampling minibatches",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 314,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 316,
+      "text": "and performing gradient steps. In practice, we use Adam to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 315,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 317,
+      "text": "perform the optimization (Kingma & Ba, 2015). The state-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 316,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 318,
+      "text": "value function Vπt (ok ; θt) is fit using n-step returns with a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 317,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "text": "moving target value function V ′(ok+n ; φ), essentially us-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 318,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "text": "ing the estimator of the deep deterministic policy gradient",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 319,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 321,
+      "text": "(DDPG) (Lillicrap et al., 2016). In the same minibatch,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 320,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 322,
+      "text": "Q+t (ok , ak ; θt) is fit to a similar loss, but with an additional",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 321,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 323,
+      "text": "target reward bonus that incorporates the previous iteration’s",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 322,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "text": "cumulative clipped advantage, max(0, A+t−1 (ok, ak )). The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 323,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 325,
+      "text": "regression targets vk and q+k are defined in terms of the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 324,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "text": "n-step returns gnk = (cid:80)k +n−1k ′=k γ k′ −k rk′ + γn V ′ (ok+n; φ):",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 325,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "text": "vk ≜ g nk (11) qk ≜ rk + γ gn−1k+1 (12) ϕk ≜ Q+t−1(ok , ak ; ωt−1 ) − Vπt−1 (ok ; θt−1) (13) q +k ≜ max(0, ϕk) + qk . (14)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 326,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "text": "3.4. ARM vs. Existing Policy Gradient Methods",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 327,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "text": "We note that the fundamental operation in CFR-like algo-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 328,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "text": "rithms, including ARM, is exemplified by the counterfactual",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 329,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "text": "regret update in Equation (6) which superficially looks quite",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 330,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "text": "similar to a policy gradient-style update: the update is in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 331,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "text": "the direction of a Q-value minus a baseline. However, we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 332,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "text": "can take the analogy between ARM and policy gradient",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 333,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "text": "methods further and show that ARM represents an inher-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 334,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "text": "ently different update compared to existing policy gradient",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 335,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "text": "methods.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 336,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "text": "Recent work has shown that policy gradient methods and Q-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 330,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "text": "learning methods are connected via maximum entropy RL",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 338,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "text": "(O’Donoghue et al., 2017; Haarnoja et al., 2017; Nachum",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 339,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "text": "et al., 2017; Schulman et al., 2017). One such perspective",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 340,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "text": "is from the soft policy iteration framework for batch-mode",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 341,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "text": "reinforcement learning (Haarnoja et al., 2018), where at",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 342,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "text": "the t-th batch iteration the updated policy is obtained by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 343,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 345,
+      "text": "minimizing the average KL-divergence between the para-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 344,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "text": "metric policy class Π and a target policy ft. Below is the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 345,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "text": "soft policy iteration update, where the subscript t refers to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 346,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "text": "the batch iteration:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 347,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "text": "πt+1 = arg min π∈Π Eo∼ρt [DKL (π(·|o)∥ft(·|o))] = arg min π∈Π Eo∼ρt,a∼π(·|o) [log(π(a|o)) − log(ft (a|o))]. (18)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 348,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 350,
+      "text": "Using the connection between policy gradient methods",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 349,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 351,
+      "text": "and Q-learning, we define the policy gradient target pol-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 350,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 352,
+      "text": "icy as a Boltzmann or softmax distribution on the entropy",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 351,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 353,
+      "text": "regularized advantage function Aβ -soft:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 352,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 354,
+      "text": "f PGt (a|o) ≜ exp(β Aβ-softt (o, a)) (cid:80) a′∈A exp(βAβ -softt (o, a′)) . (19)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 353,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 355,
+      "text": "3.5. Comparing ARM with Other Methods in Partially",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 354,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 356,
+      "text": "Now, parameterizing the policy π in terms of an explicit",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 350,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 357,
+      "text": "Observable Domains",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 355,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 358,
+      "text": "parameter θ, we obtain the expression for the existing policy",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 356,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 359,
+      "text": "gradient update, where b(o) is a baseline function:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 358,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "text": "The regret matching policy which is fundamental to ARM",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 355,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "text": "can be interpreted as a more nuanced form of exploration",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 360,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 362,
+      "text": "∆θPG ∝ Eo∼ρt,a∼π(·|o;θ) (cid:104) ∇θ log(π (o|a; θ ))· (20) (cid:0) − (1/β) log(π (o|a; θ )) + Aβ-softt (o, a) − b(o)(cid:1)(cid:105).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 358,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 363,
+      "text": "compared to the epsilon-greedy policy used with Q-learning.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 361,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "text": "In partially observable domains, the optimal policy may",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 363,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "text": "generally be stochastic (Jaakkola et al., 1994). So ϵ-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 364,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 366,
+      "text": "greedy policies which put a substantial probability mass on",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 365,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 367,
+      "text": "arg maxa Q(o, a), e.g. by setting ϵ = 0.01, can be subopti-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 366,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 368,
+      "text": "The non-entropy-regularized policy gradient arises in the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 358,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 369,
+      "text": "mal, especially compared to more general distributions on",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 367,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 370,
+      "text": "limit β → ∞, at which point (1/β) vanishes.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 368,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 371,
+      "text": "discrete actions, such as ARM’s regret matching policy. The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 369,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 372,
+      "text": "softmax policy typically learned by policy gradient methods",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 371,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 373,
+      "text": "Note that an alternative choice of target policy ft will lead to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 370,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 374,
+      "text": "Similarly, we can express the ARM-like policy gradient",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 372,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 375,
+      "text": "update, where again b(o) is a baseline:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 373,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 376,
+      "text": "∆θARM = Eo∼ρt,a∼π(·|o;θ) (cid:104) ∇θ log(π (o|a; θ))· (22) (cid:0) − log(π(o|a; θ)) + log(max(0, A+t (o, a))) − b(o)(cid:1)(cid:105).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 375,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 377,
+      "text": "Comparing Equations (20) and (22), we see that the ARM-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 376,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 378,
+      "text": "like policy gradient (Equation (22)) has a logarithmic depen-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 360,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 379,
+      "text": "dence on the clipped advantage-like function max(0, A+ ),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 378,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 380,
+      "text": "whereas the existing policy gradient (Equation (20)) is only",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 379,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 381,
+      "text": "linearly dependent on the advantage function Aβ-soft. This",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 380,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 382,
+      "text": "difference in logarithmic vs. linear dependence is respon-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 380,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 383,
+      "text": "sible for a large part of the inherent distinction of ARM",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 382,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 384,
+      "text": "from existing policy gradient methods. In particular, the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 383,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 385,
+      "text": "logarithmic dependence in an ARM-like update may be less",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 384,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 386,
+      "text": "sensitive to advantage overestimation compared to existing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 385,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 387,
+      "text": "policy gradient methods, perhaps serving a similar purpose",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 386,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 388,
+      "text": "to the double Q-learning estimator (van Hasselt et al., 2016)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 387,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 389,
+      "text": "or consistent Bellman operators (Bellemare et al., 2016).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 388,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 390,
+      "text": "We also see that for the existing policy gradient (Equation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 389,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 391,
+      "text": "(20)), the −(1/β) log(π (a|o; θ)) term, which arises from",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 390,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 392,
+      "text": "the policy entropy, is vanishing for large β. On the other",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 391,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 393,
+      "text": "hand, for the ARM-like policy gradient (Equation (22)),",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 392,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 394,
+      "text": "there is no similar vanishing effect on the equivalent policy",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 393,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 395,
+      "text": "entropy term, suggesting that ARM may perform a kind of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 394,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 396,
+      "text": "entropy regularization by default.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 395,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 397,
+      "text": "In practice we cannot implement an ARM-like policy gradi-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 396,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 398,
+      "text": "ent exactly as in Equation (22), because the positive clipping",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 397,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 399,
+      "text": "max(0, A+ ) can yield log(0). However we believe this is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 398,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 400,
+      "text": "not an intrinsic obstacle and leave the question of how to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 399,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 401,
+      "text": "implement an ARM-like policy gradient to future work.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 400,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 402,
+      "text": "is also quite general, but can still put too much probability",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 378,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 403,
+      "text": "a different kind of policy gradient update. A policy gradient",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 356,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 404,
+      "text": "mass on one action without compensation by an explicit",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 402,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 405,
+      "text": "algorithm based on ARM instead proposes a target policy",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 403,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 406,
+      "text": "entropy bonus as done in maximum entropy reinforcement",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 404,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 407,
+      "text": "based on the regret matching distribution:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 405,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 408,
+      "text": "learning.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 406,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 409,
+      "text": "f ARMt (a|o) ≜ max(0, A+t (o, a)) (cid:80) a′∈A max(0, A+t (o, a′)) . (21)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 407,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 410,
+      "text": "Policy gradient methods have an overall regret bound of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 409,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 411,
+      "text": "RT ≤ B2 /η + ηG2 T derived from stochastic gradient de-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 410,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 412,
+      "text": "scent, where B is an upper bound on the policy parameter",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 409,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 413,
+      "text": "ℓ2 -norm, G2 is an upper bound on the second moments of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 412,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 414,
+      "text": "the stochastic gradients, and η is the learning rate (Dick,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 413,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 415,
+      "text": "2015), Assuming an optimal learning rate η = B /(G T )√",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 414,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 416,
+      "text": "T . the policy gradient regret bound becomes RT ≤ 2B G",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 415,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 417,
+      "text": "CFR has an overall regret bound of RT ≤ ∆|I |(cid:112)|A|T ,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 416,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 418,
+      "text": "where ∆ is the positive range of returns, and |I | and |A|",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 417,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 419,
+      "text": "are cardinalities of the information set space and action",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 418,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 420,
+      "text": "space, respectively (Zinkevich et al., 2007). Both regret",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 419,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 421,
+      "text": "T ) dependence on T . As mentioned ear- bounds have O(",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 420,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 422,
+      "text": "lier, policy gradient methods can also be robust to partial",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 421,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 423,
+      "text": "observation, but unlike in the case of CFR, the dependence",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 422,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 424,
+      "text": "of the policy gradient regret bound on an optimal learning",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 423,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 425,
+      "text": "rate and on gradient variance may affect policy gradient con-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 424,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 426,
+      "text": "vergence in the presence of estimation error. On the other",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 425,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 427,
+      "text": "hand, the constants in the CFR regret bound are constant",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 426,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 428,
+      "text": "properties of the environment.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 427,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 429,
+      "text": "For Q-learning per se, we are not aware of any known regret",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 428,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 430,
+      "text": "bound. Szepesv´ari proved that an upper bound on the conver-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 429,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 431,
+      "text": "gence rate of Q-learning (specifically, the convergence rate",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 430,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 432,
+      "text": "of ∥QT (s, a) − Q∗ (s, a)∥∞), assuming a fixed exploration",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 431,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 433,
+      "text": "strategy, depends on an exploration condition number, which",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 432,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 434,
+      "text": "is the ratio of minimum to maximum state-action occupa-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 433,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 435,
+      "text": "tion frequencies (Szepesv ´ari, 1998), and which describes",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 434,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 436,
+      "text": "how “balanced” the exploration strategy is. If partial observ-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 435,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 437,
+      "text": "ability leads to imbalanced exploration due to confounding",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 436,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 438,
+      "text": "of states from perceptual aliasing (McCallum, 1997), then",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 437,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 439,
+      "text": "Q-learning should be negatively affected in convergence and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 438,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 440,
+      "text": "possibly in absolute performance.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 439,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 441,
+      "text": "4. Experiments",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 274,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 442,
+      "text": "Because we hypothesize that ARM should perform well in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 441,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 443,
+      "text": "partially observable domains, we conduct our experiments",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 442,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 444,
+      "text": "on visual tasks that naturally provide partial observations of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 443,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 445,
+      "text": "state. Our evaluations use feedforward convnets with frame",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 444,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 446,
+      "text": "history inputs; our hyperparameters are listed in Section",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 445,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 447,
+      "text": "A1 of the Supplementary Material. We are interested in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 446,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 448,
+      "text": "comparing ARM with other advantage-structured methods,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 447,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 449,
+      "text": "primarily: (a) double deep Q-learning with dueling net-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 448,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 450,
+      "text": "work streams (van Hasselt et al., 2016; Wang et al., 2016),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 449,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 451,
+      "text": "which possesses an advantage-like parameterization of its",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 450,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 452,
+      "text": "Q-function and assumes Markovian observations; and (b)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 451,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 453,
+      "text": "TRPO (Schulman et al., 2015; 2016), which estimates an",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 452,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 454,
+      "text": "empirical advantage using a baseline state-value function",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 453,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 455,
+      "text": "and can handle non-Markovian observations.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 454,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 456,
+      "text": "4.1. Learning First-person 3D Navigation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 455,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 457,
+      "text": "We first evaluate ARM on the task of learning first-person",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 442,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 458,
+      "text": "In Doom MyWayHome, the agent is randomly placed in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 457,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 459,
+      "text": "one of several rooms connected in a maze-like arrangement,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 458,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 460,
+      "text": "and the agent must reach an item that has a fixed visual ap-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 459,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 461,
+      "text": "pearance and is in a fixed location before time runs out. For",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 460,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 462,
+      "text": "Minecraft, we adopt the teacher-student curriculum learning",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 461,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 463,
+      "text": "task of Matiisen et al. (2017), consisting of 5 consecutive",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 462,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 464,
+      "text": "“levels” that successively increase the difficulty of complet-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 463,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 465,
+      "text": "ing the simple task of reaching a gold block: the first level",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 464,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 466,
+      "text": "(“L1”) consists of a single room; the intermediate levels",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 465,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 467,
+      "text": "(“L2”–“L4”) consist of a corridor with lava-bridge and wall-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 466,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 468,
+      "text": "gap obstacles; and the final level (“L5”) consists of a 2 × 2",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 467,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 469,
+      "text": "arrangement of rooms randomly separated by lava-bridge",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 468,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 470,
+      "text": "or wall-gap obstacles. Examples of the MyWayHome and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 469,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 471,
+      "text": "the Minecraft levels are shown in Figure 1.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 470,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 472,
+      "text": "Our results on Doom and Minecraft are in Figures 2 and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 458,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 473,
+      "text": "3. Unlike previous evaluations which augmented raw pixel",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 472,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 474,
+      "text": "observations with extra information about the game state,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 473,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 475,
+      "text": "e.g. elapsed time ticks or remaining health (Kempka et al.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 474,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 476,
+      "text": "2016; Dosovitskiy & Koltun, 2017), in our evaluation we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 475,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 477,
+      "text": "forced all networks to learn using only visual input. Despite",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 476,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 478,
+      "text": "this restriction, ARM is still able to quickly learn policies",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 477,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 479,
+      "text": "with minimal tuning of hyperparameters and to reach close",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 478,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 480,
+      "text": "to the maximum achievable score in under 1 million simula-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 479,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 481,
+      "text": "tor steps, which is quite sample efficient. On MyWayHome,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 480,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 482,
+      "text": "we observed that ARM generally learned a well-performing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 481,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 483,
+      "text": "policy more quickly than other methods. Additionally, we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 482,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 484,
+      "text": "found that ARM is able to take advantage of an off-policy",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 483,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 485,
+      "text": "replay memory when learning on MyWayHome by storing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 484,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 486,
+      "text": "the trajectories of previous sampling batches and applying",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 485,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 487,
+      "text": "an importance sampling correction to the n-step return esti-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 486,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 488,
+      "text": "mator; please see Section A2 in the Supplementary Material.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 487,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 489,
+      "text": "We performed our Minecraft experiments using fixed cur-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 488,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 490,
+      "text": "riculum learning schedules to evaluate the sample efficiency",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 472,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 491,
+      "text": "of different algorithms: the agent is initially placed in the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 490,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 492,
+      "text": "first level (“L1”), and the agent is advanced to the next",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 491,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 493,
+      "text": "level whenever a preselected number of simulator steps",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 492,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 494,
+      "text": "have elapsed, until the agent reaches the last level (“L5”).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 493,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 495,
+      "text": "We found that ARM and dueling double DQN both were",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 494,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 496,
+      "text": "able to learn on an aggressive “fast” schedule of only 62500",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 495,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 497,
+      "text": "simulator steps between levels. TRPO required a “slow”",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 496,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 498,
+      "text": "schedule of 93750 simulator steps between levels to reliably",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 497,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 499,
+      "text": "learn. ARM was able to consistently learn a well performing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 498,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 500,
+      "text": "policy on all of the levels, whereas double DQN learned",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 499,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 501,
+      "text": "more slowly on some of the intermediate levels. ARM also",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 500,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 502,
+      "text": "more consistently reached a high score on the final, most",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 501,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 503,
+      "text": "navigation in 3D maze-like tasks from two domains: ViZ-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 457,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 504,
+      "text": "difficult level (“L5”).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 502,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 505,
+      "text": "Doom (Kempka et al., 2016) based on the game Doom, and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 503,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 506,
+      "text": "Malm¨o (Johnson et al., 2016) based on the game Minecraft.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 505,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 507,
+      "text": "Doom and Minecraft both feature an egocentric viewpoint,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 506,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 508,
+      "text": "3D perspective, and rich visual textures. We expect that both",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 490,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 509,
+      "text": "domains exhibit a substantial degree of partial observability",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 508,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 510,
+      "text": "since only the immediate field-of-view of the environment",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 509,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 511,
+      "text": "is observable by the agent due to first-person perspective.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 510,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

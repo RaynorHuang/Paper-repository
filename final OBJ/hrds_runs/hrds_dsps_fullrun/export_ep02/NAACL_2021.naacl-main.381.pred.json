@@ -1,0 +1,8709 @@
+{
+  "doc_id": "NAACL_2021.naacl-main.381",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "Enriching Transformers with Structured Tensor-Product Representations",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "for Abstractive Summarization",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Yichen Jiang∗ 1, Asli Celikyilmaz2, Paul Smolensky2,3, Paul Soulos∗3, Sudha Rao2,",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Hamid Palangi2, Roland Fernandez2, Caitlin Smith∗ 3, Mohit Bansal1, Jianfeng Gao2",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "1UNC Chapel Hill 2Microsoft Research, Redmond 3Johns Hopkins University",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "{yichenj, mbansal}@cs.unc.edu",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "{aslicel,psmo,sudha.rao,hpalangi,rfernand,jfgao}@microsoft.com",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "{psoulos1, csmit372}@jhu.edu",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Figure 1: An example document and its one line summary",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Abstract",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Abstractive summarization, the task of gener-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "ating a concise summary of input documents,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "requires: (1) reasoning over the source doc-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "ument to determine the salient pieces of in-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "formation scattered across the long document,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "and (2) composing a cohesive text by recon-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Figure 1: An example document and its one line summary",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "structing these salient facts into a shorter sum-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "from XSum dataset. Document content that is composed into",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "mary that faithfully reflects the complex re-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "an abstractive summary is color-coded.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "lations connecting these facts. In this paper,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "we adapt TP-TRANSFORMER (Schlag et al.,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "2019), an architecture that enriches the orig-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "inal Transformer (Vaswani et al., 2017) with",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "the explicitly compositional Tensor Product",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "Representation (TPR), for the task of abstrac-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "tive summarization. The key feature of our",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "model is a structural bias that we introduce by",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "encoding two separate representations for each",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "token to represent the syntactic structure (with",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "role vectors) and semantic content (with filler",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "vectors) separately. The model then binds the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "role and filler vectors into the TPR as the layer",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "output. We argue that the structured interme-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "diate representations enable the model to take",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "better control of the contents (salient facts) and",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "structures (the syntax that connects the facts)",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "when generating the summary. Empirically,",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "we show that our TP-TRANSFORMER outper-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "forms the Transformer and the original TP-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "TRANSFORMER significantly on several ab-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "stractive summarization datasets based on both",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "automatic and human evaluations. On sev-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "eral syntactic and semantic probing tasks, we",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "demonstrate the emergent structural informa-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "tion in the role vectors and improved syntactic",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "interpretability in the TPR layer outputs.1",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "1 Introduction",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "Abstractive summarization is the task of generating",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "One prominent aspect of abstractive summariza-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "tion is that models struggle with combining multi-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "ple salient aspects in the source text into a coherent",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "and grammatical set of sentences that preserve the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "original information in the source document. As",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "shown in Fig. 1, these pieces of salient information",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "(“death\", “emergency landing\", “beach\") are often",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "connected by complex syntactic, causal, and tempo-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "ral relations and are loosely grouped under the main",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "topic of the source document. The transformer",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "models (Vaswani et al., 2017) encode syntactic and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "semantic information of the input text into a single",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "representation space with the self-attention, and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "decode the salient aspects into a short summary",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "a shorter version of a source text without necessar-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "with the cross-attention. However, despite the large",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "ily reusing the sentences from the original source,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "while preserving the meaning of its salient contents.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "It is a complex task that requires: semantic under-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "standing of the source text and reasoning over its",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "lexical units, making inferences about their relation",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "to extract salient facts which are scattered across",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "the long document, as well as generating a con-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "cise and coherent sequence of new sentences that",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "covers the salient facts. While humans are remark-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "ably good at this type of reasoning and abstraction,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "developing models that are capable of extraction,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "comprehension, abstraction, and reformulation of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "salient contents has been an open research question.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "number of training examples, current state-of-the-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "∗Work partially done while at Microsoft Research.",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "art transformer based approaches still struggle with",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "1Code and models are available at",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "systematic generalization of the composition of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "https://github.com/jiangycTarheel/",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "multiple salient pieces of information.",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "TPT-Summ",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "4780",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "Proceedings of the 2021 Conference of the North American Chapter of the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "Association for Computational Linguistics: Human Language Technologies, pages 4780–4793",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "June 6–11, 2021. ©2021 Association for Computational Linguistics",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "In this paper, we investigate new types of com-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "putational primitives for transformers based on",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "Tensor Product Representations (TPRs) (Smolen-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "sky, 1990) which are explicitly-compositional vec-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "tor embeddings of symbolic structures. A Ten-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "sor Product Representation encodes a constituent",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "in a symbolic structure as a composite of a role,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "which encodes the structural information (e.g.,",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "the dependency relation with another word), and",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "a filler, which encodes the content of the con-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "stituent (e.g., the meaning of a word). Analo-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "gously, the TP-TRANSFORMER constructs a pair",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "of representations for every token at every layer:",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "a filler vector returned by attention and a novel",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "role vector. As visualized in Fig. 2, the model",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "then binds the role and filler vectors to produce",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "the output of every token as a TPR. We adapt the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "TP-TRANSFORMER (Schlag et al., 2019), which",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "was proposed for solving mathematics problems,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "for the task of abstractive summarization. Unlike",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "the original TP-TRANSFORMER, which directly",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "projects the input representation into a continuous",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "role vector space, our model generates the role vec-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "tors by attending to a learned dictionary of role",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "embeddings (Palangi et al., 2018). We observe that",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "most learned role attention distributions are approx-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "imately one-hot, thus restricting the role vectors to",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "a highly discrete space. This structural inductive",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "bias encourages the TP-TRANSFORMER to encode",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "the syntactic information in the discrete roles while",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "isolating the semantics in the continuous fillers.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "To test the ability of our TP-TRANSFORMER",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "Furthermore, to investigate the structural repre-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "sentation that naturally emerges during training and",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "the advantage of having compositional TPR hidden",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "states, we design a suite of decoder probing tasks to",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "explore the information encoded in the role, filler,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "and TPR space. We adopt the encoder probing",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "task design presented in Tenney et al. (2019b) and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "create four decoder probing tasks: Part-of-speech",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "tagging (POS), Dependency Labeling (DEP), Se-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "mantic Role Labeling (SRL), and Named Entity",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "Labeling (NEL). Our findings collectively show",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "that the decoder’s role vectors encode a wealth of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "syntactic structures, aiding the decoder in deducing",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "the syntactic features (e.g., being a proper noun,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "being the object of the root predicate) of the next",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "token to be generated. The decoder’s filler vectors",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "on the other hand encode more semantic informa-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "tion (e.g., being a person’s name). Furthermore,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "we observe that having the compositional TPR re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "sults in a more interpretable final representation",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "than the original Transformer has at every layer,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "regarding the syntactic features of the next word",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "to be generated. Our results support our hypoth-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "esis that by disentangling semantics and syntax,",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "such structured intermediate representations enable",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "the model to better control both the content to be",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "conveyed and the syntactic structure needed to ex-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "press it, ultimately improving the factuality and",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "grammaticality of the generated summaries.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "Our overall contributions are as follows: (1)",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "we present a novel adaptation of the original",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "Transformer architecture that incorporates a dic-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "with discrete roles against the standard Transformer",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "tionary of role embeddings at every layer and gen-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "and the TP-TRANSFORMER with continuous roles,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "erates Tensor Product Representation by binding",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "we build several models from scratch on a num-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "the role vectors with attention outputs (filler vec-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "ber of summarization datasets spanning differ-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "tors); (2) show that our TP-TRANSFORMER out-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "ent degrees of abstractiveness, output summary",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "performs the Transformer as well as the original",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "lengths, and domains. Our TP-TRANSFORMER",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "TP-TRANSFORMER (Schlag et al., 2019) on sev-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "significantly outperforms the standard Transformer",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "eral abstractive summarization datasets; and (3)",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "and the TP-TRANSFORMER with continuous roles",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "demonstrate the emergent structures in representa-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "on the XSum (Narayan et al., 2018), Wiki-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "tions by revealing the disentangled syntactic and",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "how (Koupaee and Wang, 2018), and Arxiv (Co-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "semantic information encoded in the role and filler",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "han et al., 2018) datasets and achieves competitive",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "spaces.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "performance on the CNN/Daily Mail (Hermann",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "et al., 2015; Nallapati et al., 2016) dataset, mea-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "2 The TP-TRANSFORMER",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "sured by automatic metrics including ROUGE (Lin,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "2004) and METEOR (Denkowski and Lavie, 2014).",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "We build our TP-TRANSFORMER based on the",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "Our human evaluations on XSum and Wikihow",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "Transformer architecture used in Raffel et al.",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "datasets also correlate with the automatic metrics,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "(2020). A TP-TRANSFORMER encoder applied",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "demonstrating that summaries generated by our TP-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "to a sequence of tokens i = 1, ..., I can be seen as",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "TRANSFORMER are indeed better than the Trans-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "former’s generations.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "a 2-dimensional lattice of cells (i, l) where i is the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "4781",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "Figure 2: The Filler and Role Binding operation of the T P-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "Figure 2: The Filler and Role Binding operation of the TP-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "TRANSFORMER Model architectur",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "position of the input token and l = 1, ..., L are the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "layer indices. All cells in the encoder have the same",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "architecture and the cells at the same layer share",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "the same weights. We introduce the basic compo-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "nents of a TP-TRANSFORMER cell in Sec. 2.2 and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "its encoder and decoder cells in Sec. 2.3.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "2.1 Tensor-Product Representation Basics",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "2.2 The TP-TRANSFORMER Cell",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "Similar to the basic Transformer cell, at every",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "layer, a TP-TRANSFORMER Encoder cell starts",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "with a layer normalization and the multi-head self-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "attention followed by a residual layer. Then, the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "cell treats the output vectors as fillers and binds",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "them to role vectors to construct a Tensor Product",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "Representation, which is then passed through the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "feed-forward network to yield the final states.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "2.2.1 Multi-Head Attention",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "The TP-TRANSFORMER cell adopts multi-head",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "attention (Vaswani et al., 2017) to enable informa-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "tion passing between tokens. At any layer, denote",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "the input vectors as X∈Rkx×dm and the attention",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "target vectors as Y ∈Rky×dm, where kx, ky are the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "length of the sequences and dm is the dimension of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "the input vectors. In the case of self attention, we",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "have Y =X; while for the encoder-decoder cross at-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "tention, Y is the encoder’s output vectors. We first",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "apply layer normalization (Ba et al., 2016) to get",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "Xˆ and then linearly project it to the query, key, and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "value vectors for each attention head h = 1, ..., H.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "KQV hhh === XYYˆWWWkvhhhq +++bbbhkhvhq (1)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "Tensor-Product Representations (TPR; (Smolen-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "sky, 1990)) are explicitly-compositional vector em-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "beddings of symbolic structures, where each con-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "stituent of the structure is represented as the prod-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "uct of a role vector, which encodes its structural",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "where Wq, Wk, Wv ∈ Rdm×dk. The attention",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "information, and a filler vector, which contains the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "output matrix V¯ for each head h is computed as:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "content. The TPR of a whole structure is the sum of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "V¯ = softmax(Q√KdkT )V (2)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "the representation of its constituents. To represent",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "any 3-digit number using TPRs, we need three role",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "vectors: {r(p1): Ones place, r(p2): Tens place,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "where dk is the dimension of the key vectors K.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "r(p3): Hundreds place} and ten filler vectors f for",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "The multi-head attention output O is the concate-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "ten digits. For example, the TPR of the number",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "nation of the attention outputs from all heads fol-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "985 is r(p1)⊗f(5)+r(p2)⊗f(8)+r(p3)⊗f(9),",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "lowed by another linear projection Wo ∈ Rdm×dm.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "where ⊗ is the tensor product. When representing",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "We end the Multi-head Attention with a residual",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "a number, the role vectors operate similarly as the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "connection with the layer input vectors Xˆ:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "positional embeddings in a Transformer (Vaswani",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "et al., 2017). However, when representing natural",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "MHAttn(X, Y ) = Xˆ + [V¯1, ..., V¯H]Wo (3)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "languages, the role vectors need to encode a variety",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "of structural information (e.g., predicate-argument,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "where V¯h is the attention output for the h-th head.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "tense, etc) and thus it is infeasible to hand-design",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "2.2.2 Computing TPRs",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "an entire suite of role vectors as we did for numbers.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "To overcome this challenge, for every token, we dy-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "Role Embeddings.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "Following Palangi et al.",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "namically compute its role vector from a dictionary",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "(2018), but departing from Schlag et al. (2019),",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "of a finite number of role embeddings learned with",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "every layer of our TP-TRANSFORMER is equipped",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "with a dictionary r ∈ RNr×dr of Nr distinct role",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "the entire model and treat the self-attention outputs",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "as the fillers. We introduce the full computation",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "embeddings with a dimension of dr. Each role",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "procedure in Sec. 2.2.2.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "embedding rn, n=1,. . . ,Nr, is randomly initialized",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "4782",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "in the entire network. The role embeddings are",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "2.3 TP-TRANSFORMER Encoder & Decoder",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "normalized before computing role vectors:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "Given the components of our basic TP-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "TRANSFORMER cell in the previous section,",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "ˆrn = (cid:107)rrnn(cid:107)2 for n = 1, ..., Nr (4)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "we now describe how we construct the TP-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "TRANSFORMER encoder and decoder.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "At each layer, the model computes a weighted",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "First, the self-attention and the encoder-decoder",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "combination of these role embeddings ˆr to form a",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "cross-attention for every token can be computed as:",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "unique role vector for every token.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "Multi-Head TPR Binding.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "Our filler vectors",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "CrosSse(lYf,(XH)) == TTPPRR((MMHHAAttttnn((XY,,HX)))) (8)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "correspond to the multi-head attention output F =",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "MHAttn(X) (Eqn. 3). The filler F of each token",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "has a corresponding role vector R. We first com-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "where H is the output of the encoder’s final layer.",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "pute the Rh ∈ Rdr at every head h = 1,...,H as",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "Y represent the previous layer’s output vectors of",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "a weighted average of the normalized role embed-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "either the partially (so-far) decoded sequence at test",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "dings ˆr. We then concatenate the Rh ∈ Rkx×dr",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "time or the masked reference summary at training",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "of H heads to get the multi-head role vectors",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "time. The encoder and decoder’s operations at",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "R ∈ Rkx×(dr·H) for all kx tokens. We define this",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "every layer can be summarized as:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "process formally as:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "DeEcondceo(dHe(,XY )) == FFFF((SCerlofs(sX(S))elf(Y ), H)) (9)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "RRh == s[Rof1t,m..a.,xR(FHW] hr)ˆr (5)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "After L layers of encoding and decoding, the final",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "distribution of the i-th output token is given by:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "where Wr ∈ Rdm×Nr is the linear projection that",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "computes the attention scores over the role embed-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "zˆi = softmax(ET yi,L) (10)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "dings for every token.2",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "We use a Hadamard product3 to approximate the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "text": "where YL = Decode(H, YL−1) are the decoder’s",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "text": "full Tensor product in binding the role vectors R",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "text": "output states at the last layer and E is the tied in-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 316,
+      "text": "with filler vectors F, as it was shown in Schlag et al.",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 317,
+      "text": "(2019) that using the Hadamard products allows",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 318,
+      "text": "put/output word embeddings.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "text": "learning an optimial lower-rank approximation of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "text": "3 Summarization Experiments",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 321,
+      "text": "the full TPRs. The binding operation is followed by",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 322,
+      "text": "an addition with the unbound fillers (F) to return",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 323,
+      "text": "3.1 Abstractive Summarization Datasets",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "text": "the residual TPR vectors.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 325,
+      "text": "We train our models on four English abstractive",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "text": "summarization datasets varying the level of ab-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "text": "TPR(F) = R (cid:12) F + F (6)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "text": "stractiveness (explained below) and the length of",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "text": "summaries, as well as input domain.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "text": "2.2.3 Residual Feed-forward Layer",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "text": "The feed-forward layer of a cell consists of a linear",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "text": "XSum",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "text": "(Narayan et al., 2018) consists of 227k",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "text": "projection followed by a ReLU activation and a",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "text": "BBC articles from 2010 to 2017 concerning various",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "text": "second linear projection. The feed-forward output",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "text": "subjects along with professionally written single-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "text": "is then added to the input vectors:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "text": "sentence summaries. Its summaries cover a wide",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "text": "variety of syntactic structures (relative clause, etc)",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "text": "FF(X) = X +ReLU(XWg +bg)Wf +bf (7)",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "text": "and relations (causal, temporal, etc).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "text": "Here, Wg∈Rdm×df, bg∈ Rdf , Wf∈ Rdf×dm,",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "text": "Wikihow",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 345,
+      "text": "(Koupaee and Wang, 2018) is a dataset",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "text": "bf ∈ Rdm, and x is the function argument.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "text": "consisting of instructions from the WikiHow.com",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "text": "website. Each of 200k examples has multiple",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "text": "2We set dr · H = dm so that the multi-head role vectors",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 350,
+      "text": "instruction-step paragraphs, each paired with a",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 351,
+      "text": "R have the same dimension as F.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 352,
+      "text": "summarizing sentence. The task is to generate the",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 353,
+      "text": "3The Hadamard (or elementwise) product is the diagonal",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 354,
+      "text": "concatenated summaries of all paragraphs.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 355,
+      "text": "of the full tensor product.",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 356,
+      "text": "4783",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 357,
+      "text": "Table 1: Example summaries from XSum, Arxiv, Wikihow, and CNN/Daily Mail datasets. Text segments directly extracted",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 358,
+      "text": "Table 1: Example summaries from XSum, Arxiv, Wikihow, and CNN/Daily Mail datasets. Text segments directly extracted",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 359,
+      "text": "from the source document are underlined.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "text": "Table 2: Automatic evaluation results on the dev/test set of XSum, Arxiv, Wikihow, and CNN/Daily Mail dataset. The results",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "text": "Table 2: Automatic evaluation results on the dev/test set of XSum, Arxiv, Wikihow, and CNN/Daily Mail dataset. The results",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 362,
+      "text": "in every cell represent F1 variant of ROUGE-1/ROUGE-2/ROUGE-L/METEOR scores. The best ROUGE scores with a",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 363,
+      "text": "statistically significant advantage, and the best METEOR scores with at least 0.3 advantage are bolded.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "text": "Arxiv",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "text": "(Cohan et al., 2018) is a long document",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 366,
+      "text": "summarization dataset of scientific publications",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 367,
+      "text": "from arXiv.org (113k). The task is to generate the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 368,
+      "text": "abstract from the paper body.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 369,
+      "text": "3.2 Experimental Setup",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 370,
+      "text": "CNN/Daily Mail",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 371,
+      "text": "(Hermann et al., 2015; Nallap-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 372,
+      "text": "The Transformer and the two TP-TRANSFORMERS",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 373,
+      "text": "ati et al., 2016) dataset contains 93k articles from",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 374,
+      "text": "all have 6 layers, 8 heads per layer, dimension per",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 375,
+      "text": "CNN and 220k articles from the Daily Mail. Ev-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 376,
+      "text": "head dk=64, model dimension dm=512, and feed-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 377,
+      "text": "ery article is accompanied by a few human-written",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 378,
+      "text": "forward dimension df=2048 for the encoder and de-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 379,
+      "text": "bullet points about its content. We use the non-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 380,
+      "text": "coder. Our TP-TRANSFORMER with discrete roles",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 381,
+      "text": "anonymized version used in See et al. (2017).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 382,
+      "text": "has Nr=50 role embeddings of dimension dr=64",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 383,
+      "text": "at every layer. For each dataset above, we train the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 384,
+      "text": "Dataset Abstractiveness.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 385,
+      "text": "We show a summary",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 386,
+      "text": "all three models from scratch using an Adafactor",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 387,
+      "text": "from each of these four datasets in Table 1. Accord-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 388,
+      "text": "Optimizer (Shazeer and Stern, 2018) with square",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 389,
+      "text": "ing to the comparison made by Zhang et al. (2020)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 390,
+      "text": "root learning rate decay and dropout rate of 0.1.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 391,
+      "text": "using the coverage and density measures (Grusky",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 392,
+      "text": "We evaluate the models using automatic metrics",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 393,
+      "text": "et al., 2018), the XSum and Wikihow datasets are",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 394,
+      "text": "including ROUGE F1 score and METEOR.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 395,
+      "text": "more abstractive than the others since their sum-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 396,
+      "text": "maries rarely contain large chunks of words over-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 397,
+      "text": "3.3 Results",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 398,
+      "text": "lapping with the source documents. CNN/Daily",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 399,
+      "text": "Mail is the least abstractive of the four. Further-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 400,
+      "text": "We report automatic metric scores from our eval-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 401,
+      "text": "more, in most cases, a sentence in a CNN/Daily",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 402,
+      "text": "uated models in Table 2. We refer to the TP-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 403,
+      "text": "Mail summary only refers to a single sentence from",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 404,
+      "text": "TRANSFORMER, with freely-generated continu-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 405,
+      "text": "the source document as suggested in Lebanoff et al.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 406,
+      "text": "(2019), while a sentence in an XSum or Wikihow",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 407,
+      "text": "summary usually aggregates information from mul-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 408,
+      "text": "tiple source sentences.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 409,
+      "text": "ous role vectors (no role dictionary) (Schlag et al.,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 410,
+      "text": "4784",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 411,
+      "text": "Table 3: Human Evaluation results on 120 random samples from the XSum (Narayan et al., 2018) and Wikihow (Koupaee and",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 412,
+      "text": "Table 3: Human Evaluation results on 120 random samples from the XSum (Narayan et al., 2018) and Wikihow (Koupaee and",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 413,
+      "text": "Wang, 2018) test sets. The best numbers with an advantage of at least 5 points are underlined.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 414,
+      "text": "2019) as TPT-c, and our own TP-TRANSFORMER",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 415,
+      "text": "with a discrete set of role embeddings as TPT-d.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 416,
+      "text": "On the XSum, Arxiv, and Wikihow datasets, our",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 417,
+      "text": "TP-TRANSFORMER (TPT-d) outperforms the orig-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 418,
+      "text": "inal Transformer on all metrics. On the CNN/Daily",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 419,
+      "text": "Mail dataset, both models obtain similar perfor-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 420,
+      "text": "mance across all metrics. On every dataset, the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 421,
+      "text": "TPT-c model which excels on the mathematics",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 422,
+      "text": "dataset, is the worst among the three models be-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 423,
+      "text": "ing compared. This suggests that continuous role",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 424,
+      "text": "vectors are not suited to the summarization tasks.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 425,
+      "text": "As we explain in Sec. 3.1, CNN/Daily Mail is",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 426,
+      "text": "the least abstractive one among the four datasets. In",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 427,
+      "text": "contrast, summaries from the XSum and Wikihow",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 428,
+      "text": "datasets contain very few n-grams (n>2) that can",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 429,
+      "text": "be copied from the source documents and thus push",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 430,
+      "text": "the model’s ability to compose a coherent sum-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 431,
+      "text": "mary restating the salient aspects from the source.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 432,
+      "text": "Furthermore, as illustrated in Table 1, the XSum",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 433,
+      "text": "summary contains a long sentence that combines",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 434,
+      "text": "multiple pieces of information scattered through",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 435,
+      "text": "the long source document. These facts are usually",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 436,
+      "text": "connected by syntactic, temporal4, or causal5 rela-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 437,
+      "text": "tions and thus the model must be able to connect",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 438,
+      "text": "and reason across these salient facts and then con-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 439,
+      "text": "vert them into a coherent sentence that faithfully",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 440,
+      "text": "reflects the original facts and their relations. We",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 441,
+      "text": "argue that the compositional TPR can better en-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 442,
+      "text": "able these abilities required for XSum, where we",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 443,
+      "text": "indeed find that our TP-TRANSFORMER achieves",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 444,
+      "text": "the largest advantage over the Transformer among",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 445,
+      "text": "its improvements on all datasets.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 446,
+      "text": "3.4 Human Evaluation",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 447,
+      "text": "Unfaithful XSum Examples",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 448,
+      "text": "It is well-known",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 449,
+      "text": "that the XSum dataset contains a portion of un-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 450,
+      "text": "faithful reference summaries that mention facts not",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 451,
+      "text": "included in the source article (Durmus et al., 2020;",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 452,
+      "text": "Maynez et al., 2020). Therefore, we are interested",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 453,
+      "text": "to find out whether our TP-TRANSFORMER is bet-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 454,
+      "text": "ter than the baseline only at expressing the faithful",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 455,
+      "text": "content or it can also generate some external, “un-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 456,
+      "text": "faithful\" facts that the baseline can’t cover. To",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 457,
+      "text": "answer this question, we randomly sample 100",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 458,
+      "text": "examples from the XSum dev set and manually",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 459,
+      "text": "examine the source document, reference summary,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 460,
+      "text": "and the two generated summaries. Among these",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 461,
+      "text": "100 examples, we identify 71 examples whose ref-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 462,
+      "text": "erence summary includes “unfaithful\" facts that are",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 463,
+      "text": "not mentioned in the source. In 21 out of 71 exam-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 464,
+      "text": "ples, the Transformer baseline manages to generate",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 465,
+      "text": "some “unfaithful\" facts that match those in the ref-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 466,
+      "text": "erence while our TP-TRANSFORMER achieves this",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 467,
+      "text": "in 17 examples. Such “unfaithful\" facts that were",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 468,
+      "text": "recovered by the models include the full name of a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 469,
+      "text": "person when only the last name is mentioned in the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 470,
+      "text": "We conduct human evaluation to compare the sum-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 471,
+      "text": "source, the political party or the job title of a per-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 472,
+      "text": "maries generated by the Transformer and our TP-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 473,
+      "text": "son, each of which can be attributed to at least one",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 474,
+      "text": "TRANSFORMER. We randomly sample 120 ex-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 475,
+      "text": "example seen by models during the training. There-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 476,
+      "text": "amples from the test sets of XSum and Wikihow",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 477,
+      "text": "fore, we believe that both models learn to draw",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 478,
+      "text": "datasets with the beam-searched model summaries.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 479,
+      "text": "We refer to appendix for the complete setup. As",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 480,
+      "text": "shown in Table 3, on the XSum dataset, summaries",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 481,
+      "text": "generated by the TP-TRANSFORMER are signif-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 482,
+      "text": "icantly better in grammar. This corroborates our",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 483,
+      "text": "claim that having the TPR can improve the model’s",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 484,
+      "text": "ability to follow the correct syntax in compos-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 485,
+      "text": "ing the summary. On the Wikihow dataset, the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 486,
+      "text": "Transformer receives more votes in regarding the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 487,
+      "text": "saliency. However, our TP-TRANSFORMER main-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 488,
+      "text": "tains an advantage in grammar and achieves signif-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 489,
+      "text": "icantly better overall preferences.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 490,
+      "text": "external information from its memory of the seen",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 491,
+      "text": "examples, while our TP-TRANSFORMER doesn’t",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 492,
+      "text": "4“returned to profit after opening new stores\"",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 493,
+      "text": "do better than the baseline Transformer at referring",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 494,
+      "text": "5“Opening new stores and spending more on online mar-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 495,
+      "text": "to external facts to obtain higher ROUGE scores.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 496,
+      "text": "keting\" caused \"more profit\".",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 497,
+      "text": "4785",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 498,
+      "text": "Table 4: Results (F1 scores) of probing different interme-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 499,
+      "text": "4 Probing Experiments",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 500,
+      "text": "Probing is a method to test whether some particular",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 501,
+      "text": "information is present in the model’s encodings.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 502,
+      "text": "To achieve this, an auxiliary classifier is trained",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 503,
+      "text": "to predict specified linguistic features from the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 504,
+      "text": "model’s internal representations. We probe dif-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 505,
+      "text": "ferent components (roles, filler, TPRs) in our TP-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 506,
+      "text": "TRANSFORMERs as well as the attention+residual",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 507,
+      "text": "outputs (equivalent to the filler) of the Transformer",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 508,
+      "text": "to assess the naturally emergent structures encoded",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 509,
+      "text": "in the role vectors and the effectiveness of the TPR",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 510,
+      "text": "in the decoding process. By conducting the probing",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 511,
+      "text": "experiments, we aim to (1) provide some insights",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

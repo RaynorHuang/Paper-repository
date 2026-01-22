@@ -1,0 +1,8709 @@
+{
+  "doc_id": "ACL_2020.acl-main.687",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "Hard-Coded Gaussian Attention for Neural Machine Translation",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Weiqiu You∗, Simeng Sun∗, Mohit Iyyer",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "College of Information and Computer Sciences",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "University of Massachusetts Amherst",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "{wyou,simengsun,miyyer}@cs.umass.edu",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Figure 1: Three heads of learned self-attention (top)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Abstract",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Recent work has questioned the importance of",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the Transformer’s multi-headed attention for",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "achieving high translation quality. We push",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "further in this direction by developing a “hard-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "coded” attention variant without any learned",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "parameters. Surprisingly, replacing all learned",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "self-attention heads in the encoder and decoder",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "with fixed, input-agnostic Gaussian distribu-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "tions minimally impacts BLEU scores across",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "four different language pairs. However, ad-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "ditionally hard-coding cross attention (which",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "connects the decoder to the encoder) signifi-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "cantly lowers BLEU, suggesting that it is more",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "important than self-attention. Much of this",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Figure 1: Three heads of learned self-attention (top)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "BLEU drop can be recovered by adding just a",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "single learned cross attention head to an oth-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "as well as our hard-coded attention (bottom) given the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "query word “to”. In our variant, each attention head is a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "erwise hard-coded Transformer. Taken as a",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "Gaussian distribution centered around a different token",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "whole, our results offer insight into which com-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "within a local window.",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "ponents of the Transformer are actually impor-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "tant, which we hope will guide future work",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "into the development of simpler and more ef-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "ficient attention-based models.",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "1 Introduction",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "The Transformer (Vaswani et al., 2017) has be-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "come the architecture of choice for neural machine",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "translation. Instead of using recurrence to contextu-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "alize source and target token representations, Trans-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "formers rely on multi-headed attention mechanisms",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "(MHA), which speed up training by enabling paral-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "lelization across timesteps. Recent work has called",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "into question how much MHA contributes to trans-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "lation quality: for example, a significant fraction",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "of attention heads in a pretrained Transformer can",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "be pruned without appreciable loss in BLEU (Voita",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "et al., 2019; Michel et al., 2019), and self-attention",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "can be replaced by less expensive modules such as",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "convolutions (Yang et al., 2018; Wu et al., 2019).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "1In Figure 1, the hard-coded head distribution",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "In this paper, we take this direction to an ex-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "These experiments maintain fully learned MHA",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "cross attention, which allows the decoder to con-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "dition its token representations on the encoder’s",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "outputs. We next attempt to additionally replace",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "cross attention with a hard-coded version, which re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "sults in substantial drops of 5-10 BLEU. Motivated",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "to find the minimal number of learned attention",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "centered on the word “to” (shown in green) is",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "[0.054,0.24, 0.40,0.24, 0.054].",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "treme by developing a variant of MHA without",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "any learned parameters (Section 3). Concretely,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "we replace each attention head with a “hard-coded”",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "version, which is simply a standard normal distri-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "bution centered around a particular position in the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "sequence (Figure 1).1 When we replace all encoder",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "and decoder self-attention mechanisms with our",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "hard-coded variant, we achieve almost identical",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "BLEU scores to the baseline Transformer for four",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "different language pairs (Section 4).2",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "2Our code is available at https://github.com/",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "* Authors contributed equally.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "fallcat/stupidNMT",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "7689",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 7689–7700",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "July 5 - 10, 2020. (cid:13)c 2020 Association for Computational Linguistics",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "Figure 2: Most learned attention heads for a Transformer trained on IWSLT16 En-De focus on a local window",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "Figure 2: Most learned attention heads for a Transformer trained on IWSLT16 En-De focus on a local window",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "around the query position. The x-axis plots each head of each layer, while the y-axis refers to the distance between",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "the query position and the argmax of the attention head distribution (averaged across the entire dataset).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "parameters needed to make up this deficit, we ex-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "plore configurations with only one learned cross",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "attention head in total, which performs just slightly",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "worse (1-3 BLEU) than the baseline.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "By replacing MHA with hard-coded attention,",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "we improve memory efficiency (26.4% more to-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "kens per batch) and decoding speed (30.2% in-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "crease in sentences decoded per second) with-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "out significantly lowering BLEU, although these",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "efficiency improvements are capped by other",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "more computationally-expensive components of",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "the model (Section 5). We also perform analysis",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "experiments (Section 6.2) on linguistic properties",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "(e.g., long-distance subject-verb agreement) that",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "MHA is able to better model than hard-coded at-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "tention. Finally, we develop further variants of",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "hard-coded attention in Section 6.3, including a",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "version without any attention weights at all.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "Our hard-coded Transformer configurations have",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "intuitively severe limitations: attention in a particu-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "lar layer is highly concentrated on a local window",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "in which fixed weights determine a token’s impor-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "tance. Nevertheless, the strong performance of",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "these limited models indicates that the flexibility",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "enabled by fully-learned MHA is not as crucial as",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "commonly believed: perhaps attention is not all",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "you need. We hope our work will spur further de-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "velopment of simpler, more efficient models for",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "neural machine translation.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "2 Background",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "2.1 Multi-headed Transformer attention",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "The Transformer is an encoder-decoder model",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "formed by stacking layers of attention blocks. Each",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "encoder block contains a self-attention layer fol-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "lowed by layer normalization, a residual connec-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "tion, and a feed-forward layer. Decoder blocks are",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "identical to those of the encoder except they also",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "include a cross attention layer, which connects the",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "encoder’s representations to the decoder.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "To compute a single head of self-attention given",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "a sequence of token representations t1...n, we first",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "project these representations to queries q1...n, keys",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "k1...n, and values v1...n using three different linear",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "projections. Then, to compute the self-attention dis-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "tribution at a particular position i in the sequence,",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "we take the scaled dot product between the query",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "vector qi and all of the key vectors (represented by",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "matrix K). We then use this distribution to compute",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "a weighted average of the values (V):",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "Attn(qi,K, V) = softmax(q√iKdk(cid:62))V (1)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "where dk is the dimensionality of the key vector.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "For MHA, we use different projection matrices",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "to obtain the query, key, and value representations",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "for each head. The key difference between self-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "attention and cross attention is that the queries and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "keys come from different sources: specifically, the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "In this section, we first briefly review the Trans-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "keys are computed by passing the encoder’s final",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "former architecture of Vaswani et al. (2017) with",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "layer token representations through a linear pro-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "a focus on its multi-headed attention. Then, we",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "jection. To summarize, MHA is used in three dif-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "provide an analysis of the learned attention head",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "ferent components of the Transformer: encoder",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "distributions of a trained Transformer model, which",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "self-attention, decoder self-attention, and cross at-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "motivates the ideas discussed afterwards.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "tention.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "7690",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "2.2 Learned heads mostly focus on local",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "windows",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "The intuition behind MHA is that each head can",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "focus on a different type of information (e.g., syn-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "tactic or semantic patterns). While some heads",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "have been shown to possess interpretable patterns",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "(Voita et al., 2019; Correia et al., 2019), other work",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "has cautioned against using attention patterns to ex-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "plain a model’s behavior (Jain and Wallace, 2019).",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "In our analysis, we specifically examine the be-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "havior of a head with respect to the current query",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "token’s position in the sequence. We train a base-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "line Transformer model (five layers, two heads per",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "layer) on the IWSLT 2016 En→De dataset, and",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "compute aggregated statistics on its learned heads.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "Figure 2 shows that outside of a few layers, most",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "of the model’s heads focus their attention (i.e., the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "argmax of the attention distribution) on a local",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "neighborhood around the current sequence posi-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "tion. For example, both self-attention heads in the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "first layer of the encoder tend to focus on just a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "one to two token window around the current posi-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "tion. The decoder self-attention and cross attention",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "heads show higher variability, but most of their",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "heads are still on average focused on local infor-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "mation. These results beg the question of whether",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "replacing self-attention with “hard-coded” patterns",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "that focus on local windows will significantly affect",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "translation quality.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "3 Hard-coded Gaussian attention",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "3.1 Hard-coded self-attention",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "In self-attention, the queries and keys are derived",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "from the same token representations and as such",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "have the same length n. The baseline Transformer",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "(BASE) computes the self-attention distribution at",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "position i by taking the dot product between the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "query representation qi and all of the key vectors",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "k1...n. We instead use a fixed Gaussian distribution",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "centered around position i − 1 (token to the left),",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "i (the query token), or i + 1 (token to the right).",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "More formally, we replace Equation 1 with",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "Attn(i, V) = N(f(i), σ2)V. (2)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "The mean of the Gaussian f(i) and its standard de-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "viation σ2 are both hyperparameters; for all of our",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "experiments, we set σ to 1 and f(i) to either i − 1,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "i or i + 1, depending on the head configuration.5",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "Note that this definition is completely agnostic to",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "the input representation: the distributions remain",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "the same regardless of what sentence is fed in or",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "what layer we are computing the attention at. Ad-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "ditionally, our formulation removes the query and",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "key projections from the attention computation; the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "Gaussians are used to compute a weighted average",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "of the value vectors.6",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "While learned attention enables model flexibility",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "Instead of learning different query and key pro-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "(e.g., a head can “look” far away from the current",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "jection matrices to define different heads, we sim-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "position if it needs to), it is unclear from the above",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "ply design head distributions with different means.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "analysis how crucial this flexibility is. To examine",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "Figure 1 shows an example of our hard-coded self-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "this question, we replace the attention distribution",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "attention for a simple sentence. We iterate over",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "computation in Equation 1 (i.e., scaled dot product",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "different configurations of distribution means f(i)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "of queries and keys) with a fixed Gaussian distri-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "bution.3 In doing so, we remove all learned pa-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "on the IWSLT16 En-De dataset, while keeping the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "cross attention learned.7 Our best validation result",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "rameters from the attention computation: the mean",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "with hard-coded self-attention (HC-SA) replaces",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "of the Gaussian is determined by the position i of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "encoder self-attention with distributions centered",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "the current query token, and the standard devia-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "tion is always set to 1.4 As Transformers contain",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "around i − 1 and i + 1 and decoder self-attention",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "with distributions centered around i −1 and i. This",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "both self-attention and cross attention, the rest of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "this section details how we replace both of these",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "5The Gaussian distribution is cut off on the borders of the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "components with simplified versions. We will re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "fer to experimental results on the relatively small",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "IWSLT16 English-German dataset throughout this",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "section to contextualize the impact of the various",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "design decisions we describe. Section 4 contains a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "more fleshed out experimental section with many",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "more datasets and language pairs.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "sentence and is not renormalized to sum to one.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "6Preliminary models that additionally remove the value",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "3 Yang et al. (2018) implement a similar idea, except the",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "projections performed slightly worse when we hard-coded",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "mean and standard deviation of their Gaussians are learned",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "cross attention, so we omit them from the paper.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "7See Appendix for a table describing the effects of varying",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "with separate neural modules.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "4Preliminary experiments with other standard deviation",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "f(i) on IWSLT16 En-De BLEU score. We find in general that",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "values did not yield significant differences, so we do not vary",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "hard-coded heads within each layer should focus on different",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "the standard deviation for any experiments in this paper.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "tokens within the local window for optimal performance.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "7691",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "Table 1: Statistics of the datasets used. The last two",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "model achieves slightly higher BLEU than the base-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "line Transformer (30.3 vs 30.0 BLEU).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "3.2 Alternatives to cross attention",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "We turn next to cross attention, which on its face",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "seems more difficult to replace with hard-coded",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "Table 1: Statistics of the datasets used. The last two",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "distributions. Unlike self-attention, the queries",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "columns show the average number of tokens for source",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "and keys in cross attention are not derived from",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "and target sentences, respectively.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "the same token representations; rather, the queries",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "come from the decoder while the keys come from",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "the encoder. Since the number of queries can now",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "4 Large-scale Experiments",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "be different from the number of keys, setting the",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "The previous section developed hard-coded con-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "distribution means by position is less trivial than it",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "figurations and presented results on the relatively",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "is for self-attention. Here, we describe two meth-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "small IWSLT16 En-De dataset. Here, we expand",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "ods to simplify cross attention, starting with a fully",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "our experiments to include a variety of different",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "hard-coded approach and moving onto a minimal",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "datasets, language pairs, and model sizes. For all",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "learned configuration.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "hard-coded head configurations, we use the optimal",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "Hard-coded cross attention:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "We begin with a",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "IWSLT16 En-De setting detailed in Section 3.1 and",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "simple solution to the problem of queries and keys",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "perform no additional tuning on the other datasets.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "having variable lengths. Given a training dataset,",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "This configuration nevertheless proves robust, as",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "we compute the length ratio γ by dividing the av-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "we observe similar trends with our hard-coded",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "erage source sentence length by the average tar-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "Transformers across all of datasets.8",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "get sentence length. Then, to define a hard-coded",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "4.1 Datasets",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "cross attention distribution for target position i, we",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "center the Gaussian on positions (cid:98)γi − 1(cid:99), (cid:98)γi(cid:99),",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "We experiment with four language pairs,",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "and (cid:98)γi + 1(cid:99) of the source sentence. When we",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "English↔{German, Romanian, French, Japanese}",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "implement this version of hard-coded cross atten-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "to show the consistency of our proposed attention",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "tion and also hard-code the encoder and decoder",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "variants. For the En-De pair, we use both the small",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "self-attention as described previously (HC-ALL),",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "IWSLT 20169 and the larger WMT 2014 datasets.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "our BLEU score on IWSLT16 En-De drops from",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "For all datasets except WMT14 En→De and",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "30.3 to 21.1. Clearly, cross attention is more im-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "WMT14 En→Fr,10 we run experiments in both",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "portant for maintaining translation quality than",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "directions. For English-Japanese, we train and",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "self-attention. Michel et al. (2019) notice a sim-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "evaluate on IWSLT 2017 En↔Ja TED talk dataset.",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "ilar phenomenon when pruning heads from a pre-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "More dataset statistics are shown in Table 1.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "text": "trained Transformer: removing certain cross atten-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "text": "4.2 Architectures",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "text": "tion heads can substantially lower BLEU.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 316,
+      "text": "Our BASE model is the original Transformer",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 317,
+      "text": "Learning a single cross attention head:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 318,
+      "text": "Prior",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "text": "from Vaswani et al. (2017), reimplemented in",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "text": "to the advent of the Transformer, many neural ma-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 321,
+      "text": "PyTorch (Paszke et al., 2019) by Akoury et al.",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 322,
+      "text": "chine translation architectures relied on just a single",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 323,
+      "text": "(2019).11 To implement hard-coded attention, we",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "text": "cross attention “head” (Bahdanau et al., 2015). The",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 325,
+      "text": "only modify the attention functions in this code-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "text": "Transformer has many heads at many layers, but",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "text": "base and keep everything else the same. For the",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "text": "how many of these are actually necessary? Here,",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "text": "two small IWSLT datasets, we follow prior work",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "text": "we depart from the parameter-free approach by in-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "text": "stead removing cross attention at all but the final",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "text": "8Code and scripts to reproduce our experimental results to",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "text": "layer of the decoder, where we include only a sin-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "text": "be released after blind review.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "text": "9We report BLEU on the IWSLT16 En-De dev set follow-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "text": "gle learned head (SH-X). Note that this is the only",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "text": "ing previous work (Gu et al., 2018; Lee et al., 2018; Akoury",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "text": "learned head in the entire model, as both the en-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "text": "et al., 2019). For other datasets, we report test BLEU.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "text": "coder and decoder self-attention is hard-coded. On",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "text": "10As the full WMT14 En→Fr is too large for us to feasibly",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "text": "train on, we instead follow Akoury et al. (2019) and train on",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "text": "IWSLT16 En-De, our BLEU score improves from",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "text": "just the Europarl / Common Crawl subset, while evaluating",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 345,
+      "text": "21.1 to 28.1, less than 2 BLEU under the BASE",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "text": "using the full dev/test sets.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "text": "Transformer.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "text": "11https://github.com/dojoteef/synst",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "text": "7692",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 350,
+      "text": "Table 2: Comparison of the discussed Transformer",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 351,
+      "text": "Table 2: Comparison of the discussed Transformer",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 352,
+      "text": "variants on six smaller datasets (top)14 and two larger",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 353,
+      "text": "datasets (bottom). Hard-coded self-attention (HC-SA)",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 354,
+      "text": "achieves almost identical BLEU scores to BASE across",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 355,
+      "text": "all datasets, while a model withonly onecross attention",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 356,
+      "text": "5 Bigger Batches & Decoding Speedups",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 357,
+      "text": "head (SH-X) performs slightly worse.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 358,
+      "text": "We have thus far motivated our work as an explo-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 359,
+      "text": "ration of which components of the Transformer",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "text": "by using a small Transformer architecture with em-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "text": "are necessary to obtain high translation quality.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 362,
+      "text": "bedding size 288, hidden size 507, four heads,12",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 363,
+      "text": "Our results demonstrate that encoder and decoder",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "text": "five layers, and a learning rate 3e-4 with a lin-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "text": "self-attention can be replaced with hard-coded at-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 366,
+      "text": "ear scheduler. For the larger datasets, we use the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 367,
+      "text": "tention distributions without loss in BLEU, and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 368,
+      "text": "standard Tranformer base model, with embedding",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 369,
+      "text": "that MHA brings minor improvements over single-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 370,
+      "text": "size 512, hidden size 2048, eight heads, six layers,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 371,
+      "text": "headed cross attention. In this section, we measure",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 372,
+      "text": "and a warmup scheduler with 4,000 warmup steps.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 373,
+      "text": "efficiency improvements in terms of batch size in-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 374,
+      "text": "For all experiments, we report BLEU scores using",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 375,
+      "text": "creases and decoding speedup.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 376,
+      "text": "SacreBLEU (Post, 2018) to be able to compare",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 377,
+      "text": "Experimental setup:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 378,
+      "text": "We run experiments on",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 379,
+      "text": "with other work.13",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 380,
+      "text": "WMT16 En-Ro with the larger architecture to sup-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 381,
+      "text": "port our conclusions.15 For each model variant",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 382,
+      "text": "4.3 Summary of results",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 383,
+      "text": "discussed below, we present its memory efficiency",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 384,
+      "text": "Broadly, the trends we observed on IWSLT16 En-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 385,
+      "text": "as the maximum number of tokens per batch al-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 386,
+      "text": "De in the previous section are consistent for all of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 387,
+      "text": "lowed during training on a single GeForce RTX",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 388,
+      "text": "the datasets and language pairs. Our findings are",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 389,
+      "text": "2080 Ti. Additionally, we provide inference speed",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 390,
+      "text": "summarized as follows:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 391,
+      "text": "as the number of sentences per second each model",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 392,
+      "text": "• A Transformer with hard-coded self-attention",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 393,
+      "text": "can decode on a 2080 Ti, reporting the average of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 394,
+      "text": "in the encoder and decoder and learned",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 395,
+      "text": "five runs with a batch size of 256.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 396,
+      "text": "cross attention (HC-SA) achieves almost equal",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 397,
+      "text": "Hard-coding self-attention yields small effi-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 398,
+      "text": "BLEU scores to the BASE Transformer.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 399,
+      "text": "ciency gains:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 400,
+      "text": "Table 7 summarizes our profiling",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 401,
+      "text": "• Hard-coding both cross attention and self-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 402,
+      "text": "experiments. Hard-coding self-attention and pre-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 403,
+      "text": "attention (HC-ALL) considerably drops BLEU",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 404,
+      "text": "serving learned cross attention allows us to fit 17%",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 405,
+      "text": "compared to BASE, suggesting cross attention",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 406,
+      "text": "more tokens into a single batch, while also pro-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 407,
+      "text": "is more important for translation quality.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 408,
+      "text": "viding a 6% decoding speedup compared to BASE",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 409,
+      "text": "• A configuration with hard-coded self-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 410,
+      "text": "attention and a single learned cross attention",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 411,
+      "text": "head in the final decoder layer (SH-X)",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 412,
+      "text": "consistently performs 1-3 BLEU worse than",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 413,
+      "text": "BASE.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 414,
+      "text": "These results motivate a number of interesting",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 415,
+      "text": "analysis experiments (e.g., what kinds of phenom-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 416,
+      "text": "ena is MHA better at handling than hard-coded",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 417,
+      "text": "attention), which we describe in Section 6. The",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 418,
+      "text": "strong performance of our highly-simplified mod-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 419,
+      "text": "els also suggests that we may be able to obtain",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 420,
+      "text": "memory or decoding speed improvements, which",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 421,
+      "text": "we investigate in the next section.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 422,
+      "text": "on the larger architecture used for WMT16 En-Ro.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 423,
+      "text": "12For hard-coded configurations, we duplicate heads to fit",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 424,
+      "text": "The improvements in both speed and memory us-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 425,
+      "text": "this architecture (e.g., we have two heads per layer in the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 426,
+      "text": "age are admittedly limited, which motivates us to",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 427,
+      "text": "encoder with means of i + 1 and i − 1).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 428,
+      "text": "measure the maximum efficiency gain if we only",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 429,
+      "text": "13SacreBLEU signature: BLEU+case.mixed+lang.LANG",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 430,
+      "text": "modify self-attention (i.e., preserving learned cross",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 431,
+      "text": "+numrefs.1+smooth.exp+test.TEST+tok.intl+version.1.2.11,",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 432,
+      "text": "with LANG ∈ {en-de, de-en, en-fr} and TEST ∈",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 433,
+      "text": "attention). We run a set of upper bound experi-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 434,
+      "text": "{wmt14/full, iwslt2017/tst2013}. For WMT16 En-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 435,
+      "text": "ments where we entirely remove self-attention in",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 436,
+      "text": "Ro and IWSLT17 En-Ja, we follow previous work",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 437,
+      "text": "the encoder and decoder. The resulting encoder",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 438,
+      "text": "for preprocessing (Sennrich et al., 2016), encod-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 439,
+      "text": "ing the latter with a 32K sentencepiece vocabulary",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 440,
+      "text": "15Experiments with the smaller IWSLT16 En-De model are",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 441,
+      "text": "(https://github.com/google/sentencepiece)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 442,
+      "text": "and measuring the de-tokenized BLEU with SacreBLEU.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 443,
+      "text": "described in the Appendix.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 444,
+      "text": "7693",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 445,
+      "text": "Table 3: Decoding speedup (in terms of sentences per",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 446,
+      "text": "Figure 3: BLEU performance on WMT16 En-Ro be-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 447,
+      "text": "Table 3: Decoding speedup (in terms of sentences per",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 448,
+      "text": "second) and memory improvements (max tokens per",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 449,
+      "text": "batch) on WMT16 En-Ro for a variety of models. The",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 450,
+      "text": "last two rows refer to BASE and SH-X configurations",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 451,
+      "text": "Figure 3: BLEU performance on WMT16 En-Ro be-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 452,
+      "text": "whose self-attention is completely removed.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 453,
+      "text": "fore and after removing all feed-forward layers from",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 454,
+      "text": "the models. BASE and HC-SA achieve almost identi-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 455,
+      "text": "cal BLEU scores, but HC-SA relies more on the feed-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 456,
+      "text": "thus just becomes a stack of feed-forward layers on",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 457,
+      "text": "forward layers than the vanilla Transformer. As shown",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 458,
+      "text": "top of the initial subword embeddings. Somewhat",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 459,
+      "text": "on the plot, with a four layer encoder and decoder, the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 460,
+      "text": "surprisingly, the resulting model still achieves a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 461,
+      "text": "BLEU gap between BASE-FF and BASE is 1.8, while",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 462,
+      "text": "fairly decent BLEU of 27.0 compared to the BASE",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 463,
+      "text": "the gap between HC-SA and HC-SA-FF is 3.2.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 464,
+      "text": "model’s 33.0. As for the efficiency gains, we can",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 465,
+      "text": "fit 27% more tokens into a single batch, and de-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 466,
+      "text": "6 Analysis",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 467,
+      "text": "coding speed improves by 12.3% over BASE. This",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 468,
+      "text": "relatively low upper bound for HC-SA shows that",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 469,
+      "text": "Taken as a whole, our experimental results suggest",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 470,
+      "text": "simply hard-coding self-attention does not guaran-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 471,
+      "text": "that many of the components in the Transformer",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 472,
+      "text": "tee significant speedup. Previous work that simpli-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 473,
+      "text": "can be replaced by highly-simplified versions with-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 474,
+      "text": "fies attention (Wu et al., 2019; Michel et al., 2019)",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 475,
+      "text": "out adversely affecting translation quality. In this",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 476,
+      "text": "also report efficiency improvements of similar low",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 477,
+      "text": "section, we explain how hard-coded self-attention",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 478,
+      "text": "magnitudes.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 479,
+      "text": "does not degrade translation quality (Section 6.1),",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 480,
+      "text": "perform a detailed analysis of the behavior of our",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 481,
+      "text": "Single-headed cross attention speeds up de-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 482,
+      "text": "various models by comparing the types of errors",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 483,
+      "text": "coding:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 484,
+      "text": "Despite removing learned self-attention",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 485,
+      "text": "made by learned versus hard-coded attention (Sec-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 486,
+      "text": "from both the encoder and decoder, we did not",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 487,
+      "text": "tion 6.2), and also examine different attention con-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 488,
+      "text": "observe huge efficiency or speed gains. However,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 489,
+      "text": "figurations that naturally follow from our experi-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 490,
+      "text": "reducing the source attention to just a single head",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 491,
+      "text": "ments (Section 6.3).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 492,
+      "text": "results in more significant improvements. By only",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 493,
+      "text": "6.1 Why does hard-coded self-attention work",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 494,
+      "text": "keeping single-headed cross attention in the last",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 495,
+      "text": "so well?",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 496,
+      "text": "layer, we are able to achieve 30.2% speed up and",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 497,
+      "text": "fit in 26.4% more tokens to the memory compared",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 498,
+      "text": "Given the good performance of HC-SA on multiple",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 499,
+      "text": "to BASE . Compared to HC-SA, SH-X obtains a",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 500,
+      "text": "datasets, it is natural to ask why hard-coding self-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 501,
+      "text": "22.9% speedup and 8.0% bigger batch size.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 502,
+      "text": "attention does not deteriorate translation quality.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 503,
+      "text": "From our profiling experiments, most of the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 504,
+      "text": "We conjecture that feed-forward (FF) layers play",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 505,
+      "text": "speed and memory considerations of the Trans-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 506,
+      "text": "a more important role in HC-SA than in BASE by",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 507,
+      "text": "former are associated with the large feed-forward",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 508,
+      "text": "compensating for the loss of learned dynamic self-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 509,
+      "text": "layers that we do not modify in any of our experi-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 510,
+      "text": "attention. To test this hypothesis, we conduct an",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 511,
+      "text": "ments, which caps the efficiency gains from modi-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

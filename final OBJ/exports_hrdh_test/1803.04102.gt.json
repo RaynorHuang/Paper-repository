@@ -1,0 +1,8709 @@
+{
+  "doc_id": "1803.04102",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "Hardware Trojan Detection through Information Flow",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Security Verification",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Adib Nahiyan, Mehdi Sadi, Rahul Vittal, Gustavo Contreras, Domenic Forte and Mark Tehranipoor",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Department of Electrical and Computer Engineering, University of Florida, Gainesville, Florida",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Email: {adib1991, mehdi.sadi, rahulvittal, gustavokcm}@ufl.edu, {dforte, tehranipoor}@ece.ufl.edu",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Abstract—",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Semiconductor design houses are increasingly becoming dependent on",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 5,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "third party vendors to procure intellectual property (IP) and meet time-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 6,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "to-market constraints. However, these third party IPs cannot be trusted",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 7,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "as hardware Trojans can be maliciously inserted into them by untrusted",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 8,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "vendors. While different approaches have been proposed to detect Trojans",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 9,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "in third party IPs, their limitations have not been extensively studied.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 10,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "In this paper, we analyze the limitations of the state-of-the-art Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 11,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "detection techniques and demonstrate with experimental results how to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 12,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "defeat these detection mechanisms. We then propose a Trojan detection",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 13,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "framework based on information flow security (IFS) verification. Our",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 14,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "framework detects violation of IFS policies caused by Trojans without",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 15,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "the need of white-box knowledge of the IP. We experimentally validate",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 16,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "the efficacy of our proposed technique by accurately identifying Trojans",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 17,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "in the trust-hub benchmarks. We also demonstrate that our technique",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 18,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "does not share the limitations of the previously proposed Trojan detection",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 19,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "techniques.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 20,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "I. IN TROD UC TIO N",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 5,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Today’s system-on-chips (SoCs) usually contain tens of IP cores",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 22,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "(digital and analog) performing various functions. To lower research",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 23,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "and development (R&D) cost and speed up the development cycle,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 24,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "the SoC design houses typically purchase most of the IP cores from",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 25,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "third-party (3P) vendors [1]. This raises a major concern toward the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 26,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "trustworthiness of 3PIPs because 3PIP vendors can insert malicious",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 27,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "components (known as hardware Trojans) in their IPs [2]. This",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 28,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "issue has gained significant attention as Trojans inserted by a 3PIP",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 29,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "vendor can create backdoors in the design through which sensitive",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 30,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "information can be leaked and other possible attacks (e.g., denial of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 31,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "service, reduction in reliability) can be performed [3].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 32,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "Detection of Trojans in 3PIPs is challenging as there is no golden",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 23,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "version against which to compare a given IP core during verification.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 34,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "In theory, an effective way to detect a Trojan in an IP core is to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 35,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "activate the Trojan and observe its effects, but a Trojan’s type, size,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 36,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "and location are unknown, and its activation condition is most likely a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 37,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "rare event. A Trojan can be, therefore, well hidden during the normal",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 38,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "functional operation of the 3PIP supplied as register transfer level",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 39,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "(RTL) code. A large industrial-scale IP core can include thousands",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 40,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "of lines of code. Identifying the few lines of RTL code in an IP core",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 41,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "that represents a Trojan is an extremely challenging task [4].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 42,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "Different approaches have been proposed to validate that an IP does",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 34,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "Functional analysis based approaches [10] [11] rely on functional",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 44,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "simulation to find suspicious regions of an IP which have similar",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 45,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "characteristics of a hardware Trojan. Waksman et al. [10] have",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 46,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "proposed a technique named Functional Analysis for Nearly-unused",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 47,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "Circuit Identification (FANCI) which flags nets having weak input-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 48,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "to-output dependency as suspicious. Zhang et al. [11] have proposed",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 49,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "a technique called VeriTrust to identify nets that are not driven by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 50,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "functional inputs as potential trigger inputs of a hardware Trojan.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 51,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "However, in [12] authors have shown that a Trojan can be designed to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 52,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "bypass both of these detection techniques. Farahmandi et al. [13] have",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 53,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "proposed a Trojan detection technique based on symbolic algebra.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 54,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "However, this technique requires a golden reference of the IP which",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 55,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "may not be available when it is procured from 3P vendors.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 56,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "Some recent works have utilized formal methods and information",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 45,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "flow tracking (IFT) based techniques to detect Trojans. Rajendran",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 58,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "et al. [14] have proposed a technique to formally verify malicious",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 59,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "modification of critical data in 3PIP by hardware Trojans. Another",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 60,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "similar approach has been proposed in [15] which formally verifies",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 61,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "unauthorized information leakage in 3PIPs. In [16] [17], authors",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 62,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "have proposed the concept of proof-carrying code (PCC) to formally",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 63,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "validate the security related properties of an IP. Commercial tools,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 64,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "e.g., Jasper security path verification tool [18] can identify informa-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 65,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "tion leakage caused by design bugs and/or hardware Trojans. Wei",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 66,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "et al. [19] have used information flow tracking to detect Trojans in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 67,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "3PIP cores. These state-of-the-art techniques have been shown to be",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 68,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "effective in detecting various types of Trojans. However, all of these",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 69,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "techniques share some inherent limitations which can be exploited to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 70,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "bypass their detection capabilities.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 71,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "In this paper, we present a comprehensive analysis of IFT/formal",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 58,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "Trojan detection techniques. Also, we propose a novel framework to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 73,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "detect Trojans in 3PIPs addressing the shortcomings of previously",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 74,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "proposed techniques. Our proposed framework is based on informa-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 75,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "tion flow security (IFS) verification which detects violation of IFS",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 76,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "policies due to Trojans. Once we detect the presence of a Trojan, we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 77,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "extract its triggering condition. In this paper, we focus on utilizing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 78,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "our framework for Trojan detection. However, it can also be used to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 79,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "detect IFS violations unintentionally introduced by design mistakes or",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 80,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "by CAD tools [22] [23]. We summarize our contribution as follows:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 81,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "not perform any malicious function, i.e., an IP does not contain any",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 44,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "Trojan. Existing Trojan detection techniques can be broadly classified",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 83,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "• We analyze the limitations of the recent Trojan detection tech-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 82,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "into structural and functional analysis, logic testing, formal verifi-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 84,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "niques for 3PIP ([14] [15] [18] [16]) and demonstrate how these",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 85,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "cation, information flow tracking and runtime validation. Structural",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 86,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "limitations can be exploited to bypass their detection capabilities.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 87,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "analysis employs quantitative metrics to mark signals or gates with",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 88,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "• We propose a IFS verification framework which detects viola-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 89,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "low activation probability as suspicious signals that may be a part of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 90,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "tions of confidentiality and integrity policies caused by Trojan.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 91,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "a Trojan [6] [7]. Hicks et al. [8] have proposed a technique named",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 92,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "The novelty of this approach is that it models an asset (e.g., a net",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 93,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "unused circuit identification (UCI) to find the lines of RTL code that",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 94,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "carrying a secret key) as a fault and leverages the automatic test",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 95,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "have not been executed during simulation. These unused lines of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 96,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "pattern generation (ATPG) algorithm to detect the propagation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 97,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "codes can be considered to be part of a malicious circuit. However,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 98,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "of the asset.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 99,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "these techniques do not guarantee Trojan detection and Sturton et",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 100,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "• We propose a partial-scan ATPG technique to identify",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 101,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "al. [9] have demonstrated that hardware Trojans can be designed to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 102,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "the observe/control points through/from which an asset can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 103,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "defeat UCI technique.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 104,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "be leaked/influenced. Traditional full-scan ATPG and full-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 105,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "Paper 6.1",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "INTERNATIONAL TEST CONFERENCE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "1",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "978-1-5386-3413-4/17/$31.00 ©2017 IEEE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "IMAGE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "Figure 1: System-on-chip (SoC) design flow",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 112,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "sequential ATPG cannot be used for this purpose.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 107,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "• We propose a technique to differentiate between a valid asset",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 114,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "propagation path and a Trojan payload path.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 115,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "• Our proposed technique can detect Trojan inserted by 3P ven-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 116,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "dors, e.g., design for test (DfT) vendors. This differentiates our",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 117,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "approach from previously proposed techniques which cannot",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 118,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "work with DfT inserted netlist.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 119,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "• We experimentally validate the efficacy of our proposed tech-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 120,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "nique using 18 benchmarks from the trust-hub [21].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 121,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "The rest of the paper is organized as follows. In the next section,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 73,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "we give the necessary background on SoC design flow and discuss",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 123,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "our threat model. In Section III, we analyze the limitations of the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 124,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "previously proposed Trojan detection technique and demonstrate with",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 125,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "experimental results how to exploit them. Section IV discusses our",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 126,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "proposed framework which consists of confidentiality verification,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 127,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "integrity verification, and trigger condition extraction. We present",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 128,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "our results in Section V. We discuss the limitations of our proposed",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 129,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "approach in Section VI. We conclude the paper with Section VII.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 130,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "II . PRELIM I NA R I E S A ND DEFI NITIO NS",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 22,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "A. SoC Design Flow",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 132,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "B. Threat Model",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 133,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "In this section, we present how the potential adversaries can",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 134,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "implant a hardware Trojan in a SoC design. We also briefly describe",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 135,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "their objectives and their capabilities. Finally, we present the types",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 136,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "of hardware Trojans covered by our threat model.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 137,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "1) Potential Adversaries: We consider that all the 3PIPs, i.e., soft,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 135,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "firm and hard IPs as untrusted. However, in this work, we mainly",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "focus on the soft and the firm IPs. The third party vendors involved",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 140,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "in the SoC design flow (e.g., design for test (DfT) insertion) are",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 141,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "considered untrusted as well. We consider the SoC integrator and the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 142,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "CAD tools as trusted entities. Although we do not trust the foundry,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 143,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "Trojan inserted by the foundry is out of the scope of this paper.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 144,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "Trojans inserted by foundry can only be detected by post-silicon",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 145,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "verification techniques, whereas in this paper we focus on Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 146,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "detection in pre-silicon design stage.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 147,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "We assume that the third party vendors will insert the Trojans",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "while the SoC integrator will try to detect them. We consider the SoC",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 149,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "integrator has black box knowledge of the IP purchased from the third",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 150,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "Figure 1 shows a typical SoC design flow. Design specification by",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 133,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "party vendors. That is, the SoC integrator only has the knowledge of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 151,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "the SoC integrator is the first step. The SoC integrator then identifies",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 152,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "the high-level functionality of the IP. The 3PIP vendors have full",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 153,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "a list of IPs necessary to implement the given specification. These IP",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 154,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "control over their IP and can insert stealthy Trojans which would",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 155,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "cores are either developed in-house or purchased from 3PIP vendors.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 156,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "be extremely difficult, if not impossible, to detect using traditional",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 157,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "If purchased, these 3PIP cores can be procured in the following three",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 158,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "test and verification techniques. The other important players in SoC",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 159,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "forms [24],",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 160,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "design flow are the third party vendors, e.g., DfT vendors who have",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 161,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "• Soft IP cores are delivered as synthesizable register transfer level",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 162,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "access to the whole SoC design and have the capability to incorporate",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 163,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "(RTL) written in hardware description language (HDL) such as",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 164,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "stealthy malicious circuitry in the SoC.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 165,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "Verilog or VHDL.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 166,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "The objective of the adversaries is to implant Trojan in the SoC",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 149,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "• Firm IP cores are delivered as gate level implementation of the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 168,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "design through which sensitive information can be leaked and other",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 169,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "IP, possibly using a generic library.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 152,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "possible attacks (e.g., denial of service, reduction in reliability) can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 171,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "• Hard IP cores are delivered as GDSII representations of a fully",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 172,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "be performed.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 173,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "placed and routed design.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 174,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "2) Hardware Trojan Structure: The basic structure of a hardware",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 169,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "After developing/procuring all the necessary soft IPs, the SoC",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 172,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "Note that, we consider the entities inside the green box in Figure",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 178,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "1 as trusted while the entities inside the red box as rogue/untrusted.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 179,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "Trojan in a 3PIP can include two main parts, trigger, and payload.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 177,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "design house integrates them to generate RTL specification of the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 178,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "A Trojan trigger is an optional part that monitors various signals",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 181,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "whole SoC. The RTL design goes through extensive functional testing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 182,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "and/or a series of events in the SoC. Once the trigger detects an",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 183,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "to verify the functional correctness of the SoC and also to find any",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 184,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "expected event or condition, the payload is activated to perform a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 185,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "design bugs. SoC integrator then synthesizes the RTL description",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 186,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "malicious behavior. Typically, the trigger is expected to be activated",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 187,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "into a gate-level netlist based on a target technology library. They",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 188,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "under extremely rare conditions, so the payload remains inactive most",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 189,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "may also integrate firm IP cores from a vendor into this netlist.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 190,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "of the time. When the payload is inactive, the SoC acts like a Trojan-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 191,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "The SoC integrator then integrates DfT structures to improve the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 192,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "free circuit, making it difficult to detect the Trojan [2].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 193,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "design’s testability. However, in many cases, the DfT insertion is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 194,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "A Trojan can have a variety of possible payloads. In this paper,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 177,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "outsourced to third party vendors who specialize in designing test",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 196,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "we focus on payloads which leak secret information (violation of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 197,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "and debug structures, e.g., built-in self-test (BIST), compression",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 198,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "confidentiality) and/or allows an adversary to gain unauthorized",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 199,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "structures. In the next step, the gate-level netlist is translated into",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 200,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "access to a privilege system (violation of integrity). Note that, most",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 201,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "a physical layout design. It is also possible to import IP cores from",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 202,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "Trojan payloads will either violate the confidentiality and/or the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 203,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "vendors in GDSII layout file format and integrate them at this stage.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 204,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "integrity policies of the SoC.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 205,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "After performing static timing analysis (STA) and power closure, SoC",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 206,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "integrator generates the final layout in GDSII format and sends it out",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 208,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "to a foundry for fabrication [2].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 209,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "In this paper, we classify Trojan into two broad categories,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 197,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "Paper 6.1",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "INTERNATIONAL TEST CONFERENCE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "2",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "978-1-5386-3413-4/17/$31.00 ©2017 IEEE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "IMAGE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "Figure 2: C17 benchmark circuit",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 216,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "• Trojan type I: This type of Trojan delivers its payload through",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 211,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "the valid asset propagation path. For example, RSA-T100 trust-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 218,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "hub Trojan [21] leaks the private key through valid ciphertext",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 219,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "output port. This type of Trojans generally creates a bypass path",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 220,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "and allows an adversary to extract the asset.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 221,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "• Trojan type II: This type of Trojan delivers its payload through",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 222,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "a malicious circuit which is not authorized to observe or control",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 223,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "the asset. For example, AES-T100 trust-hub Trojan [21] leaks",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 224,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "the private key through a leakage circuit which is functionally",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 225,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "isolated from the valid encryption logic.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 226,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "The structure and the functionality of RSA-T100 and AES-T100",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 211,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "Trojans are discussed in details in Section V.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 228,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "I II . PREV I OUS WORK S AN D T HEI R LIMI TAT ION S",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 132,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "Limitations of existing Trojan detection approaches, e.g., UCI [8],",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 230,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "FANCI [10], VeriTrust [11] have been discussed in details in [9], [12],",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 231,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "[14]. In this paper, we analyze recent Trojan detection techniques",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 232,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "which utilize formal methods and/or information flow tracking.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 233,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "A. Formal Verification",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 230,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "Rajendran et al. [14] proposed a technique to formally verify",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 235,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "malicious modification of critical data in 3PIP by hardware Trojans.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 236,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "Another similar approach has been proposed in [15] which formally",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 237,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "verifies unauthorized information leakage in 3PIPs. Both techniques",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 238,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "are based on bounded model checking (BMC) where the BMC checks",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 239,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "for the property-“does critical information get corrupted?” and “does",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 240,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "the design leak any sensitive information?”. The underlying concept",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 241,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "is same for both techniques, and therefore, we will focus our analysis",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 242,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "on [15].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 243,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "To check for information leakage caused by Trojan, authors in [15]",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 236,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "used the following property,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 245,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "P |= (s0 == o) ∨ (¬s0 == o), ∀ s0 ∈ 0, 1 (1)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 246,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "where, s0 is the individual bit of sensitive information (e.g., en-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 247,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "B. GLIFT-based Trojan Detection",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 235,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "cryption key) and ¬s0 is the inverted logical value of s0 . o is any",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 248,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "GLIFT-based Trojan detection technique [19] relies on gate-level",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 249,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "leakage point (e.g., output port). The authors claim that this property",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 250,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "information flow tracking (GLIFT) [20] to detect Trojan. To account",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 251,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "can detect if the sensitive information or a function of the sensitive",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 252,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "for hardware specific information flow, GLIFT technique tracks",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 253,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "information is leaked.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 254,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "information flow through Boolean gates. At gate level, all information",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 255,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "However, there exist many limitations of this technique, as dis-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 245,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "cussed below:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 258,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "IMAGE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "False Positive Results: The fundamental limitation of this technique",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 259,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "is that it will produce a large number of false positive results. The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 261,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "reason is that the property only checks if the logical value of s0 or",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 262,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "its inverted value ¬s0 is same as the logical value of o. However, the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 263,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "property does not guarantee if there exists an information flow from",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 264,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "s0 to o causing the possibility of false positive results. We illustrate",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 265,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "this limitation using the simple C17 benchmark circuit.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 266,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "Figure 2 shows the schematic of the C17 benchmark circuit. It",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 258,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "We use the inclusive formal verification (IFV) tool of Cadence",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 268,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "[25] to verify this property. The IFV tool returns that the assertion",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 269,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "has failed which means that there exists information leakage from N1",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 270,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "to N23. This is a false positive result as there exists no information",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 271,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "flow from N 1 to N 23. The reason for this false positive result is that",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 272,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "the IFV tool uses other input pins to make the logical value of N 23",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 273,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "equal to N 1. This result illustrates that the technique proposed in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 274,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "[14], [15] would produce a large number of false positive results for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 275,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "any practical circuit.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 276,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "Limited Verification Capability: Another fundamental limitation of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 277,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "any model checking technique is that a sequential circuit can be",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 278,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "unrolled or verified only to a limited number of clock cycles, T . If the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 279,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "Trojan is designed in such a way so that its trigger gets activated after",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 280,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "T , then the Trojan would evade detection. In [14], [15] the authors",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 281,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "acknowledged this limitation and proposed a trivial solution that the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 282,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "design needs to be reset once the number of clock cycles exceeds T .",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 283,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "This proposed solution, however, does not provide adequate pro-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 269,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "tection from Trojans. To demonstrate this, we take the AES-T1100",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 285,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "Trojan benchmark circuit [21] from trust-hub. The triggering circuit",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 286,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "of this Trojan can be illustrated as a finite state machine (FSM)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 287,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "consisting of four states (shown in black color in Figure 3). This",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 288,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "Trojan is triggered when it observes four specific plaintexts (P1, P2,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 289,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "P3, P4) in the correct order. We use the property of Equation 1 and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 290,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "use the IFV tool to detect the Trojan. The IFV tool easily detects the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 291,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "Trojan and also shows the triggering condition. Next, we modify the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 292,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "Trojan triggering circuit by incorporating one more state (State 4 in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 293,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "Figure 3) and a 20 bit counter. Once the Trojan observes the four",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 294,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "specific triggering sequence, it starts the counter and waits for 220",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 295,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "cycles before triggering its payload (State 5 in Figure 3). We now use",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 296,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "the IFV tool again to detect the Trojan and the tool now fails to detect",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 297,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "it. We also designed the Trojan counter and FSM trigger in such a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 298,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "way that these registers are not reset-able. Therefore, even when the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 299,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "design is reset, these registers store their current state and deliver",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 300,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "its payload when the triggering condition is met. Our modification",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 301,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "only introduces 0.4% area overhead compared to the original AES-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 302,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "T1100 Trojan. Also, non-reset-able FFs are not uncommon, e.g.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 303,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "DFFX1 is a non-reset-able FF in the Synopsys standard cell library.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 304,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "Therefore, our proposed modification does not make the Trojan circuit",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 305,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "distinguishable from the rest of the circuit. This experiment illustrates",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 306,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "another crucial weakness of the formal methods in detecting Trojan.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 307,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "is clear from Figure 2 input N1 is not in the fan-in cone of the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 268,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "output N 23. In other words, there is no information flow from N1 to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 309,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "Figure 3: Finite state machine of the modified triggering circuit of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 260,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "N 23. Now we write the following assertion to prove the property of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 310,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "text": "AES-T1100 Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 311,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "text": "Equation 1.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 312,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "text": "P |= assert never ((N1 == N23) ∨ (¬N1 == N 23)) (2)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 314,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 316,
+      "text": "Paper 6.1",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 317,
+      "text": "INTERNATIONAL TEST CONFERENCE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 318,
+      "text": "3",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "text": "978-1-5386-3413-4/17/$31.00 ©2017 IEEE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "text": "IMAGE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 321,
+      "text": "C. Jasper Security Path Verification",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 249,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 322,
+      "text": "With the growing importance of data security assurance, commer-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 321,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 323,
+      "text": "cial tool vendors have started introducing security verification tools.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 322,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "text": "JasperGold Security Path Verification (SPV) tool of Cadence [18] is a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 323,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 325,
+      "text": "powerful formal verification tool that accepts a RTL code containing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 324,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "text": "Figure 4: AES encryption module with a hardware Trojan. The Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 320,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "text": "a specific secure area (memory or key location), and exhaustively",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 325,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "text": "leaks the secret key through the ciphertext output when it is triggered.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 326,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "text": "proves that secure information: (i) cannot be read illegally, (ii) cannot",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 327,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "text": "be illegally overwritten",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 329,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "text": "flow appears at the most basic level of abstraction which allows",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 257,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "text": "Jasper tool formally checks whether there exists any functional",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 322,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "text": "detecting information flow that is inherently not visible at higher",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 331,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "text": "path from source signal A to destination signal B. The tool first",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 332,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "text": "levels (software level). In GLIFT each data bit is associated with",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 333,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "text": "injects a unique tag called “taint” on A and utilizes a proprietary",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 334,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "text": "a taint bit and the propagation of data is monitored by tracking",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 335,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "text": "the tainted bits as they flow through Boolean gates. To track the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 337,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "text": "path sensitization technology to verify whether this unique tag can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 336,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "text": "ever appear at B. Among many applications, Jasper tool can detect",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 339,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "text": "propagation of taint bits, each standard cell gate is augmented with",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 338,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "text": "Trojans which cause information leakage.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 340,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "text": "its corresponding tracking logic gate (referred to as GLIFT logic).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 341,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "text": "However, Jasper tool may not be effective in detecting certain types",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 332,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 345,
+      "text": "However, GLIFT logic generation is a difficult problem due to its",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 343,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "text": "of Trojan. Jasper SPV tool checks whether there exists any functional",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 344,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "text": "inherent complexity. Also GLIFT logic can produce false positive",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 345,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "text": "path from asset to a destination signal. A SoC integrator having",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 346,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "text": "results as shown in [20].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 347,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 350,
+      "text": "black-box knowledge of a 3PIP may not know which internal signal",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 348,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 351,
+      "text": "To detect Trojan using GLIFT, Wei et al. [19] label the secret key",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 251,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 352,
+      "text": "to check for that is associated with a Trojan. For example, AES-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 350,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 353,
+      "text": "as HIGH (tainted) and all the remaining inputs as LOW (untainted).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 351,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 354,
+      "text": "2000 or AES-T2100 [21] Trojans direct the key to internal registers",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 352,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 355,
+      "text": "Then they write formal properties to check if an unauthorized output",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 353,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 356,
+      "text": "and rely on dynamic power consumption of these registers to leak",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 354,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 357,
+      "text": "port can have HIGH taint. In an encryption module any output port",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 355,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 358,
+      "text": "the key. Such Trojans may not be detected using Jasper as a SoC",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 356,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 359,
+      "text": "apart from the ciphertext outputs is considered as unauthorized output",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 357,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "text": "integrator may not know which specific signals to look for to detect",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 358,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "text": "point as the secret key should not propagate to this point. The main",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 359,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 362,
+      "text": "these Trojans.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 360,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 363,
+      "text": "advantage of GLIFT over formal verification based techniques, i.e.,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 361,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "text": "We applied the Jasper security path verification on AES-T2000",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 344,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "text": "[14], [15] is that formal methods only check functional properties,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 363,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 366,
+      "text": "and AES-T2100 Trojan benchmark circuits [21] and analyzed for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 364,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 367,
+      "text": "e.g., a signal X can take a logic value of Y [19]. This does not reveal",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 365,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 368,
+      "text": "information leakage of a key bit to all output ports. However, we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 366,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 369,
+      "text": "the actual information flow, raising the possibility of false positive",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 367,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 370,
+      "text": "were unable to detect these Trojans as we do not know which specific",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 368,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 371,
+      "text": "results as shown in Section III-A. On the contrary, GLIFT can track",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 369,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 372,
+      "text": "internal signal to analyze for information leakage.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 370,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 373,
+      "text": "the actual information flow.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 371,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 374,
+      "text": "However, this technique also has some inherent limitations which",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 351,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 375,
+      "text": "D. Trojan Detection by Signal Sensitivity Tracing",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 321,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 376,
+      "text": "can be exploited to bypass this technique.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 374,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 377,
+      "text": "Jin et al. [16] have proposed the concept of proof-carrying code",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 375,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 378,
+      "text": "Indistinguishable Valid and Malicious Paths: GLIFT-based Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 376,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 379,
+      "text": "(PCC) to formally validate the security related properties of an IP",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 377,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 380,
+      "text": "detection technique assumes that “it is normal for the key to flow to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 378,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 381,
+      "text": "and detect the possible Trojan presence. PCC methodology was",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 379,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 382,
+      "text": "the ciphertext output in a cryptographic function” [19]. However, the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 380,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 383,
+      "text": "proposed to perform data sensitivity tracing. The data sensitivity list",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 381,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 384,
+      "text": "proposed technique fails to take into account that an adversary can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 382,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 385,
+      "text": "contains the overall information of the distribution of the sensitive",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 383,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 386,
+      "text": "design a Trojan which leaks the key through ciphertext output. Figure",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 384,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 387,
+      "text": "information across a design and this list can be evaluated to detect",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 385,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 388,
+      "text": "4 shows such a Trojan whose payload leak keys through a ciphertext",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 386,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 389,
+      "text": "possible Trojan payload which leaks the sensitive information. The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 387,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 390,
+      "text": "output when a certain trigger condition is applied. The GLIFT-based",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 388,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 391,
+      "text": "sensitivity of circuit signals which does not contain sensitive data",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 389,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 392,
+      "text": "Trojan detection technique would not be able to distinguish between",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 390,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 393,
+      "text": "are allocated with 0 value while the signals containing sensitive data",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 391,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 394,
+      "text": "the valid key propagation path and the key leakage path caused by the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 392,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 395,
+      "text": "are allocated with positive integer values. A larger value indicates",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 393,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 396,
+      "text": "Trojan. This limitation raises the possibility of false negative results.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 394,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 397,
+      "text": "a higher level of the sensitivity of the signal and therefore, requires",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 395,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 398,
+      "text": "Taint Explosion: Another major limitation of the GLIFT-based",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 396,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 399,
+      "text": "a higher level of protection. The signal transition value needs to be",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 397,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 400,
+      "text": "technique is that it cannot be applied to detect Trojans inserted by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 398,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 401,
+      "text": "IMAGE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 402,
+      "text": "rogue DfT vendors. As discussed in Section II-B, in many cases the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 400,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 403,
+      "text": "DfT insertion is often outsourced to third party vendors who have",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 402,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 404,
+      "text": "access to the whole SoC design and have the capability to incorporate",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 403,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 405,
+      "text": "a Trojan. In a DfT inserted design all the FFs in a scan chain will be",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 404,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 406,
+      "text": "connected in series in scan mode. Now, if a secret information (taint",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 405,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 407,
+      "text": "value HIGH) is propagated to any of these FFs, then in scan mode",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 406,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 408,
+      "text": "all the FFs in the scan chain will be tainted as HIGH as well, causing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 407,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 409,
+      "text": "a taint explosion. Therefore, GLIFT technique cannot be applied to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 408,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 410,
+      "text": "detect Trojan in DfT inserted netlist. One may argue that it is possible",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 409,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 411,
+      "text": "to apply GLIFT in only functional mode by applying constraint in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 410,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 412,
+      "text": "the scan enable signal. However, it has been demonstrated that it",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 411,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 413,
+      "text": "is possible to design Trojan that delivers its payload in scan mode,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 412,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 414,
+      "text": "Figure 5: Stable sensitivity status of AES encryption module. The red",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 401,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 415,
+      "text": "e.g., s35932-T100 Trojan in trust-hub [21]. Such Trojans cannot be",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 413,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 416,
+      "text": "dotted line represents the Trojan leakage path and the blue colored",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 414,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 417,
+      "text": "detected using GLIFT-based Trojan detection technique.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 415,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 418,
+      "text": "mask is part of the Trojan payload.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 416,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 419,
+      "text": "Also, GLIFT technique relies on formal tools to detect Trojan",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 374,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 420,
+      "text": "and therefore, shares the same limitation of Limited Verification",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 419,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 421,
+      "text": "Capability of formal methods.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 420,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 422,
+      "text": "Paper 6.1",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 423,
+      "text": "INTERNATIONAL TEST CONFERENCE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 424,
+      "text": "4",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 425,
+      "text": "978-1-5386-3413-4/17/$31.00 ©2017 IEEE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 426,
+      "text": "IMAGE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 427,
+      "text": "Figure 6: Overview of our proposed IFS verification framework for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 426,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 428,
+      "text": "Trojan detection.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 427,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 429,
+      "text": "updated as the signal goes through different circuit operations. Their",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 399,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 430,
+      "text": "proposed technique uses a conservative model which allows only a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 429,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 431,
+      "text": "few operations to downgrade the signal sensitivity list.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 430,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 432,
+      "text": "Figure 5 shows the stable signal sensitivity status of an AES",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 377,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 433,
+      "text": "encryption module. As shown in Figure 5, the sensitivity value of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 432,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 434,
+      "text": "ciphertext output is { f ix : 0}. The authors assume that a Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 433,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 435,
+      "text": "circuit which leaks sensitive information will cause sensitivity value",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 434,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 436,
+      "text": "of ciphertext output to be a positive integer instead of { f ix : 0}.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 435,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 437,
+      "text": "Bypassing Sensitivity Checking: It is possible to design a Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 436,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 438,
+      "text": "which leaks the sensitive information without making the sensitivity",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 437,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 439,
+      "text": "value of ciphertext output a positive integer. An attacker can introduce",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 438,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 440,
+      "text": "a Trojan leakage path which bypasses the S-Box, ShiftRow and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 439,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 441,
+      "text": "MixColumn operation, and leaks the intermediate state to the output",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 440,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 442,
+      "text": "(shown with a red dotted line in Figure 5). Note that, this Trojan path",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 441,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 443,
+      "text": "does not affect the sensitivity value of ciphertext output. However,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 442,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 444,
+      "text": "this Trojan leaks the intermediate state (Plaint ext ⊕ Key) when it is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 443,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 445,
+      "text": "triggered allowing the attacker to recover the key from the known",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 444,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 446,
+      "text": "plaintext. This Trojan bypasses the proposed detection technique",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 445,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 447,
+      "text": "as it does not affect the sensitivity value of ciphertext output. We",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 446,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 448,
+      "text": "experimentally validate this limitation using the AES-T100 Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 447,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 449,
+      "text": "benchmark [21] in Section V-D.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 448,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 450,
+      "text": "IV. T RO JA N D E TECTIO N THRO UG H IF S VERIFI CAT I ON",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 230,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 451,
+      "text": "In Section III, we have shown that recent Trojan detection tech-",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 450,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 452,
+      "text": "niques suffer from large false positive results and limited verification",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 451,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 453,
+      "text": "capability. Also, these techniques cannot distinguish between a valid",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 452,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 454,
+      "text": "and a Trojan propagation path and is also incapable of detecting",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 453,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 455,
+      "text": "Trojans in DfT inserted netlist. We propose a novel framework to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 454,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 456,
+      "text": "detect Trojan in 3PIPs which addresses these limitations.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 455,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 457,
+      "text": "Our proposed Trojan detection framework is based on information",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 451,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 458,
+      "text": "flow security (IFS) verification which detects violation of IFS policies",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 457,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 459,
+      "text": "due to Trojans. This framework can be applied to synthesized gate-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 458,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 460,
+      "text": "IMAGE",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 461,
+      "text": "level netlist of a design. To detect Trojan using IFS framework, a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 459,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 462,
+      "text": "SoC integrator will first synthesize the 3PIP to get the gate-level",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 461,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 463,
+      "text": "netlist and then apply the framework. Another advantage of IFS",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 462,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 464,
+      "text": "verification technique is that it can also detect Trojan in a DfT inserted",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 463,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 465,
+      "text": "netlist unlike previously proposed techniques (see Section III-B).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 464,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 466,
+      "text": "Therefore, the proposed technique can be applied to detect Trojan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 465,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 467,
+      "text": "inserted by DfT vendors. Our Trojan detection framework is based",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 466,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 468,
+      "text": "on the observation that a Trojan, however, small, will alter the normal",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 467,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 469,
+      "text": "information flow of a design and thereby violate information flow",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 468,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 470,
+      "text": "security (IFS) policies. The challenge here is to detect IFS violation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 469,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 471,
+      "text": "caused by Trojan without using any golden reference model.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 470,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 472,
+      "text": "Our IFS verification framework is based on a novel concept of",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 457,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 473,
+      "text": "For our IFS verification framework, we need to identify all observe",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 472,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 474,
+      "text": "points through which an asset can be observed and identify all",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 473,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 475,
+      "text": "control points from which an asset can be controlled. There are",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 474,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 476,
+      "text": "certain challenges of using conventional full-scan and full-sequential",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 475,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 477,
+      "text": "ATPG analysis for IFS verification framework. In full-scan ATPG,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 476,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 478,
+      "text": "we can detect the asset propagation only to the first level FFs. Asset",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 477,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 479,
+      "text": "propagation to the subsequent level of FFs cannot be performed",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 478,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 480,
+      "text": "using full-scan ATPG [27]. This presents a major limitation because",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 479,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 481,
+      "text": "the observe points associated with a Trojan which is not located in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 480,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 482,
+      "text": "the first level FFs, will not be detected by full-scan ATPG. In full-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 481,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 483,
+      "text": "sequential ATPG method, a sequence of functional input stimulus",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 482,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 484,
+      "text": "is generated to activate and propagate a fault to an observe point.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 483,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 485,
+      "text": "However, even for a simple stuck-at fault, the full-sequential ATPG",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 484,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 486,
+      "text": "needs to search through the space of all possible test vector sequences.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 485,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 487,
+      "text": "Due to the high complexity of the full-sequential ATPG, it remains",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 486,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 488,
+      "text": "a challenging task to detect fault propagation in sequential circuits",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 487,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 489,
+      "text": "that do not incorporate any DfT scheme [26].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 488,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 490,
+      "text": "We overcame the limitations of full-scan and full-sequential ATPG",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 473,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 491,
+      "text": "with our proposed partial-scan ATPG technique which is capable of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 490,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 492,
+      "text": "identifying the observe/control points of an asset. In a partial-scan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 491,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 493,
+      "text": "design, the scan chains contain some, but not all, of the sequential",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 492,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 494,
+      "text": "cells in the design. Traditionally, partial-scan is used to minimize",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 493,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 495,
+      "text": "area overhead (caused by DfT structure) while attaining targeted test",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 494,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 496,
+      "text": "coverage. However, in our IFS framework, we have used the partial-",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 495,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 497,
+      "text": "scan ATPG to identify the observe points through which an asset can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 496,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 498,
+      "text": "be observed and identify the control points from which an asset can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 497,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 499,
+      "text": "be controlled. Note that, the partial-scan ATPG technique is only used",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 498,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 500,
+      "text": "for our IFS verification purpose. Once the verification is performed,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 499,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 501,
+      "text": "the design can be transformed into a full-scan design to improve test",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 500,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 502,
+      "text": "coverage.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 501,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 503,
+      "text": "Figure 6 shows the overview of the IFS verification framework",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 490,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 504,
+      "text": "for Trojan detection. This technique can detect Trojan inserted",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 503,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 505,
+      "text": "by 3PIP and DfT vendors. The IFS verification can be further",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 504,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 506,
+      "text": "classified to Confidentiality Verification and Integrity Verification.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 505,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 507,
+      "text": "In Confidentiality Verification, we analyze all the observe points",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 506,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 508,
+      "text": "through which an asset can be observed and identify if the asset",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 507,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 509,
+      "text": "can be observed through any unauthorized/malicious observe points.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 508,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 510,
+      "text": "modeling an asset (e.g., a net carrying a secret key) as a stuck-at-0 and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 472,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 511,
+      "text": "Figure 7: Confidentiality verification algorithm utilizes partial-scan",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 460,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

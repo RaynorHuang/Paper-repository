@@ -1,0 +1,5326 @@
+{
+  "doc_id": "1704.00568",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "A parametric level-set metho d for partially discrete tomography",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Ajinkya Kadu†, Tristan van Leeuwen†, K. Joost Batenburg‡",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Abstract",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "This paper intro duces a parametric level-set method for tomographic reconstruction of partially",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 2,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "discrete images. Such images consist of a continuously varying background and an anomaly with a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 3,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "constant (known) grey-value. We represent the geometry of the anomaly using a level-set function,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 4,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "which we represent using radial basis functions. We pose the reconstruction problem as a bi-level",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 5,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "optimization problem in terms of the background and co efficients for the level-set function. To",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 6,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "constrain the background reconstruction we impose smoothness through Tikhonov regularization.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 7,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The bi-level optimization problem is solved in an alternating fashion; in each iteration we first",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 8,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "reconstruct the background and consequently update the level-set function. We test our method on",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 9,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "numerical phantoms and show that we can successfully reconstruct the geometry of the anomaly,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 10,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "even from limited data. On these phantoms, our method outperforms Total Variation reconstruction,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 11,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "DART and P-DART.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 12,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "1 Intro duction",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 2,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "The need to reconstruct (quantitative) images of an object from tomographic measurements app ears",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 14,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "in many applications. At the heart of many of these applications is a projection model based on the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 15,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Radon transform. Characterizing the ob ject under investigation by a function u(x) with x ∈ D = [0, 1]2,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 16,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "tomographic measurements are modeled as",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 17,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "pi = (cid:90) D u(x)δ(si − n(θi ) · x) dx,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 18,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "where si ∈ [0, 1] denotes the shift, θi ∈ [0, 2π ) denotes the angle and n(θ ) = (cos θ , sin θ). The goal is to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 19,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "retrieve u from a number, m, of such measurements for various shifts and directions.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 20,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "If the shifts and angles are regularly sampled, the transform can be inverted directly by Filtered",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 15,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "back-pro jection or Fourier reconstruction [9]. A common approach for dealing with non-regularly sampled",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 22,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "or missing data, is to express u in terms of a basis",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 23,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "u(x) = n (cid:88) j=1 uj b(x − xj),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 24,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "where b are piece-wise polynomial basis functions and {xj}nj=1 is a regular (pixel) grid. This leads to a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 25,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "set of m linear equations in n unknowns",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 26,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "p = W u,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 27,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "with wij = (cid:82)D b(x − xj )δ (si − n(θi ) · x) dx. Due to noise in the data or errors in the pro jection model",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 28,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "the system of equations is inconsistent, so a solution may not exist. Furthermore, there may be many",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 29,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "solutions that fit the observations equally well because the system is underdetermined. A standard",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 30,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "approach to mitigate these issues is to formulate a regularized least-squares problem",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 31,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "min u 1 2 ∥W u − p∥22 + λ2 ∥Ru∥22,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 32,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "where R is the regularization operator. Such a formulation is popular mainly b ecause very efficient",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 33,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "algorithms exist for solving it. Dep ending on the choice of R, however, this formulation forces the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 34,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "solution to have certain properties which may not reflect the truth. For example, setting R to b e the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 35,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "∗ Paper submitted to 20th International Conference on Discrete Geometry for Computer Imagery",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "Mathematical Institute, Utrecht University, The Netherlands. Contact: ajinkyakadu125@gmail.com",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "‡ Centrum Wiskunde & Informatica, Amsterdam, The Netherlands",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "1",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "discrete Laplace operator will pro duce a smooth reconstruction, whereas setting R to b e the identity",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 36,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "matrix forces the individual co efficients ui to b e small. In many applications such quadratic regularization",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 41,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "terms do not reflect the characteristics of the ob ject we are reconstructing. For example, if we expect u",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 42,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "to be piecewise constant, we could use a Total Variation regularization term ∥R u∥1 where R is a discrete",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 43,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "gradient op erator [14]. R ecently, a lot of progress has been made in developing efficient algorithms for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 44,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "solving such non-smo oth optimization problems [6]. If the ob ject under investigation is known to consist",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 45,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "of only two distinct materials, the regularization can be formulated in terms of a non-convex constraint",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 46,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "u ∈ {u0 , u1}n . The latter leads to a combinatorial optimization problem, solutions to which can be",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 47,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "approximated using heuristic algorithms [3].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 48,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "In this paper, we consider tomographic reconstruction of partially discrete ob jects that consist of a",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 22,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "region of constant density embedded in a continuously varying background. In this case, neither the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 50,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "quadratic, Total Variation nor non-convex constraints by themselves are suitable. We therefore propose",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 51,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "the following parametrization",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 52,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "u(x) = (cid:26)u0 (x) if x ∈ Ω, u1 otherwise.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 53,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "The inverse problem now consists of finding u0 (x), u1 and the set Ω. We can subsequently apply suitable",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 50,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "regularization to u0 separately. To formulate a tractable optimization algorithm, we represent the set Ω",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 55,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "using a level-set function ϕ(x) such that",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 56,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "Ω = {x | ϕ(x) > 0}.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 57,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "In the following sections, we discuss how to formulate a variational problem to reconstruct Ω and u0",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 55,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "based on a parametric level-set representation of Ω and assuming we know u1 .",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 59,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "The outline of the paper is as follows. In section 2 we discuss the parametric level-set method and",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 59,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "prop ose some practical heuristics for cho osing various paramaters that occur in the formulation. A joint",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 61,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "background-anomaly reconstruction algorithm for partially discrete tomography is discussed in section 3.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 62,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "The results on few moderately complicated numerical phantoms are presented in Section 4. We provide",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 63,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "some concluding remarks in Section 5.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 64,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "2 Level-set methods",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 14,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "In terms of the level-set function, we can express u as",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 66,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "u(x) = (1 − h(ϕ(x)))u0 (x) + h(ϕ(x))u1 ,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 67,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "where h is the Heaviside function and the latter term represents the anomaly.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 68,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "Level-set methods have received much attention in geometric inverse problems, interface tracking,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 67,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "segmentation and shape optimization. The reason b eing their ability to handle topological changes. The",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 70,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "classical level-set method, introduced by Sethian and Osher [12], solves the Hamiltonian-Jacobi equation,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 71,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "also known as level-set equation.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 72,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "∂ ϕ ∂t + v |∇ϕ| = 0, (1)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 73,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "where ϕ : R2 × R+ → R denotes the level-set function as a time-dep endent quantity for representing the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 74,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "shap e and v denotes the normal velocity. In the inverse-problems setting, the velo city v is often derived",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 75,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "from the gradient of the cost function with respect to the model parameter [5], [7]. There are various",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 76,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "numerical issues asso ciated with the numerical solution of level-set equation, e.g. reinitialization of the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 77,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "level-set. We refer the interested reader to a seminal paper in level-set metho d [11] and its application",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 78,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "to computational tomography [10].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 79,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "Instead of taking this classical level-set approach, we employ a parametric level-set approach, first",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 70,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "intro duced by Aghasi et al [1]. In this method, the level-set function is parametrized using radial basis",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 81,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "functions:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 82,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "ϕ(x) = n′ (cid:88) j=1 αj Ψ(βj ∥x − χj ∥2),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 83,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "where Ψ(.) is a radial basis function, {αj }n′j=1 and {χj }n′j=1 are the amplitudes and nodes respectively,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 84,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "and the parameters {βj}n′j=1 control the widths. Intro ducing the kernel matrix A(χ, β) with elements",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 85,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "aij = Ψ(βj ∥xi − χj ∥2 ),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 86,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "2",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "we can now express u as",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 87,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "u = (1 − h(A(χ, β)α)) ⊙ u0 + h(A( χ, β)α)u1, (2)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 89,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "where h is applied element-wise to the vector A(χ, β )α and ⊙ denotes the element-wise (Hadamard)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 90,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "product. By cho osing the parameters (χ, β, α) appropriately we can represent any (smo oth) shap e. To",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 91,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "simplify matters and make the resulting optimization problem more tractable, we consider a fixed regular",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 92,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "grid {χj }n′j =1 and a fixed width βj ≡ β . In the following we choose β in accordance with the gridspacing",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 93,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "∆χ as β = 1/(η∆χ), where η determines the influence of RBF on its neighbors.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 94,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "2.0.1 Example",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 66,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "To show that the reconstruction of level-set with a finitely many radial basis functions, we consider the",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 96,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "level-set shown in Figure 1 (a). With n′ = 196 RBFs, it is possible to reconstruct a smooth shape",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 97,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "discretized on a grid with n = 256 × 256 pixels.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 98,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "(a) (b) (c) (d)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "Figure 1: Any (sufficiently) smo oth level-set can be reconstructed from radial basis functions. (a)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 100,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "Level-set to be reconstructed is denoted by green line. Initial level-set (dash-dotted line) is generated by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 101,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "some positive RBFs (denoted by red plusses ) near the center and negative RBFs all around (denoted",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 102,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "by blue dots ) (b) Initial level-set function and the 0-level plane (c) Reconstructed level-set denoted by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 103,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "dash-dotted line with corresp onding positive and negative RBFs (d) Final level-set function",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 104,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "Finally, the discretized reconstruction problem for determining the shape is now formulated as",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 97,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "min α (cid:8)f (α) = ∥W [(u1 − u0 ) ⊙ hϵ(Aα)] − (p − W u0)∥22(cid:9) , (3)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 106,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "where hϵ is a smo oth approximation of the Heaviside function. The gradient and Gauss-Newton Hessian",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 107,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "of f (α) are given by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 108,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "∇f (α) = AT DTαW T r(α), HGN (f (α)) = AT DTαW T W Dα A. (4)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 109,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "where the diagonal matrix and residual vectors are given by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 110,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "Dα = diag((u1 − u0) ⊙ h′ϵ (Aα)), r(α) = W [(u1 − u0) ⊙ hϵ (Aα)] − (p − W u0 ).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 111,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "Using a Gauss-Newton method, the level-set parameters are updated as",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 106,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "α(k+1) = α(k) − µ(k) (cid:16)HGN (f (α(k)))(cid:17)−1 ∇f (α(k)),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 113,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "where µk is a suitable stepsize and α(0) is a given initial estimate of the shap e.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 114,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "From equation 4, it can b e observed that the ability to update the level-set parameters depends on",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 113,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "two main factors: 1) The difference b etween u0 and u1 , and 2) the derivative of the Heaviside function.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 116,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "Hence, the supp ort and smoothness of h′ϵ plays a crucial role in the sensitivity. More details on the choice",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 117,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "of hϵ are discussed in section 2.1.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 118,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "2.0.2 Example",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 96,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "We demonstrate the parametric level-set method on a (binary) discrete tomography problem. We consider",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 120,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "the mo del describ ed in Figure 2(a). For a full-angle case (0 ≤ θ ≤ π) with a large number of samples,",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 121,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "Figure 2(c) shows that it is possible to accurately reconstruct a complex shape.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 122,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "3",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "(a) (b) (c)(d) (e) (f )",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "Figure 2: Parametric level-set method for Discrete tomography problem. (a) True mo del (n = 256 × 256)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 125,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "(b) RBF grid (n′ = 27 × 27) with initial level-set denoted by green line, positive and negative RBFs",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 126,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "are denoted by red pluses and blue dots resp ectively (c) Final level-set denoted by the green line, and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 127,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "the corresponding positive and negative RBFs (d) Initial level-set function (e) level-set function after 10",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 128,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "iterations (f ) final level-set function after 25 iterations.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 129,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "2.1 Approximation to Heaviside function",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 66,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "The update of the level-set function primarily dep ends on the Heaviside function. Various approximations",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 131,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "have been mentioned earlier [1]. These approximations suffer from the variational region of Dirac-Delta",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 132,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "function near its p eak (δ|x=0) which amplifies the gradient disproportionally. This sometimes results in",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 133,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "po or updates for the level-set parameter α, and hence ruining the reconstructions. To solve this issue, we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 134,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "prop ose a new formulation of the Heaviside function. We construct the piecewise Dirac-Delta function",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 135,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "shown in equation (5):",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 136,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "δ (x) = 0 x ≤ −ϵ14(1−µ)ϵ (cid:16)1 + x+(1−µ)ϵµϵ + 1π sin(π x+(1−µ)ϵµϵ )(cid:17) −ϵ < x ≤ −µϵ12(1−µ)ϵ −µϵ < x ≤ µϵ14(1−µ)ϵ (cid:16)1 − x−(1−µ)ϵµϵ − 1π sin(π x−(1−µ)ϵµϵ )(cid:17) µϵ < x ≤ ϵ0 x ≥ ϵ (5)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 137,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "This new approximation has been plotted in Figure 3. The ab ove formulation provides mainly 3 benefits:",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 132,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "1) constant sensitivity in the b oundary region controlled by parameter µ, 2) a smooth transition part",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "and 3) the compact support.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 140,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "Definition 2.1. In accordance with the compact approximation of the Heaviside function with width ϵ,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 139,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "a level-set boundary, denoted by ∂ Ω, is defined as the set of all the p oints x ∈ R2 satisfying the condition",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 142,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "h′ϵ(ϕ(x)) > 0.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 143,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "Figure 3(c) shows a graphical representation of level-set boundary.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 142,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "Lemma 2.1. For any smooth and compact approximation of the Heaviside function with finite width ϵ,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 145,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "there exists a relation between level-set boundary and gradient of level-set function, given by |δTx ∇ϕ(x)| ≤",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 146,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "ϵ, where, δx = maxx∈∂Ω |x − x0 | and x0 is the point on the level-set.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 147,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "Proof. From Taylor series expansion for ϕ(x) near the level-set point x0 , we get",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 146,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "ϕ(x) = ϕ(x0) + (x − x0 )T ∇ϕ(x0 ) + O(∥x − x0∥2 ).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 149,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "4",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "h′ϵ (ϕ(x)) > 0 if and only if |ϕ(x)| < ϵ. Neglecting higher-order terms, we get |(x − x0 )T ∇ϕ(x0)| ≤ ϵ.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 150,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "This implies the above relation.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 152,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "From the lemma 2.1, it is important to choose the Heaviside width in such a way that the level-set",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 149,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "boundary exists on mo del grid. For simplicity, we crudely approximate the gradient of level-set function",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 154,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "using upper and lower bounds [8]. Hence, the heaviside width is represented by",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 155,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "ϵ = κ (cid:18) max(ϕ(x)) − min(ϕ(x)) ∆x (cid:19) = κ (cid:18) max(Aα) − min(Aα) ∆x (cid:19) , (6)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 156,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "where κ controls the number of gridp oints a level-set boundary can have. This formulation of ϵ solves the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 157,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "re-initialization issue associated with the level-set method. The steepness (|∇ϕ(x)| ≫ 1) of the level-set",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 158,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "function in the level-set boundary can be handled by this formulation as well, as it adapts the level-set",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 159,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "boundary to global change in level-set function.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 160,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "-1.5 -1 -0.5 0 0.5 1 1.5x00.20.40.60.81h(x) new formulation compact gobal -1.5 -1 -0.5 0 0.5 1 1.5x00.20.40.60.81(x) new formulation compact global(a) (b) (c)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "Figure 3: New formulation for approximating the Heaviside function. the Heaviside functions (a) and",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 162,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "corresponding Dirac-Delta functions (b) with ϵ = 1 and µ = 0.2 . Global approximation is constructed",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 163,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "from inverse tangent function, while compact one is comp osed of linear and sinusoid functions. (c)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 164,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "level-set boundary (orange region) around zero level-set denoted by blue line, n represents the normal",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 165,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "direction at x0 .",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 166,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "3 Joint reconstruction algorithm",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 66,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "Reconstructing both the shape and the background parameter can be cast as a bi-level optimization",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 168,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "problem",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 169,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "min u0 ,α (cid:8)f (α, u0 ) := 12 ∥W [(1 − h(Aα)u0 + h(Aα)u1 ] − p∥22 + λ2 ∥Lu0 ∥22(cid:9) , (7)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 170,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "where L is of form [LTx LTy ]T . Lx and Ly are the second-order finite-difference op erators in x and y",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 171,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "directions resp ectively. This optimization problem is separable; it is quadratic in u0 and non-linear in α.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 172,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "In order to exploit the fact that the problem has a closed-form solution in u0 for each α, we introduce",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 173,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "a reduced ob jective",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 174,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "f (α) = min u0 f (α, u0 ).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 175,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "The gradient and Hessian of this reduced ob jective are given by",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 169,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "∇f (α) = ∇α f (α, u0), (8)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 177,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "∇2f (α) = ∇2α f − ∇2α,u0 f (cid:0)∇2u0 f (cid:1)−1 ∇2α,u0 f, (9)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 178,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "where u0 = argminu0 f (α, u0 ) [2].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 179,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "Using a modified Gauss-Newton algorithm to find a minimizer of f , leads to the following alternating",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 177,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "algorithm",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 181,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "u(k+1)0 = arg minu0 f (α(k) , u0 ) (10)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 182,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "α(k+1) = α(k) − µ(k) (cid:16)HGN (f (α(k)))(cid:17)−1 ∇αf (α(k) , u(k+1)0 ), (11)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 183,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "where the expressions for the gradient and Gauss-Newton Hessian are given by (4). Convergence of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 184,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "this alternating approach to a lo cal minimum of (7) is guaranteed as long as the step-length satisfies the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 185,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "strong Wolfe conditions [16].",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 186,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "5",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "The reconstruction algorithm based on this iterative scheme is presented in Algorithm 1.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 181,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "Algorithm 1 Joint Reconstruction AlgorithmRequire: p - data, W - forward modeling op erator, u1 - anomaly property, A - RBF Kernel matrix, α0- initial RBF weights, κ - Heaviside width parameter, µ - Heaviside inclination parameterEnsure: αK−1 - final weights, u - corresponding model1: for k = 0 to K − 1 do2: compute Heaviside ϵ from equation (6)3: compute background parameter u(k+1)0 by solving equation (10)4: compute level-set parameter α(k+1) from equation (11)5: end for6: compute u from equation (2).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 189,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "We use the LSQR method in step 3, with pre-defined maximum iterations and a tolerance value. A",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 189,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "trust-region method is applied to compute α(k+1) in step 4 restricting the conjugate gradient to only 10",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 191,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "iterations.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 192,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "4 Numerical Exp eriments",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 168,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "The numerical experiments are performed on 4 phantoms shown in figure 4. Each phantom has a constant",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 194,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "gray value of parameter 1. For the first two phantoms, the background varies from 0 to 0.5, while for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 195,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "the next two, it varies from 0 to 0.8. In order to avoid inverse crime, the data is generated using a line",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 196,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "Kernel, and the forward mo del uses a Joseph kernel. We use ASTRA to olbox to compute the forward",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 197,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "and backward projections [4]. First, we show the results on the noiseless full-view data and later we",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 198,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "compare various methods to prop osed metho d in limited-data case with additive gaussian noise of 10 dB",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 199,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "SNR.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 200,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "(a) Mo del A (b) Mo del B (c) Model C (d) Model D",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "Figure 4: Phantoms for Simulations. All the models have resolution of 256 × 256 pixels.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 202,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "For the parametric level-set method, we use compactly supported radial basis functions. The basis",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 195,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "functions has the form given b elow:",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 204,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "Ψ(r ) = (1 − r)8+ (32r 3 + 25r2 + 8r + 1).",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 205,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "RBF nodes are placed on a rectangular grid with the gridspacing 5 times the computational (model)",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 204,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "gridspacing. The grid extends to two points outside the model grid to compensate for the background",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 207,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "effects. The heaviside width parameter κ is set to be 0.01 and the its inclination parameter µ is set to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 208,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "be 0.1.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 209,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "The level-set parameter α is optimized using the fminunc package (trust-region algorithm) in",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 207,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "MATLAB. A total of 50 iterations are performed for predicting the α, while 200 iterations are",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 211,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "performed for predicting u0(x) using LSQR at each step.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 212,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "4.1 Regularization parameter selection",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 194,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "The reconstruction with the prop osed algorithm is influenced by the parameter for Tikhonov",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 214,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "regularization. In general, there are various strategies to choose this parameter, e.g., [15]. As our",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 215,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "problem formulation deals with the non-linearity in the level-set parameter, application of these kinds",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 216,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "of strategies is not clear. Instead we analyze the various residuals, introduced b elow, with respect to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 217,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "the regularization parameter.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 218,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "6",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "We define three measures (all in the least-squares sense) to quantify the residuals: 1) data residual",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 215,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "(DR), determines the data fit between the true data and reconstructed data, 2) mo del residual (MR),",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 221,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "determines the fit b etween reconstructed model and true model, 3) shape residual (SR), determines the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 222,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "fit b etween the reconstructed and true anomaly shape. In practice, one can only have a data residual",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 223,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "measure to figure out the regularization parameter λ. From Figure 5, it is evident that there exists a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 224,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "sufficient region of λ for which the reconstructions almost stays constant. This region is easily identifiable",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 225,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "from the data residual plot for various λ.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 226,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "(a)104 105 106 10 7 10 8 109101102103104residual =1.83e+05 =6.95e+06 =5.46e+08=3.79e+05=2.07e+04 Data ResidualNoise LevelShape ResidualModel Residual (b)λ = 1.83 × 105 (c)λ = 3.79 × 10(d) λ = 6.95 × 106 (e) λ = 5.46 × 10",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "Figure 5: Variation of residuals with regularization parameter for Tikhonov. Appropriate region for",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 228,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "chosing λ exists between 3.79 × 105 and 6.95 × 106 . (a) b ehavior of DR, MR and SR over λ for model",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 229,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "A with noisy limited-angle data. Noise amplitude is denoted by green dotted line. (b),(c),(d),(e) shows",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 230,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "reconstructions for various λ values",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 231,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "4.2 Benchmark test",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 214,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "For the full-view (benchmark) case, the pro jection data is generated on 256 × 256 grid with 256 detectors",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 233,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "and 180 pro jections with 0 ≤ θ ≤ π. The noise is assumed to be zero in this case. The results on the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 234,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "phantoms with the full-view data are shown in Figure 6. Anomaly geometries in all of these mo dels are",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 235,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "reconstructed almost perfectly with the prop osed method, although the background has been smoothened",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 236,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "out with the tikhonov regularization.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 237,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "(λ = 2.97 × 107) (λ = 1.13 × 109) (λ = 2.97 × 107) (λ = 1.27 × 108)",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "Figure 6: Benchmark Tests: Reconstructions with full-view noiseless data for the regularization",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 239,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "parameter λ shown below it.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 240,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "4.3 Limited-angle test",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 233,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "In this case, we use only 5 pro jections with θ restricted from 0 to 2π/3. The data is now reduced",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 242,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "to almost 3% compared to the benchmark test. We also add Gaussian noise of 10 dB SNR to this",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 243,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "synthetic data. To check the p erformance of the proposed method, we compare it to Total-variation",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 244,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "method [4], DART [3] and its mo dified version for partially discrete tomography, P-DART [13]. A total",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 245,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "of 200 iterations were performed with regularization parameter determined from shap e residual curve.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 246,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "In DART, the background part was modeled using 20 discrete gray-values between its bounds for model",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 247,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "A and B, while 30 discrete gray-values for mo del C and D. 40 DART iterations were p erfomed in each",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 248,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "case. For P-DART, a total of 150 iterations were performed.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 249,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "7",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "Model Total-Variation DART P-DART Prop osed Method(λ = 3.36) (λ = 3.793 × 105 )DR = 59.91 DR = 119.36 DR = 13.64 DR = 74.07SR = 6904 SR = 4542 SR = 2207 SR = 352(λ = 1.438) (λ = 3.793 × 105 )DR = 39.39 DR = 35.25 DR = 298.61 DR = 62.28SR = 5366 SR = 4057 SR = 7622 SR = 796(λ = 3.36) (λ = 7.438 × 105 )DR = 70.35 DR = 134.99 DR = 16.54 DR = 118.56SR = 6805 SR = 6964 SR = 5541 SR = 377(λ = 0.6158) (λ = 3.793 × 105 )DR = 21.52 DR = 96.5216 DR = 9.00 DR = 59.51SR = 5602 SR = 4766 SR = 3631 SR = 1304",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "Figure 7: Reconstructions with noisy limited data. The first column shows the true models, while the",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 252,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "last 4 columns show the reconstructions with various methods. The residuals are also shown below each",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 253,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "reconstructed model.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 254,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "8",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 7,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "The results on noisy limited-angle with limited data are presented in Figure 7. The proposed method",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 243,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "is able to capture most of the fine details (evident from the shape residual) in the phantoms even with",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 257,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "the very limited data with moderate noise. The P-DART method achieves the least amount of data",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 258,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "residual in all the cases, but fails to capture the complete geometry of the anomaly.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 259,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "5 Conclusions and Discussion",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 194,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "We discussed a parametric level-set metho d for partially discrete tomography. We mo del such objects as a",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 261,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "constant-valued shap e embedded in a continuously varying background. The shape is represented using a",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 262,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "level-set function, which in turn is represented using radial basis functions. The reconstruction problem is",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 263,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "posed as a bi-level optimization problem for the background and level-set parameters. This reconstruction",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 264,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "problem can be efficiently solved using a variable pro jection approach, where the shape is iteratively",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 265,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "updated. Each iteration requires a full reconstruction of the background. The algorithm includes some",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 266,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "practical heuristics for cho osing various parameters that are introduced as part of the parametric level-set",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 267,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "method. Numerical experiments on a few numerical phantoms show that the proposed approach can",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 268,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "outp erform other p opular methods for (partially) discrete tomography in terms of reconstruction error.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 269,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "As the proposed algorithm requires repeated full reconstructions, future research is directed at making",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 270,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "the method more efficient.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 271,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "Acknowledgments. This work is part of the Industrial Partnership Programme (IPP)",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 262,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "‘Computational sciences for energ y research’ of the Foundation for Fundamental Research on Matter",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 273,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "(FOM), which is part of the Netherlands Organisation for Scientific Research (NWO). This research",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 274,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "programme is co-financed by Shell Global Solutions International B.V. The second and third authors",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 275,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "are financially supported by the Netherlands Organisation for Scientific Research (NWO) as part of",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 276,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "research programmes 613.009.032 and 639.073.506 respectively.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 277,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "References",
+      "label_id": 4,
+      "label_name": "Section",
+      "is_meta": false,
+      "parent": 261,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "[1] A. Aghasi, M. Kilmer, and E. L. Miller. Parametric level set metho ds for inverse problems. SIAM",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 279,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "Journal on Imaging Sciences, 4(2):618–650, 2011.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 280,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "[2] A. Y. Aravkin and T. Van Leeuwen. Estimating nuisance parameters in inverse problems. Inverse",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 280,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "Problems, 28(11):115016, 2012.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 282,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "[3] K. J. Batenburg and J. Sijbers. Dart: a practical reconstruction algorithm for discrete tomography.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 282,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "IEEE Transactions on Image Processing, 20(9):2542–2553, 2011.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 284,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "[4] F. Bleichro dt, T. van Leeuwen, W. J. Palenstijn, W. van Aarle, J. Sijbers, and K. J. Batenburg. Easy",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 284,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "implementation of advanced tomography algorithms using the astra to olbox with spot operators.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 286,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "Numerical algorithms, 71(3):673–697, 2016.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 287,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "[5] M. Burger. A level set metho d for inverse problems. Inverse problems, 17(5):1327, 2001.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 286,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "[6] A. Chambolle and T. Pock. A first-order primal-dual algorithm for convex problems with",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 289,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "applications to imaging. Journal of Mathematical Imaging and Vision, 40(1):120–145, 2011.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 290,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "[7] O. Dorn and D. Lesselier. Level set metho ds for inverse scattering. Inverse Problems, 22(4):R67,",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 290,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "2006.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 292,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "[8] A. Kadu, T. Van Leeuwen, and W. A. Mulder. Salt reconstruction in full waveform inversion with",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 292,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "a parametric level-set method. IEEE Transactions on Computational Imaging, 2016.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 294,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "[9] A. C. Kak and M. Slaney. Principles of computerized tomographic imaging. SIAM, 2001.",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 294,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "[10] E. Klann, R. Ramlau, and W. Ring. A mumford-shah level-set approach for the inversion and",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 296,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "segmentation of sp ect/ct data. Inverse Probl. Imaging, 5(1):137–166, 2011.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 297,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "[11] S. Osher and R. Fedkiw. Level set methods and dynamic implicit surfaces, volume 153. Springer",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 297,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "Science & Business Media, 2006.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 299,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "[12] S. Osher and J. A. Sethian. Fronts propagating with curvature-dependent sp eed: algorithms based",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 299,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "on hamilton-jacobi formulations. Journal of computational physics, 79(1):12–49, 1988.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 301,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "9",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 8,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "[13] T. Roelandts, K. Batenburg, E. Biermans, C. K ¨ub el, S. Bals, and J. Sijbers. Accurate segmentation",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 301,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "of dense nanoparticles by partially discrete electron tomography. Ultramicroscopy, 114:96–105, 2012.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 304,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "[14] E. Y. Sidky and X. Pan. Image reconstruction in circular cone-beam computed tomography by",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 304,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "constrained, total-variation minimization. Physics in medicine and biology, 53(17):4777, 2008.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 306,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "[15] A. M. Thompson, J. C. Brown, J. W. Kay, and D. M. Titterington. A study of methods of cho osing",
+      "label_id": 5,
+      "label_name": "First-Line",
+      "is_meta": false,
+      "parent": 306,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "the smo othing parameter in image restoration by regularization. IEEE Transactions on Pattern",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 308,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "Analysis and Machine Intelligence, 13(4):326–339, 1991.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 309,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "[16] S. Wright and J. Nocedal. Numerical optimization. Springer Science, 35:67–68, 1999.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": false,
+      "parent": 310,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "10",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 3,
+      "rel_name": "meta",
+      "page_id": 9,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

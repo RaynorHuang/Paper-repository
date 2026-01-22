@@ -1,0 +1,8709 @@
+{
+  "doc_id": "EMNLP_D17-1149",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "Translating Phrases in Neural Machine Translation",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Xing Wang† Zhaopeng Tu‡ Deyi Xiong†∗ Min Zhang†",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "†Soochow University, Suzhou, China",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "xingwsuda@gmail.com, {dyxiong, minzhang}@suda.edu.cn",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "‡ Tencent AI Lab, Shenzhen, China",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "tuzhaopeng@gmail.com",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Abstract",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Phrases play an important role in natu-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "ral language understanding and machine",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "translation (Sag et al., 2002; Villavicencio",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "et al., 2005). However, it is difficult to in-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "tegrate them into current neural machine",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "translation (NMT) which reads and gener-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "ates sentences word by word. In this work,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "we propose a method to translate phrases",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "in NMT by integrating a phrase memory",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "storing target phrases from a phrase-based",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "statistical machine translation (SMT) sys-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "tem into the encoder-decoder architecture",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "of NMT. At each decoding step, the phrase",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "memory is first re-written by the SMT",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "model, which dynamically generates rel-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "evant target phrases with contextual in-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "formation provided by the NMT model.",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Then the proposed model reads the phrase",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "memory to make probability estimations",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "for all phrases in the phrase memory. If",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "phrase generation is carried on, the NMT",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "decoder selects an appropriate phrase from",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "the memory to perform phrase translation",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "and updates its decoding state by con-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "suming the words in the selected phrase.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "Otherwise, the NMT decoder generates a",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "word from the vocabulary as the general",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "NMT decoder does. Experiment results",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "on the Chinese→English translation show",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "that the proposed model achieves signif-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "icant improvements over the baseline on",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "various test sets.",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "1 Introduction",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "Neural machine translation (NMT) has been re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "The word-by-word generation philosophy in",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "NMT makes it difficult to translate multi-word",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "phrases. Phrases, especially multi-word expres-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "sions, are crucial for natural language understand-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "ing and machine translation (Sag et al., 2002;",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "Villavicencio et al., 2005) as the meaning of a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "phrase cannot be always deducible from the mean-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "ings of its individual words or parts. Unfortu-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "nately current NMT is essentially a word-based or",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "character-based (Chung et al., 2016; Costa-jussa`",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "and Fonollosa, 2016; Luong and Manning, 2016)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "translation system where phrases are not consid-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "ered as translation units. In contrast, phrases are",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "much better than words as translation units in",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "SMT and have made a significant advance in trans-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "lation quality. Therefore, a natural question arises:",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "Can we translate phrases in NMT?",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "Recently, there have been some attempts on",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "multi-word phrase generation in NMT (Stahlberg",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "et al., 2016b; Zhang and Zong, 2016). However",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "these efforts constrain NMT to generate either",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "syntactic phrases or domain phrases in the word-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "by-word generation framework. To explore the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "phrase generation in NMT beyond the word-by-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "ceiving increasing attention due to its impressive",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "translation performance (Kalchbrenner and Blun-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "som, 2013; Cho et al., 2014; Sutskever et al., 2014;",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "Bahdanau et al., 2015; Wu et al., 2016). Sig-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "nificantly different from conventional statistical",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "machine translation (SMT) (Brown et al., 1993;",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "Koehn et al., 2003; Chiang, 2005), NMT adopts",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "a big neural network to perform the entire trans-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "lation process in one shot, for which an encoder-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "decoder architecture is widely used. Specifically,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "the encoder encodes a source sentence into a con-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "tinuous vector representation, then the decoder",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "uses the continuous vector representation to gen-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "erate the corresponding target translation word by",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "word.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "word generation framework, we propose a novel",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "architecture that integrates a phrase-based SMT",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "∗Corresponding author",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "1421",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pages 1421–1431",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "Copenhagen, Denmark, September 7–11, 2017. (cid:13)c 2017 Association for Computational Linguistics",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "model into NMT. Specifically, we add an auxil-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "iary phrase memory to store target phrases in sym-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "bolic form. At each decoding step, guided by the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "decoding information from the NMT decoder, the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "SMT model dynamically generates relevant target",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "phrase translations and writes them to the mem-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "ory. Then the NMT decoder scores phrases in",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "the phrase memory and selects a proper phrase or",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "word with the highest probability. If the phrase",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "generation is carried out, the NMT decoder gen-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "erates a multi-word phrase and updates its decod-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "ing state by consuming the words in the selected",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "phrase.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "Furthermore, in order to enhance the ability of",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "the NMT decoder to effectively select appropriate",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "target phrases, we modify the encoder of NMT to",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "make it fit for exploring structural information of",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "source sentences. Particularly, we integrate syn-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "tactic chunk information into the NMT encoder,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "to enrich the source-side representation. We vali-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "date our proposed model on the Chinese→English",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "translation task. Experiment results show that",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "the proposed model significantly outperforms the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "conventional attention-based NMT by 1.07 BLEU",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "points on multiple NIST test sets.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "The rest of this paper is organized as fol-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "lows. Section 2 briefly introduces the attention-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "based NMT as background knowledge. Section",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "3 presents our proposed model which incorporates",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "the phrase memory into the NMT encoder-decoder",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "architecture, as well as the reading and writing",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "procedures of the phrase memory. Section 4",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "presents our experiments on the Chinese→English",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "translation task and reports the experiment results.",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "Finally we discuss related work in Section 5 and",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "conclude the paper in Section 6.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "2 Background",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "Neural machine translation often adopts the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "encoder-decoder architecture with recurrent neu-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "ral networks (RNN) to model the translation pro-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "3 Approach",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "cess. The bidirectional RNN encoder which con-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "sists of a forward RNN and a backward RNN",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "In this section, we introduce the proposed model",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "reads a source sentence x = x1, x2, ..., xTx and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "which incorporates a phrase memory into the",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "transforms it into word annotations of the entire",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "encoder-decoder architecture of NMT. Inspired by",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "source sentence h = h1, h2, ..., hTx. The de-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "the recent work on attaching an external struc-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "coder uses the annotations to emit a target sentence",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "ture to the encoder-decoder architecture (Gulcehre",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "y = y1, y2, ..., yTy in a word-by-word manner.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "et al., 2016; Gu et al., 2016; Tang et al., 2016;",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "In the training phase, given a parallel sentence",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "P (yi|y<i, x) = softmax(f(si, yi−1,ci)) (2)",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "where f(·) is a non-linear function and si is the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "hidden state of the decoder at step i:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "si = g(si−1, yi−1,ci) (3)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "where g(·) is a non-linear function. Here we adopt",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "Gated Recurrent Unit (Cho et al., 2014) as the re-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "current unit for the encoder and decoder. ci is the",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "context vector, computed as a weighted sum of the",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "annotations h:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "ci = XjT=x1 αt,jhj (4)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "where hj is the annotation of source word xj and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "its weight αt,j is computed by the attention model.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "We train the attention-based NMT model by",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "maximizing the log-likelihood:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "C(θ) = XnN=1 XiT=y1 log P(yni |yn<i, xn) (5)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "given the training data with N bilingual sentences",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "(Cho, 2015).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "In the testing phase, given a source sentence x,",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "we use beam search strategy to search a target sen-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "tence yˆ that approximately maximizes the condi-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "tional probability P(y|x)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "yˆ = argmy ax P(y|x) (6)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "Wang et al., 2017), we adopt a similar approach",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "(x, y), NMT models the conditional probability as",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "follows,",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "P(y|x) = YiT=y1P (yi|y<i, x) (1)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "where yi is the target word emitted by the decoder",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "at step i and y<i = y1, y2, ..., yi−1. The condi-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "tional probability P(yi|y<i, x) is computed as",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "to incorporate the phrase memory into NMT.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "1422",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "Figure 1: Architecture of the NMT decoder with",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "Figure 1: Architecture of the NMT decoder with",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "the phrase memory. The NMT decoder per-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "forms phrase generation using the balancer and the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "phrase memory.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "3.1 Framework",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "Well-Formed Phrases",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "We employ a source-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "side chunker to chunk the source sentence, and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "only phrases that corresponds to a source chunk",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "are used in our model. We restrict ourselves to",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "the well-formed chunk phrases based on the fol-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "lowing considerations: (1) In order to take ad-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "vantage of dynamic programming, we restrict our-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "Figure 1 shows an example. Given the gener-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "selves to non-overlap phrases.1 (2) We explicitly",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "ated words “President Bush emphasized that”, the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "utilize the boundary information of the source-side",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "model generates the next fragment either from",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "chunk phrases, to better guide the proposed model",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "a word generation mode or a phrase generation",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "to adopt a target phrase at an appropriate decoding",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "mode. If the model selects the word generation",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "step. (3) We enable the model to exploit the syn-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "mode, it generates a word by the NMT decoder",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "tactic categories of chunk phrases to enhance the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "as in the standard NMT framework. Otherwise,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "proposed model with its selection preference for",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "it generates a multi-word phrase by enquiring a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "special target phrases. With these information, we",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "phrase memory, which is written by an SMT de-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "enrich the context vector ci to enable the proposed",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "coder based on the dynamic decoding information",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "model to make better decisions, as described be-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "from the NMT model for each step. The trade-off",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "low.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "between word generation mode and phrase gener-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "Following the commonly-used strategy in se-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "ation mode is balanced by a weight λ, which is",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "quence tagging tasks (Xue and Shen, 2003), we al-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "produced by a neural network based balancer.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "low the words in a phrase to share the same chunk",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "Formally, a generated translation y =",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "The balancing weight λ is produced by the bal-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "ancer – a multi-layer network. The balancer net-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "work takes as input the decoding information, in-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "cluding the context vector ci, the previous decod-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "ing state si−1 and the previous generated word",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "yi−1:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "λi = σ(fb(si, yi−1, ci)) (8)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "where σ(·) is a sigmoid function and fb(·) is",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "the activation function. Intuitively, the weight λ",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "can be treated as the estimated importance of the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "phrase to be generated. We expect λ to be high if",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "the phrase is appropriate at the current decoding",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "step.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "tag and introduce a special tag for the beginning",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "{y1, y2, . . ., yTy} consists of two sets of frag-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "word. For example, the phrase “ &E S(cid:28) (in-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "ments: words generated by NMT decoder w =",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "formation security)” is tagged as a noun phrase",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "{w1,w2, . .. , wK} and phrases generated from the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "“NP”, and the tag sequence should be “NP B NP”.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "phrase memory p = {p1, p2, . . . ,pL} . The prob-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "Partially motivated by the work on integrating lin-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "ability of generating y is calculated by",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "guistic features into NMT (Sennrich and Haddow,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "2016), we represent the encoder input as the com-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "P(y|x) = wk∈w×(1pY−l∈pλλt(tw(pkl)))PPpwhorrads(ew(pkl)) (7)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "bination of word embeddings and chunking tag",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "embeddings, instead of word embeddings alone in",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "the conventional NMT. The new input is formu-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "lated as follows:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "where Pword(wk) is the probability of generating",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "[Ewxi, Etti] (9)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "the word wk (see Equation 2), Pphrase(pl) is that",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "of generating the phrase pl which will be described",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "1Overlapped phrases may result in a high dimensionality",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "in Section 3.2, and t(·) is the decoding step to gen-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "in translation hypothesis representation and make it hard to",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "erate the corresponding fragment.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "employshared fragments forefficientdynamic programming.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "1423",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "where Ew ∈ Rdw×|V NMT | is a word embedding",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "matrix and dw is the word embedding dimension-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "ality, Et ∈ Rdt×|V TAG| is a tag embedding matrix",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "and dt is the tag embedding dimensionality. [·] is",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "the vector concatenation operation.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "3.2 Phrase Memory",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "The phrase memory stores relevant target phrases",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "provided by an SMT model, which is trained on",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "the same bilingual corpora. At each decoding",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "step, the memory is firstly erased and re-written by",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "the SMT model, the decoding of which is based",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "on the translation information provided by the",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "NMT model. Then, the proposed model enquires",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "phrases along with their probabilities Pphrase from",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "the memory.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "Writing to Phrase Memory",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "Reading Phrase Memory",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "When phrases are",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "read from the memory, they are rescored by a neu-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "ral network based score function. The score func-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "tion takes as input the phrase itself and decoding",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "information from NMT (i = t(pl) denotes the cur-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "rent decoding step):",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "scorephrase(pl) = gs e(pl), si, yi−1, ci (11)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "where gs(·) is either an identity or a non-linear",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "function. e(pl) is the representation of phrase pl,",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "which is modeled by a recurrent neural networks.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "Again, si is the decoder state, yi−1 is the lastly",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "generated word, and ci is the context vector. The",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "scores are normalized for all phrases in the phrase",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "Given a partial",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "memory, and the probability for phrase pl is calcu-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "translation y<i = {y1, y2, . . ., yt−1} gener-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "lated as",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "ated from NMT, the SMT model picks potential",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "Pphrase(pl) = softmax(scorephrase(pl)) (12)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "phrases extracted from the translation table. The",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "phrases are scored with multiple SMT features,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "The probability calculation is controlled with pa-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "including the language model score, the trans-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "rameters, which are trained together with the pa-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "lation probabilities, the reordering score, and so",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "rameters from the NMT model.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "on. Specially, the reordering score depends on",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "alignment information between source and target",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "3.3 Training",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "words, which is derived from attention distribution",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "Formally, we train both the default parameters of",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "produced by the NMT model (Wang et al., 2017).",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "standard NMT and the new parameters associated",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "SMT coverage vector in (Wang et al., 2017) is",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "with phrase generation on a set of training exam-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "also introduced to avoid repeat phrasal recommen-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "ples {[xn, yn]}Nn=1:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "dations. In our work, the potential phrase is phrase",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "C(θ) = XnN=1 log P(yn|xn) (13)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "with high SMT score which is defined as follow-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "ing:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "text": "SMTscore(pl|y<t, x) = mXM=1 wmhm(pl,x(pl()1)0",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "text": "where P (yn|xn) is defined in Equation 7. Ideally,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "text": "the trained model is expected to produce a higher",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 316,
+      "text": "balance weight λ and phrase probability Pphrase",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 317,
+      "text": "when a phrase is selected from the memory, and",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 318,
+      "text": "where pl is a target phrase and x(pl) is its cor-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "text": "responding source span. hm(pl, x(pl)) is a SMT",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "text": "lower scores in other cases.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 321,
+      "text": "feature function and wm is its weight. The feature",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 322,
+      "text": "3.4 Decoding",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 323,
+      "text": "weights can be tuned by the minimum error rate",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "text": "During testing, the NMT decoder generates a tar-",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 325,
+      "text": "training (MERT) algorithm (Och, 2003).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "text": "get sentence which consists of a mixture of words",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "text": "This leads to a better interaction between SMT",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "text": "and phrases. Due to the different granularities of",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "text": "and NMT models. It should be emphasized that",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "text": "words and phrases, we design a variant of beam",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "text": "our memory is dynamically updated at each de-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "text": "search strategy: At decoding step i, we first com-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "text": "coding step based on the decoding history from",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "text": "pute Pphrase for all phrases in the phrase memory",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "text": "both SMT and NMT models.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "text": "The proposed model is very flexible, where the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "text": "2Bilingual resources can be utilized in two ways: First,",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "text": "phrase memory can be either fully dynamically",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "text": "we can store the bilingual resources in a static memory and",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "text": "generated by an SMT model or directly extracted",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "text": "keep all items available to NMT in the whole decoding pe-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "text": "riod. Second, we can integrate the bilingual resources into",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "text": "from a bilingual dictionary, or any other bilingual",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "text": "SMT and then dynamically feed them into the phrase mem-",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 345,
+      "text": "resources storing idiomatic translations or bilin-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "text": "gual multi-word expressions, which may lead to",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "text": "a further improvement. 2",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "text": "ory.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "text": "1424",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 350,
+      "text": "and Pword for all words in NMT vocabulary. Then",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 351,
+      "text": "the balancer outputs a balancing weight λi, which",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 352,
+      "text": "is used to scale the phrase and word probabilities :",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 353,
+      "text": "λi × Pphrase and (1 − λi) × Pword. Now outputs",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 354,
+      "text": "are normalized probabilities on the concatenation",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 355,
+      "text": "of phrase memory and the general NMT vocabu-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 356,
+      "text": "lary. At last, the NMT decoder generates a proper",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 357,
+      "text": "phrase or word of the highest probability.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 358,
+      "text": "If a target phrase in the phrase memory has the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 359,
+      "text": "highest probability, the decoder generates the tar-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "text": "get phrase to complete the multi-word phrase gen-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "text": "eration process, and updates its decoding state by",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 362,
+      "text": "consuming the words in the selected phrase as de-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 363,
+      "text": "scribed in Equation 3. All translation hypotheses",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "text": "are placed in the corresponding beams according",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "text": "to the number of generated target words.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 366,
+      "text": "4 Experiments",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 367,
+      "text": "In this section, we evaluated the effectiveness",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 368,
+      "text": "of our model on the Chinese→English machine",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 369,
+      "text": "translation task. The training corpora consisted",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 370,
+      "text": "of about 1.25 million sentence pairs3 with 27.9",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 371,
+      "text": "million Chinese words and 34.5 million English",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 372,
+      "text": "words respectively. We used NIST 2006 (NIST06)",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 373,
+      "text": "dataset as development set, and NIST 2004",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 374,
+      "text": "(NIST04), 2005 (NIST05) and 2008 (NIST08)",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 375,
+      "text": "datasets as test sets. We report experiment results",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 376,
+      "text": "with case-insensitive BLEU score4.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 377,
+      "text": "We compared our proposed model with two",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 378,
+      "text": "state-of-the-art systems:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 379,
+      "text": "* Moses: a state-of-the-art phrase-based SMT",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 380,
+      "text": "system (Koehn et al., 2007) with its default",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 381,
+      "text": "settings, where feature function weights are",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 382,
+      "text": "tuned by the minimum error rate training",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 383,
+      "text": "(MERT) algorithm (Och, 2003).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 384,
+      "text": "* RNNSearch: an in-house implementation of",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 385,
+      "text": "the attention-based NMT system (Bahdanau",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 386,
+      "text": "et al., 2015) with its default settings.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 387,
+      "text": "For Moses, we used the full bilingual train-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 388,
+      "text": "For RNNSearch, we generally followed settings",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 389,
+      "text": "in the previous work (Bahdanau et al., 2015; Tu",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 390,
+      "text": "et al., 2017a,b). We only kept a shortlist of the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 391,
+      "text": "most frequent 30,000 words in Chinese and En-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 392,
+      "text": "glish, covering approximately 97.7% and 99.3%",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 393,
+      "text": "of the data in the two languages respectively. We",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 394,
+      "text": "constrained our source and target sequences to",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 395,
+      "text": "have a maximum length of 50 words in the train-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 396,
+      "text": "ing data. The size of embedding layer of both sides",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 397,
+      "text": "was set to 620 and the size of hidden layer was set",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 398,
+      "text": "to 1000. We used a minibatch stochastic gradient",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 399,
+      "text": "descent (SGD) algorithm of size 80 together with",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 400,
+      "text": "Adadelta (Zeiler, 2012) to train the NMT mod-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 401,
+      "text": "els. The decay rates ρ and (cid:15) were set as 0.95 and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 402,
+      "text": "10−6. We clipped the gradient norm to 1.0 (Pas-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 403,
+      "text": "canu et al., 2013). We also adopted the dropout",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 404,
+      "text": "technique. Dropout was applied only on the out-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 405,
+      "text": "put layer and the dropout rate was set to 0.5. We",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 406,
+      "text": "used a simple beam search decoder with beam size",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 407,
+      "text": "10 to find the most likely translation.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 408,
+      "text": "For the proposed model, we used a Chinese",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 409,
+      "text": "chunker6 (Zhu et al., 2015) to chunk the source-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 410,
+      "text": "side Chinese sentences. 13 chunking tags ap-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 411,
+      "text": "peared in our chunked sentences and the size",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 412,
+      "text": "of chunking tag embedding was set to 10. We",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 413,
+      "text": "used the trained phrase-based SMT to translate the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 414,
+      "text": "source-side chunks. The top 5 translations accord-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 415,
+      "text": "ing to their translation scores (Equation 10) were",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 416,
+      "text": "kept and among them multi-word phrases were",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 417,
+      "text": "used as phrasal recommendations for each source",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 418,
+      "text": "chunk phrase. For a source-side chunk phrase, if",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 419,
+      "text": "there exists phrasal recommendations from SMT,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 420,
+      "text": "the output chunk tag was used as its chunking tag",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 421,
+      "text": "feature as described in Section 3.1. Otherwise, the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 422,
+      "text": "words in the chunk were treated as general words",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 423,
+      "text": "by being tagged with the default tag. In the phrase",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 424,
+      "text": "memory, we only keep the top 7 target translations",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 425,
+      "text": "with highest SMT scores at each decoding step.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 426,
+      "text": "ing data to train the phrase-based SMT model",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 427,
+      "text": "We used a forward neural network with two hid-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 428,
+      "text": "and the target portion of the bilingual training",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 429,
+      "text": "den layers for both the balancer (Equation 8) and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 430,
+      "text": "data to train a 4-gram language model using",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 431,
+      "text": "the scoring function (Equation 11). The numbers",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 432,
+      "text": "KenLM5. We ran Giza++ on the training data in",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 433,
+      "text": "of units in the hidden layers were set to 2000 and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 434,
+      "text": "both Chinese-to-English and English-to-Chinese",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 435,
+      "text": "directions and applied the “grow-diag-final” re-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 436,
+      "text": "finement rule (Koehn et al., 2003) to obtain word",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 437,
+      "text": "alignments. The maximum phrase length is set to",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 438,
+      "text": "7.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 439,
+      "text": "500 respectively. We used a backward RNN en-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 440,
+      "text": "coder to learn the phrase representations of target",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 441,
+      "text": "3The corpus includes LDC2002E18, LDC2003E07,",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 442,
+      "text": "phrases in the phrase memory.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 443,
+      "text": "LDC2003E14, Hansards portion of LDC2004T07,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 444,
+      "text": "LDC2004T08 and LDC2005T06.",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 445,
+      "text": "4ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-v11b.pl",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 446,
+      "text": "5https://kheafield.com/code/kenlm/",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 447,
+      "text": "6http://www.niuparser.com/",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 448,
+      "text": "1425",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 449,
+      "text": "Table 1: Main experiment results on the NIST Chinese-English translation task. BLEU scores in the",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 450,
+      "text": "Table 1: Main experiment results on the NIST Chinese-English translation task. BLEU scores in the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 451,
+      "text": "table are case insensitive. Moses and RNNSearch are SMT and NMT baseline system respectively. “†”:",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 452,
+      "text": "significantly better than RNNSearch (p < 0.05); “‡”: significantly better than RNNSearch (p < 0.01).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 453,
+      "text": "Table 3: Percentages of phrase categories to the",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 454,
+      "text": "Table 2: Percentages of sentences that contain",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 455,
+      "text": "Table 2: Percentages of sentences that contain",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 456,
+      "text": "phrases generated by the proposed model.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 457,
+      "text": "4.1 Main Results",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 458,
+      "text": "Table 3: Percentages of phrase categories to the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 459,
+      "text": "Table 1 reports main results of different models",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 460,
+      "text": "total number of generated ones. “All” denotes all",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 461,
+      "text": "measured in terms of BLEU score. We observe",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 462,
+      "text": "generated phrases, and “New” means new phrases",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 463,
+      "text": "that our implementation of RNNSearch outper-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 464,
+      "text": "that cannot be found in translations generated by",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 465,
+      "text": "forms Moses by 2.34 BLEU points. (+memory)",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 466,
+      "text": "the baseline system. “Total” is the total number of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 467,
+      "text": "which is the proposed model with the phrase mem-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 468,
+      "text": "generated phrases and “Correct” denotes the fully",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 469,
+      "text": "ory obtains an improvement of 0.47 BLEU points",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 470,
+      "text": "correct ones.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 471,
+      "text": "over the baseline RNNSearch. With the source-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 472,
+      "text": "side chunking tag feature, (+memory+chunking",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 473,
+      "text": "tag) outperforms the baseline RNNSearch by 1.07",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 474,
+      "text": "BLEU points, showing the effectiveness of chunk-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 475,
+      "text": "ing syntactic categories on the selection of ap-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 476,
+      "text": "propriate target phrases. From here on, we use",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 477,
+      "text": "“+memory+chunking tag” as the default setting in",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 478,
+      "text": "the following experiments if not otherwise stated.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 479,
+      "text": "Number of Sentences Affected by Generated",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 480,
+      "text": "Phrases",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 481,
+      "text": "We also check the number of transla-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 482,
+      "text": "tions that contain phrases generated by the pro-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 483,
+      "text": "posed model, as shown in Table 2. As seen,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 484,
+      "text": "a large portion of translations take the recom-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 485,
+      "text": "mended phrases, and the number increases when",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 486,
+      "text": "the chunking tag feature is used.7 Considering",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 487,
+      "text": "BLEU scores reported in Table 1, we believe that",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 488,
+      "text": "the chunking tag feature benefits the proposed",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 489,
+      "text": "model on its phrase generation.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 490,
+      "text": "4.2 Analysis on Generated Phrases",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 491,
+      "text": "Syntactic Categories of Generated Phrases",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 492,
+      "text": "We first investigate which category of phrases",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 493,
+      "text": "Concerning the newly introduced phrases that",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 494,
+      "text": "cannot be found in baseline translations (i.e., col-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 495,
+      "text": "umn “New”), 13.2% of generated phrases are both",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 496,
+      "text": "new and fully correct, which contribute most to the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 497,
+      "text": "performance improvement. We can also find that",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 498,
+      "text": "most newly introduced verb phrases and quantifier",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 499,
+      "text": "is more likely to be selected by the proposed",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 500,
+      "text": "phrases are not correct, the patterns of which can",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 501,
+      "text": "approach. There are some phrases, such as",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 502,
+      "text": "noun phrases (NPs, e.g., “national laboratory” and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 503,
+      "text": "“vietnam airlines”) and quantifier phrases (QPs,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 504,
+      "text": "e.g., “15 seconds” and “two weeks”) , that we",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 505,
+      "text": "expect to be favored by our approach. Statistics",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 506,
+      "text": "shown in Table 3 confirm our hypothesis. Let’s",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 507,
+      "text": "first concern all generated phrases (i.e., column",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 508,
+      "text": "“All”): most selected phrases are noun phrases",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 509,
+      "text": "(81.0%) and quantifier phrases (10.8%). Among",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 510,
+      "text": "them, 44.5% percent of them are fully correct8.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 511,
+      "text": "Specifically, NPs have relative higher generation",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

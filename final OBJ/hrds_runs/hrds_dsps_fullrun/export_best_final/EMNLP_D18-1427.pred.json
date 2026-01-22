@@ -1,0 +1,8709 @@
+{
+  "doc_id": "EMNLP_D18-1427",
+  "nodes": [
+    {
+      "id": 0,
+      "text": "Answer-focused and Position-aware Neural Question Generation",
+      "label_id": 0,
+      "label_name": "Title",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Xingwu Sun1, Jing Liu1, Yajuan Lyu1, Wei He1, Yanjun Ma1, Shi Wang2",
+      "label_id": 1,
+      "label_name": "Author",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "text": "1Baidu Inc., Beijing, China",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 3,
+      "text": "2Institute of Computing Technology Chinese Academy of Sciences, Beijing, China",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "text": "{sunxingwu,liujing46,lvyajuan,hewei06,mayanjun02}@baidu.com",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "text": "wangshi@ict.ac.cn",
+      "label_id": 3,
+      "label_name": "Affiliation",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Abstract",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "text": "In this paper, we focus on the problem of ques-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "text": "tion generation (QG). Recent neural network-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "text": "based approaches employ the sequence-to-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "text": "sequence model which takes an answer and its",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "text": "context as input and generates a relevant ques-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "text": "tion as output. However, we observe two ma-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "text": "jor issues with these approaches: (1) The gen-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 14,
+      "text": "erated interrogative words (or question words)",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "text": "do not match the answer type. (2) The model",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 16,
+      "text": "copies the context words that are far from",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "text": "and irrelevant to the answer, instead of the",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "text": "words that are close and relevant to the an-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "text": "swer. To address these two issues, we propose",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "text": "an answer-focused and position-aware neural",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "text": "question generation model. (1) By answer-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "text": "focused, we mean that we explicitly model",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "text": "question word generation by incorporating the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "text": "answer embedding, which can help generate",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 25,
+      "text": "an interrogative word matching the answer",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 26,
+      "text": "type. (2) By position-aware, we mean that we",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "text": "model the relative distance between the con-",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "text": "text words and the answer. Hence the model",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 29,
+      "text": "can be aware of the position of the context",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 30,
+      "text": "words when copying them to generate a ques-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 31,
+      "text": "tion. We conduct extensive experiments to ex-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 32,
+      "text": "amine the effectiveness of our model. The ex-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 33,
+      "text": "perimental results show that our model signif-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "text": "icantly improves the baseline and outperforms",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "text": "the state-of-the-art system.",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "text": "1 Introduction",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "text": "The task of question generation (QG) aims to gen-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 38,
+      "text": "Previous work of QG can be classified into two",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 39,
+      "text": "categories: rule-based and neural network-based.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 40,
+      "text": "Compared to the rule-based approach, the neural",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 41,
+      "text": "network-based approach does not rely on hand-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "text": "crafted rules, and it is instead data-driven and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "text": "trainable in an end-to-end fashion. The recent re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "text": "lease of large-scale machine reading comprehen-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 45,
+      "text": "sion datasets, e.g. SQuAD (Rajpurkar et al., 2016)",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 46,
+      "text": "and MARCO (Nguyen et al., 2016), also drives the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "text": "development of neural question generation.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "text": "Recent neural question generation ap-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 49,
+      "text": "proaches (Du et al., 2017; Zhou et al., 2017)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "text": "employ sequence-to-sequence model that takes",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 51,
+      "text": "an answer and its context as input and outputs",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 52,
+      "text": "a relevant question. Zhou et al. (2017) further",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 53,
+      "text": "enrich the sequence-to-sequence model with rich",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 54,
+      "text": "features (e.g. answer position and lexical features)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "text": "to generate answer focused questions, and incor-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "text": "porate copy mechanism that allows to copy words",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 57,
+      "text": "from the context when generating questions. To",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "text": "the best of our knowledge, it achieve the best re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "text": "sults on SQuAD dataset so far (Zhou et al., 2017).",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 60,
+      "text": "In this paper, we implement this approach and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 61,
+      "text": "carefully study its generation results. Specifically,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "text": "we randomly sample 130 questions generated by",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "text": "the approach, and manually judge their quality by",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "text": "erate questions for a given text, and it can benefit",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "text": "comparing them with the references. We find 54",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "text": "several real applications: (1) In the area of educa-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "text": "out of 130 questions are ill generated, and we ob-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "text": "tion, QG can help generate questions for reading",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "text": "serve two major issues with the 54 questions: (1)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "text": "comprehension materials (Du et al., 2017). (2) QG",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "text": "20 (37.04% errors) questions contain the question",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 72,
+      "text": "can enable the machine to actively ask questions in",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 73,
+      "text": "words that do not match the answer type, though",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 74,
+      "text": "a dialogue system. (3) QG can also aid in the de-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 75,
+      "text": "the answer position feature has been incorporated.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "text": "velopment of question answering datasets (Duan",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 77,
+      "text": "Because the model does not pay much attention to",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "text": "et al., 2017). Typically, QG includes two sub-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "text": "the answer that is a key to question word genera-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "text": "tasks: (1) what to say, i.e. determining the targets",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "text": "(e.g. sentences, phrases or words) that should be",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "text": "asked; (2) how to say, i.e. producing the surface-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "text": "form of the question. In this paper, we focus on",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 84,
+      "text": "the sub-task of surface-form realization of ques-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 85,
+      "text": "tions by assuming the targets are given.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "text": "tion. Table 1 gives an example. A when-question",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 87,
+      "text": "3930",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 88,
+      "text": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 3930–3939",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 89,
+      "text": "Brussels, Belgium, October 31 - November 4, 2018. (cid:13)c 2018 Association for Computational Linguistics",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 90,
+      "text": "Table 1: A bad case where the generated question word does not match the answer type. A when-question should",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 91,
+      "text": "Table 1: A bad case where the generated question word does not match the answer type. A when-question should",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 92,
+      "text": "be triggered for answer “the end of the Mexican War”, while a why-question is generated by the baseline.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 93,
+      "text": "Table 2: A bad case where the model copies the context words far away from and irrelevant to the answer. The",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 94,
+      "text": "Table 2: A bad case where the model copies the context words far away from and irrelevant to the answer. The",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 95,
+      "text": "baseline copies “leading theory” that is far away from and unrelated to the answer “homologous recombination”,",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "text": "but neglects the phrase “second theory” that is close and relevant to the answer.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 97,
+      "text": "should be triggered for answer “the end of the",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "text": "Mexican War” while a why-question is generated",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "text": "by the model. (2) 11 (20.37% errors) questions",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "text": "copies the context words that are far from and",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "text": "irrelevant to the answer, instead of the words that",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "text": "are close and relevant to the answer. Because the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "text": "model is not aware of the positions of context",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "text": "words. Table 2 gives an example. The baseline",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "text": "model copies “leading theory” that is far away",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 106,
+      "text": "from and unrelated to the answer “homologous",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "text": "recombination”, but neglects the phrase “second",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "text": "theory” that is close and relevant to the answer.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "text": "To address these two issues, we propose an",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "text": "The contributions of this paper can be summa-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 111,
+      "text": "rized as follows:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "text": "• We analyze the generation results by the state-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "text": "of-the-art neural model, and find two major is-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 114,
+      "text": "sues with the model: (a) the generated question",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 115,
+      "text": "words do not match the answer type; (b) the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 116,
+      "text": "model copies the context words that are far from",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 117,
+      "text": "and irrelevant to the answer.",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 118,
+      "text": "• To deal with these two issues, we propose an",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 119,
+      "text": "answer-focused and position-aware neural ques-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 120,
+      "text": "tion generation model.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 121,
+      "text": "answer-focused and position-aware neural ques-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 122,
+      "text": "• We conduct extensive experiments to examine",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 123,
+      "text": "tion generation model. (1) By answer-focused,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 124,
+      "text": "the effectiveness of our proposed model.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "text": "we mean that we explicitly model question word",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "text": "generation by incorporating the answer embed-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 127,
+      "text": "2 Related Work",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 128,
+      "text": "ding, which can help generate a question word",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 129,
+      "text": "Question Generation",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "text": "Previous work of QG can",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "text": "matching the answer type. (2) By position-aware,",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "text": "we mean that we model the relative distance be-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "text": "be classified into two categories: rule-based and",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "text": "neural network-based. Regardless of the approach",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "text": "tween the context words and the answer. The rela-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 136,
+      "text": "taken, QG usually includes two sub-tasks: (1)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "text": "tive distance is encoded as position embedding, on",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 138,
+      "text": "what to say, i.e. selecting the targets that should be",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "text": "which a position-aware attention is generated. The",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "text": "asked. (2) how to say, i.e. formulating the struc-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 141,
+      "text": "position-aware attention help the model copy the",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 142,
+      "text": "ture of the question and producing the surface re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 143,
+      "text": "context words that are relatively close and relevant",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 144,
+      "text": "alization. This is similar to other natural language",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 145,
+      "text": "to the answer. We further conduct extensive exper-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 146,
+      "text": "iments on SQuAD and MARCO dataset to exam-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "text": "generation tasks. In this paper, we focus on the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "text": "second sub-task, i.e. surface-form realization of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "text": "ine the effectiveness of the answer-focused model",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "text": "and position-aware model, respectively. The ex-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 151,
+      "text": "questions by assuming the targets are given.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 152,
+      "text": "perimental results show that the combination of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 153,
+      "text": "our proposed answer-focused model and position-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "text": "aware model significantly improves the baseline",
+      "label_id": 9,
+      "label_name": "Figure",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 155,
+      "text": "and outperforms the state-of-the-art system.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "text": "The rule-based approaches usually include the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "text": "3931",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 1,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "text": "following steps: (1) Preprocess the given text by",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "text": "applying natural language processing techniques,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "text": "including syntactic parsing, sentence simplifica-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "text": "tion and semantic role labeling. (2) Identify",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 162,
+      "text": "the targets that should be asked by using rules",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 163,
+      "text": "or semantic roles. (3) Generate questions using",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 164,
+      "text": "transformation rules or templates. (4) Rank the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "text": "over generated questions by well-designed fea-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 166,
+      "text": "tures (Heilman and Smith, 2009, 2010; Chali and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 167,
+      "text": "Hasan, 2015). The major drawbacks of rule-based",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 168,
+      "text": "approaches include: (1) they rely on rules or tem-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 169,
+      "text": "plates that are expensive to manually create; (2)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 170,
+      "text": "the rules or templates lack diversity; (3) the targets",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "text": "that they can deal with are limited.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "text": "Sequence-to-sequence",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "text": "In recent years, the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 174,
+      "text": "sequence-to-sequence model has been widely",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "text": "To tackle the issues of rule-based approaches,",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 176,
+      "text": "used in the area of natural language generation,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "text": "the neural network-based approaches are applied",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "text": "including the tasks of abstractive text summa-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 179,
+      "text": "to the task of QG. The neural network-based ap-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 180,
+      "text": "rization, response generation in dialogue, poetry",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "text": "proaches do not rely on hand-crafted rules, and",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "text": "generation, etc. Sutskever et al. (2014) propose",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "text": "they are instead data driven and trainable in an",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "text": "a sequence-to-sequence model and apply it",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "text": "end-to-end fashion. Serban et al. (2016) firstly in-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 186,
+      "text": "to the task of machine translation. Bahdanau",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 187,
+      "text": "troduce an encoder-decoder framework with atten-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "text": "et al. (2014) introduce attention mechanism to",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "text": "tion mechanism to generate factoid questions for",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 190,
+      "text": "the sequence-to-sequence model and it greatly",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 191,
+      "text": "the facts (i.e. each fact is a triple composed of a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 192,
+      "text": "improves the model performance on the task",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 193,
+      "text": "subject, a predicate and an object) from FreeBase.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 194,
+      "text": "of machine translation. To deal with the out of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 195,
+      "text": "Du et al. (2017) introduce sequence-to-sequence",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "text": "vocabulary issue, several variants of the sequence-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "text": "model with attention mechanism to generate ques-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 198,
+      "text": "to-sequence model have been proposed to copy",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 199,
+      "text": "tions for the text from SQuAD dataset, which con-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 200,
+      "text": "words from source text (Gu et al., 2016; Gulcehre",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 201,
+      "text": "tains large-scale manually annotated triples com-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 202,
+      "text": "et al., 2016; Cao et al., 2017; See et al., 2017).",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 203,
+      "text": "posed of question, answer and the context (i.e. the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 204,
+      "text": "passage). Zhou et al. (2017) enrich the sequence-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 205,
+      "text": "3 Our Models",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 206,
+      "text": "to-sequence model with rich features, e.g. answer",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 207,
+      "text": "position and lexical features, and incorporate copy",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 208,
+      "text": "In this section, we describe the details of our",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "text": "mechanism that allows it to copy words from the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "text": "models. We first describe the baseline model, a",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "text": "context when generating a question. Their ex-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "text": "feature-enriched pointer-generator model. Then,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "text": "periments show the effectiveness of the rich fea-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "text": "we elaborate the proposed answer-focused model",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "text": "tures and the copy mechanism. Duan et al. (2017)",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "text": "and position-aware model to deal with the two is-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "text": "propose to combine templates and sequence-to-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "text": "sues discussed in previous section. Finally, a hy-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "text": "sequence model. Specifically, they mine question",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "text": "brid model is introduced to combine these two",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "text": "patterns from a question answering community",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "text": "models.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "text": "and apply sequence-to-sequence to generate ques-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "text": "tion patterns for a given text. Tang et al. (2017)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "text": "3.1 Baseline (Feature-enriched",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "text": "model question answering and question generation",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 227,
+      "text": "Pointer-generator Model)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 228,
+      "text": "as dual tasks. It helps generate better questions",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 229,
+      "text": "Our baseline model is an attention-based pointer-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 230,
+      "text": "when training these two tasks together.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "text": "generator model (See et al., 2017) enhanced with",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 232,
+      "text": "various rich features proposed by (Zhou et al.,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "text": "In this paper, we observe two major issues with",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 234,
+      "text": "the exiting neural models: (1) The generated ques-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "text": "2017). These features include: named entity (NE),",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "text": "part-of-speech (POS) and answer position in the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "text": "tion words do not match the answer type, since the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "text": "models do not pay much attention to the answers",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "text": "embedding layer of the encoder.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "text": "that are critical to generate question words. (2)",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 241,
+      "text": "The encoder in our baseline is a bidirec-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "text": "The model copies the context words that are far",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "text": "tional LSTM, which takes the joint embedding",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "text": "from and irrelevant to the answer, instead of the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "text": "words that are close and relevant to the answer,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "text": "since the models are not aware the positions of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "text": "the context words. To address these two issues,",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "text": "we propose an answer-focused and position-aware",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "text": "neural question generation model. As to position-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "text": "aware models, Zeng et al. (2014); Zhang et al.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "text": "(2017) introduce position feature in the task of re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "text": "lation extraction. They apply this feature to en-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "text": "code the relative distance to the target noun pairs.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "text": "In the task of QG, Zhou et al. (2017) apply BIO",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 255,
+      "text": "scheme to label answer position, which is a weak",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 256,
+      "text": "representation of relative distance between answer",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "text": "and its context words.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "text": "of word, answer position and lexical features",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "text": "3932",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 2,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "text": "(NE, POS) as input (w1, w2, ..., wTx) with wi ∈",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "text": "Rdw+da+dn+dp, where Tx is the input length and",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "text": "dw, da,dn, dp is the dimensionality of word em-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 263,
+      "text": "bedding, answer position embedding, NE embed-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 264,
+      "text": "ding and POS embedding respectively. It pro-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 265,
+      "text": "duces a sequence of hidden states (h1,h2, ..., hTx)",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "text": "to represent its input, each of which is a concate-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 267,
+      "text": "nation of a forward and a backward LSTM repre-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 268,
+      "text": "sentation:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 269,
+      "text": "←−→−hhhiii === [LL←−hSSTTi;MM−→h((iww],ii,, ←−→−hh ii+−11)), (1)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "text": "where ←−h i, −→h i are all dh-dimensional vectors.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "text": "The decoder is a unidirectional LSTM condi-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 272,
+      "text": "tioned on all encoded hidden states. At decoding",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 273,
+      "text": "step t, the decoder reads an input word embedding",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 274,
+      "text": "wt, previous attentional context vector ct−1 and",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "text": "its previous hidden state st−1 to update its current",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "text": "hidden state st ∈ Rdh:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 277,
+      "text": "st = LSTM([wt; ct−1], st−1) (2)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "text": "The context vector ct together with an attention",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "text": "distribution αt are generated via attention mecha-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 280,
+      "text": "nism (Bahdanau et al., 2014). Attention can be re-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 281,
+      "text": "garded as a semantic match between encoder hid-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 282,
+      "text": "den states and the decoder hidden state. It de-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 283,
+      "text": "scribes how the model spread out the amount it",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 284,
+      "text": "cares about different encoder hidden states during",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 285,
+      "text": "3.2 Answer-focused Model",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "text": "decoding. At step t, the context vector ct and the",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "text": "attention distribution αt are calculated as follows:",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "text": "The mismatch between generated question words",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "text": "and answer type is a major issue in neural ques-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "text": "eti = vTαttacint=h=(sWo(cid:88)iT=fhxtT1mhαaitxi+(heiWti)sT st + b) (((345)))",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "text": "tion generation (NQG). Even though answer is a",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "text": "key to question word generation, most NQG mod-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "text": "els do not focus on answer or weakly emphasis",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "text": "on it when generating question words. As Ta-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 295,
+      "text": "ble 1 shows, a when-question should be triggered",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 296,
+      "text": "for the answer “the end of the Mexican War”, but",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 297,
+      "text": "where Wh, Ws, b and v are all trainable parame-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 298,
+      "text": "an answer-irrelevant why-question is generated by",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 299,
+      "text": "ters.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 300,
+      "text": "the baseline. According to our analysis in Section",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "text": "Our baseline is based on a pointer-generator",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "text": "The latter mode copies words directly from the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "text": "source sequence. As the attention weights already",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "text": "measure the relevance of each input word to the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "text": "partial decoding state, we treat αt as the copy",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "text": "probability i.e. Pcopy(w) = αt. Both modes are",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "text": "switched via a generation probability pgen as fol-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "text": "lows:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "text": "P (w) = pgenPvocab(w)+(1−pgen)Pcopy(w) (7)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "text": "where pgen is computed from the context vector",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "text": "ct, decoder hidden state st and the decoder input",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "text": "wt:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "text": "pgen = σ(f(ct, st, wt)) (8)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "text": "f(·) indicates a simple feed-forward neural net-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "text": "work that emits a single scalar value. The whole",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 316,
+      "text": "network is thus trained end-to-end according to the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 317,
+      "text": "negative log likelihood loss of target word prob-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 318,
+      "text": "ability P(w∗). In the baseline, we apply BIO",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "text": "scheme to label answer position, where B,I,O de-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "text": "note the begin of an answer, the non-begin of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 321,
+      "text": "the answer and the non-answer context words re-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 322,
+      "text": "spectively. Besides, we introduce dropout (Sri-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 323,
+      "text": "vastava et al., 2014) with maxout (Goodfellow",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "text": "et al., 2013) to tackle over-fitting problem and pre-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 325,
+      "text": "trained global vectors (Glove) for word represen-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "text": "tation (Pennington et al., 2014). All these tech-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "text": "niques have been verified in their effectiveness in",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "text": "our model.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "text": "1, we discover that nearly 37% bad cases from our",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "text": "framework, which includes two complementary",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "text": "baseline fall into this category. To deal with this",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "text": "modes: a generation mode and a copy mode. The",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "text": "issue, we develop an answer-focused model.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "text": "former mode generates words from a given vocab-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "text": "We observe that the generation of question",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "text": "ulary as the vanilla sequence-to-sequence model:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "text": "words is mainly related to the answer and its sur-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "text": "Pvocab = softmax (g(st, ct)) (6)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "text": "rounding words. For example in Table 1, the an-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "text": "swer and its context “until after the end of the",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "text": "where g(·) is a two-layer feed-forward network",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "text": "Mexican War” already involve the essential infor-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "text": "with a maxout internal activation. Pvocab ∈ R|V |",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "text": "denotes the vocabulary distribution with a vocab-",
+      "label_id": 12,
+      "label_name": "Page-Header",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 345,
+      "text": "ulary size of |V |.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "text": "mation to generate a question word “when”. This",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "text": "3933",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 3,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "text": "Figure 1: The modules marked with A(cid:13) and colored yellow describe the answer-focused model, while the ones",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "text": "Figure 1: The modules marked with (cid:13)A and colored yellow describe the answer-focused model, while the ones",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 350,
+      "text": "marked with (cid:13)P and colored green describe the position-aware model. In answer-focused model, comparing to",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 351,
+      "text": "pointer-generator model, we introduce a question word generation mode and generate question words in a restricted",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 352,
+      "text": "vocabulary of question words. In position-aware model, we incorporate word position embeddings to gain a",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 353,
+      "text": "position-aware attention for further generation. The hybrid model has two types of attention distribution: position-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 354,
+      "text": "aware and non-position-aware attention distribution and two types of context vector accordingly. Question word",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 355,
+      "text": "distribution is generated from non-position-aware context vector while vocabulary distribution is calculated from",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 356,
+      "text": "position-aware one.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 357,
+      "text": "suggests that the answer and its context can bene-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 358,
+      "text": "fit the generation of question words. We also ob-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 359,
+      "text": "serve that the number of question words is limited.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "text": "Therefore, we introduce a specific vocabulary of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 361,
+      "text": "question words to directly and explicitly model the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 362,
+      "text": "generation of question words.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 363,
+      "text": "As depicted in Figure 1, comparing to pointer-",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "text": "The final probability distribution is calculated via",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "text": "a weighted sum of the three mode probability dis-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 366,
+      "text": "generator model, we introduce an additional ques-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 367,
+      "text": "tributions:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 368,
+      "text": "tion word generation mode to generate question",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 369,
+      "text": "P(w) += ppggeennqvPPqvuoecsatbi(own )w+ordp(cwop)yPcopy(w) (11)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 370,
+      "text": "words based on a restricted vocabulary of ques-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 371,
+      "text": "tion words. This mode produces a question word",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 372,
+      "text": "distribution based on an answer embedding vans,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 373,
+      "text": "3.3 Position-aware Model",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 374,
+      "text": "the decoder state st and the context vector ct:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 375,
+      "text": "Another main issue of NQG is that the generated",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 376,
+      "text": "Pquestion word = softmax(g(vans, st, ct)) (9",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 377,
+      "text": "question copies the context words that are distant",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 378,
+      "text": "from and irrelevant to the answer, instead of the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 379,
+      "text": "where Pquestion word is a |Vqw|-dimensional prob-",
+      "label_id": 7,
+      "label_name": "Equation",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 380,
+      "text": "words that are close and relevant to the answer. In",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 381,
+      "text": "ability distribution, and |Vqw| is the size of vocab-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 382,
+      "text": "other words, attention is distracted by irrelevant",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 383,
+      "text": "ulary of question words. We employ the encoded",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 384,
+      "text": "words far away from the answer. As shown in",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 385,
+      "text": "hidden state at the answer start position as the an-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 386,
+      "text": "Table 2, the baseline model copies “leading the-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 387,
+      "text": "swer embedding, i.e. vans = hanswer start. We",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 388,
+      "text": "ory” that are far away from and unrelated to the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 389,
+      "text": "argue that under bidirectional encoding, this an-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 390,
+      "text": "answer “homologous recombination”, but neglects",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 391,
+      "text": "swer embedding has already memorized both the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 392,
+      "text": "the words “second theory” and “linear and repli-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 393,
+      "text": "left and the right contexts around the answer re-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 394,
+      "text": "gion, making it a desired choice. To control the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 395,
+      "text": "balance among different modes, we introduce a 3-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 396,
+      "text": "dimensional switch probability:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 397,
+      "text": "pgenv, pgenq, pcopy = softmax(f(ct,st,wt)) (10)",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 398,
+      "text": "cates through” that are closer to the answer. In",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 399,
+      "text": "3934",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 4,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 400,
+      "text": "Section 1, we analyze the bad cases of our base-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 401,
+      "text": "line, and find that about 20% suffer from this phe-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 402,
+      "text": "nomenon. Further analysis on these cases indi-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 403,
+      "text": "cates that the closer a word is to the answer, the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 404,
+      "text": "more likely it should be copied.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 405,
+      "text": "Based on these evidences, we believe that an",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 406,
+      "text": "important reason for the above phenomenon lies",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 407,
+      "text": "in the lack of word position information inside the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 408,
+      "text": "NQG model. Following this direction, we propose",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 409,
+      "text": "a position-aware model. The model aims at en-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 410,
+      "text": "forcing local attention, and adapting the attention",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 411,
+      "text": "weights so as to put more emphasis on answer-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 412,
+      "text": "surrounded context words by incorporating word",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 413,
+      "text": "position embeddings.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 414,
+      "text": "A straightforward solution to inject position",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 415,
+      "text": "information is to directly incorporate relative",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 416,
+      "text": "word position embeddings. This can inform the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 417,
+      "text": "model where the answer is and what context",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 418,
+      "text": "words are close to it. As depicted in Figure 1,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 419,
+      "text": "4 Experiments",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 420,
+      "text": "we achieve this by feeding position embeddings",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 421,
+      "text": "4.1 Experiment Settings",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 422,
+      "text": "(dp1, dp2, ..., dpTx ) into the computation of atten-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 423,
+      "text": "tion distribution through a single layer network:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 424,
+      "text": "Dataset",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 425,
+      "text": "In this paper, we conduct the experiments",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 426,
+      "text": "on SQuAD and MARCO. Since the test sets of",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 427,
+      "text": "both data sets are not publicly available, we follow",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 428,
+      "text": "eti = vT tanh(αWtid=dpsio+ftmWahxh(ie+ti)Wsst + b) ((1123))",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 429,
+      "text": "Zhou et al. (2017) to randomly split the develop-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 430,
+      "text": "ment set into two parts and use them as the devel-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 431,
+      "text": "opment set and test set for the task of question gen-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 432,
+      "text": "eration. In SQuAD, there are 86, 635, 8, 965 and",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 433,
+      "text": "8, 964 question-answer pairs in our training set,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 434,
+      "text": "where pi is the relative distance between the i-th",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 435,
+      "text": "development set and test set, respectively. We di-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 436,
+      "text": "word and the answer, dpi is the embedding of pi,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 437,
+      "text": "rectly use the extracted features 1 shared by Zhou",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 438,
+      "text": "which we call word position embedding. By opti-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 439,
+      "text": "et al. (2017). In MARCO, there are 74, 097, 4, 539",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 440,
+      "text": "mizing the attention parameters, our model is ex-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 441,
+      "text": "and 4, 539 question-answer pairs in our training",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 442,
+      "text": "pected to discover the correlation between target",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 443,
+      "text": "set, development set and test set, respectively. We",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 444,
+      "text": "words and their relative distance from the answer.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 445,
+      "text": "use Stanford CoreNLP 2 to extract lexical features.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 446,
+      "text": "As a result, distracted attention on irrelevant input",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 447,
+      "text": "We attach all the processed data sets in the supple-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 448,
+      "text": "words can be avoided.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 449,
+      "text": "mental materials.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 450,
+      "text": "Implementation Details",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 451,
+      "text": "In this paper, we set the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 452,
+      "text": "3.4 A Hybrid Model (Answer-focused and",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 453,
+      "text": "cutoff length of the input sequence as 100 words.",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 454,
+      "text": "Position-aware)",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 455,
+      "text": "The vocabulary contains the most frequent 20, 000",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 456,
+      "text": "In Section 3.2 and 3.3, we describe the answer-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 457,
+      "text": "The hybrid model has three modes as in the",
+      "label_id": 8,
+      "label_name": "Table",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 458,
+      "text": "answer-focused model. The question word dis-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 459,
+      "text": "tribution is computed from non-position-aware at-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 460,
+      "text": "tention distribution as equation (9), while vocabu-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 461,
+      "text": "lary distribution is calculated from position-aware",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 462,
+      "text": "one. The final distribution is weighted sum of the",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 463,
+      "text": "three mode probability distributions:",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 464,
+      "text": "P(w) +=PppvggoeecnnaqvbPP=qvuoescsaotbfi(otmwn a)wx+or(cid:0)dgp((cwsopt)y,Pc(cid:48)tc)o)p(cid:1)y(w) ((1145))",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 465,
+      "text": "where Pcopy(w) is the position-aware attention",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 466,
+      "text": "distribution α(cid:48)t.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 467,
+      "text": "words in each training set. The vocabulary of",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 468,
+      "text": "focused model and position-aware model respec-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 2,
+      "rel_name": "equality",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 469,
+      "text": "question words contains 20 words. We use the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 470,
+      "text": "tively. In this section, we combine these two",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 471,
+      "text": "pre-trained Glove word vectors 3 with 300 dimen-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 472,
+      "text": "models to get a both answer-focused and position-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 473,
+      "text": "sions to initialize the word embeddings that will",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 474,
+      "text": "aware hybrid model. As depicted in Figure 1, the",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 475,
+      "text": "be further fine-tuned in the training stage. The",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 476,
+      "text": "hybrid model generates two types of attention dis-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 477,
+      "text": "representations of answer position feature and lex-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 478,
+      "text": "tribution: position-aware and non-position-aware",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 479,
+      "text": "ical features at the embedding layer of the encoder",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 480,
+      "text": "distribution. Accordingly, the model has two",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 481,
+      "text": "1https://res.qyzhou.me/redistribute.",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 482,
+      "text": "types of context vector: position-aware and non-",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 483,
+      "text": "zip",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 484,
+      "text": "position-aware context vector. At time step t, we",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 485,
+      "text": "2https://nlp.stanford.edu/software/",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 486,
+      "text": "calculate position-aware attention distribution α(cid:48)t",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 487,
+      "text": "3http://nlp.stanford.edu/data/glove.",
+      "label_id": 13,
+      "label_name": "Footnote",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 488,
+      "text": "as equation (12), (13), and non-position-aware one",
+      "label_id": 2,
+      "label_name": "Mail",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 489,
+      "text": "αt as equation (4), (5). And we use ct, c(cid:48)t to repre-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 490,
+      "text": "sent non-position-aware and position-aware con-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 491,
+      "text": "text vector calculated as equation (3) respectively.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 492,
+      "text": "6B.zip",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 493,
+      "text": "3935",
+      "label_id": 6,
+      "label_name": "Para-Line",
+      "is_meta": true,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 5,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 494,
+      "text": "Table 3: The main experimental results of baselines, answer-focused model, position-aware model and a hybrid",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 495,
+      "text": "Table 3: The main experimental results of baselines, answer-focused model, position-aware model and a hybrid",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 1,
+      "rel_name": "contain",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 496,
+      "text": "model on SQuAD and MARCO.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 497,
+      "text": "are randomly initialized as 32 dimensional vectors",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 498,
+      "text": "that are trainable during training stage. The hid-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 499,
+      "text": "den size of both the encoder and decoder is 512.",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 500,
+      "text": "We use dropout only in the encoder with a dropout",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 501,
+      "text": "rate 0.5. The size of answer embedding in answer-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 502,
+      "text": "focused model is 512. The position, that indicates",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 503,
+      "text": "the relative distance between the context words",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 504,
+      "text": "and the answer, ranges from 0 to 80 and its embed-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 505,
+      "text": "ding size in position-aware model is 16. We use",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 506,
+      "text": "the optimization algorithm Adagrad (Duchi et al.,",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 507,
+      "text": "2011) with learning rate 0.15, an initial accumu-",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 508,
+      "text": "lator value of 0.1 and batch size as 64. We use",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 509,
+      "text": "gradient clipping with a maximum gradient norm",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 510,
+      "text": "of 2. During training, we select the best model on",
+      "label_id": 11,
+      "label_name": "Page-Footer",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 511,
+      "text": "development set.",
+      "label_id": 10,
+      "label_name": "Caption",
+      "is_meta": false,
+      "parent": -1,
+      "rel_id": 0,
+      "rel_name": "connect",
+      "page_id": 6,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

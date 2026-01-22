@@ -1,0 +1,81 @@
+{
+  "exp_name": "hrds_dsps_fullrun",
+  "hrds_root": "C:\\Users\\tomra\\Desktop\\PAPER\\final OBJ\\HRDS",
+  "cfg": {
+    "max_len": 512,
+    "batch_size": 1,
+    "num_workers": 0,
+    "d_model": 256,
+    "nhead": 8,
+    "num_layers": 4,
+    "dropout": 0.1,
+    "max_1d_pos": 512,
+    "max_pages": 32,
+    "layout_bins": 1001,
+    "vis_crop_size": 224,
+    "vis_out_dim": 256,
+    "alpha_parent": 1.0,
+    "alpha_rel": 1.0,
+    "focal_gamma": 2.0,
+    "focal_alpha": 0.25,
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 2
+  },
+  "use_text": false,
+  "use_visual": false,
+  "use_softmask": true,
+  "best_epoch": 2,
+  "best_score_macro_strict": -0.8974870466097591,
+  "best_ckpt": "hrds_runs\\hrds_dsps_fullrun\\best_hrds.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train": {
+        "loss": 7.06806297885047,
+        "loss_cls": 1.6030009278323916,
+        "loss_par": 5.440790718396505,
+        "loss_rel": 0.024271332885319782
+      },
+      "metrics": {
+        "num_docs": 100,
+        "STEDS_strict_mean": -0.8976369367269377,
+        "STEDS_strict_std": 0.01802730545087131,
+        "STEDS_strict_median": -0.8993822865937217,
+        "STEDS_label_mean": -0.8976163181702367,
+        "STEDS_label_std": 0.018029307272830534,
+        "STEDS_label_median": -0.8993822865937217,
+        "cls_acc_mean": 2.0618556701030927e-05,
+        "parent_acc_mean": 0.012676110928042338,
+        "rel_acc_mean": 0.96478113879417
+      },
+      "macro_strict_for_select": -0.8976369367269377,
+      "eval_time_sec": 1217.1289012432098,
+      "is_best": true
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "loss": 6.333203865687053,
+        "loss_cls": 1.5589216228326161,
+        "loss_par": 4.767174943288167,
+        "loss_rel": 0.0071073019675936345
+      },
+      "metrics": {
+        "num_docs": 100,
+        "STEDS_strict_mean": -0.8974870466097591,
+        "STEDS_strict_std": 0.018143019926097962,
+        "STEDS_strict_median": -0.8993822865937217,
+        "STEDS_label_mean": -0.8974870466097591,
+        "STEDS_label_std": 0.018143019926097962,
+        "STEDS_label_median": -0.8993822865937217,
+        "cls_acc_mean": 0.00014989011717859245,
+        "parent_acc_mean": 0.012676110928042338,
+        "rel_acc_mean": 0.9747978463365711
+      },
+      "macro_strict_for_select": -0.8974870466097591,
+      "eval_time_sec": 436.40010809898376,
+      "is_best": true
+    }
+  ]
+}
