@@ -58,7 +58,7 @@ def train_one_epoch(model, loader, optimizer, cfg, focal_cls, focal_rel):
                 f"elapsed={elapsed/60:.1f}min"
             )
 
-        # ===== quick sanity check (只在最前面几步) =====
+        # ===== quick sanity check  =====
         if step < 2:
             L = len(doc["units"])
             print(f"    sanity: seq_len={L}, "
