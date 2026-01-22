@@ -27,9 +27,7 @@ def predict_doc(model: DSPSModel, doc: Dict[str, Any]) -> Dict[str, Any]:
         p = -1 if idx == 0 else (idx - 1)
         par.append(p)
 
-    # relation: 这里的 rel_logits 是用 GT parent 生成的；
-    # 推理时更严格做法：用预测 parent 重算 rel（下面给你重算版本）
-    # 先给简版：
+
     rel = out["rel_logits"].argmax(dim=-1).cpu().tolist()
 
     return {"pred_cls": cls, "pred_parent": par, "pred_rel": rel}
@@ -40,13 +38,6 @@ from collections import defaultdict
 
 @torch.no_grad()
 def predict_doc_with_rel_recompute(model, doc, device):
-    """
-    返回：
-      pred_cls: (L,)
-      pred_parent: (L,)  -1 表示 ROOT
-      pred_rel: (L,)
-      also return raw probs/logits if needed
-    """
     model.eval()
     out = model(doc)
 
@@ -90,9 +81,7 @@ def predict_doc_with_rel_recompute(model, doc, device):
         L = h_seq.size(0)
         if (p is None) or (p < 0) or (p >= L):
             parent_vec = root.squeeze(0)
-            # 可选：记录一次非法 parent（不影响逻辑）
-            # doc.setdefault("_bad_parent_count", 0)
-                    # doc["_bad_parent_count"] += 1
+            
         else:
             parent_vec = h_seq[p]
 
@@ -113,12 +102,7 @@ def predict_doc_with_rel_recompute(model, doc, device):
 
 
 def _id2name(mapping, idx: int) -> str:
-    """
-    mapping 可以是：
-      - list: mapping[idx]
-      - dict: mapping.get(idx)
-      - None: 返回 idx 字符串
-    """
+
     if mapping is None:
         return str(idx)
     if isinstance(mapping, dict):
@@ -131,19 +115,7 @@ def _id2name(mapping, idx: int) -> str:
 
 
 def export_tree_json(doc, pred=None):
-    """
-    doc: dataset 返回的 doc dict
-    pred: None => 导出 GT
-          dict => 导出 pred（需要含 pred_cls/pred_parent/pred_rel）
-    输出格式：
-      {
-        doc_id,
-        nodes: [
-          {id, text, label_id, label_name, is_meta, parent, rel_id, rel_name, page_id, box},
-          ...
-        ]
-      }
-    """
+
     doc_id = doc["doc_id"]
     units = doc["units"]
     L = len(units)
@@ -157,7 +129,7 @@ def export_tree_json(doc, pred=None):
         parent = pred["pred_parent"]
         rel_ids = pred["pred_rel"]
 
-    # 兼容你 notebook 里 ID2LABEL_14 / ID2REL 的类型（list 或 dict）
+    
     label_map = globals().get("ID2LABEL_14", None)
     rel_map = globals().get("ID2REL", None)
 
