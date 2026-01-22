@@ -1,10 +1,7 @@
 import json
 from pathlib import Path
 from collections import OrderedDict
-
 from transformers import AutoTokenizer
-
-# notebook 全局状态统一从 data_setup 来
 from . import data_setup
 
 
@@ -13,9 +10,6 @@ MAX_TOKENS = 512
 DOC_ID = "0a51k4mj12"
 
 DATA_DIR = data_setup.DATA_DIR
-
-
-# ---------- load label ----------
 label_path = DATA_DIR / "labels" / f"{DOC_ID}.json"
 obj = json.loads(label_path.read_text(encoding="utf-8"))
 pages_meta = obj["pages"]
@@ -65,9 +59,6 @@ def build_parent_map(elements, root_id=0):
 
 
 parent_map = build_parent_map(elements, root_id=0)
-
-
-# ---------- tokenizer ----------
 tok = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True)
 
 chunks = []
