@@ -30,7 +30,7 @@ class DSPSModel(nn.Module):
         self.use_text = use_text
         self.use_visual = use_visual
 
-        # embeddings
+      
         self.layout_pos_page = LayoutPosPageEmbedder(
             d_model=cfg.d_model,
             layout_bins=cfg.layout_bins,
@@ -98,7 +98,7 @@ class DSPSModel(nn.Module):
         doc_id = doc["doc_id"]
         page_images = doc["page_images"]
 
-        # ---- embeddings sum: text + visual + layout/pos/page ----
+        
         x = self.layout_pos_page(units, page_images)  # (L,d)
 
         if self.use_text:
@@ -111,37 +111,31 @@ class DSPSModel(nn.Module):
         x = self.fuse_ln(x)            # (L,d)
         x = x.unsqueeze(0)             # (1,L,d) for transformer batch_first
 
-        # ---- encoder ----
+        
         x_star = self.encoder(x)       # (1,L,d)
         x_star = x_star.squeeze(0)     # (L,d)
 
-        # ---- class logits ----
+       
         cls_logits = self.cls_head(x_star)  # (L,C)
         cls_prob = F.softmax(cls_logits, dim=-1)  # (L,C)
 
-        # ---- ROOT representation ----
+       
         root = x_star.mean(dim=0, keepdim=True)  # (1,d)
 
-        # ---- GRU decoder (causal) ----
-        # 论文写用 x*_{i-1} 驱动，这里用全序列输入 + 自己取 h_i（等价实现）
+       
         h_seq, _ = self.gru(x_star.unsqueeze(0))  # (1,L,d)
         h_seq = h_seq.squeeze(0)                  # (L,d)
 
-        # ---- parent logits with soft-mask ----
-        # 我们把 candidate set 定义为 [ROOT] + [0..i-1]
-        # 输出 par_logits[i] 形状 (i+1,) 其中 index0=ROOT, index k>0 对应 parent=j=k-1
+     
+        
         par_logits = []
         eps = 1e-8
 
-        # 预先准备 ROOT 的 class distribution：用 uniform 或者用 mean prob；论文是扩展 P_cls(0) 为 (C+1)，ROOT=1
-        # 我这里做：P_cls_root_over_parentclass = one-hot at ROOT row
-        # 计算 P_dom 时使用 rows=parentclass+ROOT
-        # 具体：P̃_cls(j) = [P_cls(j), 0] for real nodes；ROOT 用 [0..0,1]
+       
         root_one = torch.zeros((1, self.num_classes + 1), device=x_star.device)
         root_one[0, self.num_classes] = 1.0
 
-        # child prob 扩成 (C) 即原本；parent prob 扩成 (C+1)
-        # 对每个 i:
+        
         for i in range(L):
             q = self.Wq(h_seq[i:i+1])                # (1,d)
             # keys = [ROOT] + past h
@@ -176,9 +170,7 @@ class DSPSModel(nn.Module):
 
             par_logits.append(score)
 
-        # ---- relation logits (用 GT parent 保持训练稳定；推理时再用预测 parent) ----
-        # 这里先输出一个 (L,R) 的 logits，其中第 i 个是与 GT parent 的关系
-        # 对于 parent=-1 的（ROOT），relation 按你的数据里常见是 "contain"/"meta"，这里仍然算一个 rel loss（你也可 mask 掉）
+       
         y_parent = doc.get("y_parent", [-1]*L)
         rel_logits = []
         for i in range(L):
