@@ -10,10 +10,7 @@ from PIL import Image
 
 
 class SBERTTextEmbedder(nn.Module):
-    """
-    用 sentence-transformers 得到每个 unit 的句向量，然后投影到 d_model。
-    - 支持简单的 dict 缓存：key=(doc_id, unit_idx)
-    """
+
     def __init__(self, d_model: int, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
         super().__init__()
         self.d_model = d_model
@@ -35,10 +32,7 @@ class SBERTTextEmbedder(nn.Module):
         return emb
 
     def forward(self, doc_id: str, texts: List[str]) -> torch.Tensor:
-        """
-        返回 (L, d_model)，保证在 self.proj.weight.device 上
-        cache 存 CPU，取用时搬到目标 device
-        """
+        
         device = self.proj.weight.device
         L = len(texts)
         out = [None] * L
@@ -53,16 +47,16 @@ class SBERTTextEmbedder(nn.Module):
                 missing_idx.append(i)
                 missing_text.append(t)
 
-        # 2) cache miss：SBERT encode -> detach/clone -> proj -> 存 CPU
+
         if len(missing_idx) > 0:
-            emb_384 = self.encode_texts(missing_text)          # 可能是 inference tensor
-            emb_384 = emb_384.detach().clone().to(device)      # 关键：变普通 tensor + 上 GPU
-            emb_d = self.proj(emb_384)                         # (M,d_model) on GPU
+            emb_384 = self.encode_texts(missing_text)          
+            emb_384 = emb_384.detach().clone().to(device)      
+            emb_d = self.proj(emb_384)                         
 
             for k, i in enumerate(missing_idx):
                 key = (doc_id, i)
-                self.cache[key] = emb_d[k].detach().cpu()      # cache 存 CPU，省显存
-                out[i] = emb_d[k]                              # 当前 batch 直接用 GPU tensor
+                self.cache[key] = emb_d[k].detach().cpu()      
+                out[i] = emb_d[k]                              
 
         return torch.stack(out, dim=0)
     
@@ -73,7 +67,7 @@ class LayoutPosPageEmbedder(nn.Module):
         self.d_model = d_model
         self.layout_bins = layout_bins
 
-        # LayoutLMv2 风格：x0,x1,w 与 y0,y1,h，各自 embedding 再 concat -> proj
+        
         self.emb_x0 = nn.Embedding(layout_bins, d_model//4)
         self.emb_x1 = nn.Embedding(layout_bins, d_model//4)
         self.emb_w  = nn.Embedding(layout_bins, d_model//4)
@@ -93,7 +87,7 @@ class LayoutPosPageEmbedder(nn.Module):
         return: (L, d_model)
         """
         L = len(units)
-        # 逐页拿宽高
+        
         page_wh = {}
         for pid, pth in page_images.items():
             img = Image.open(pth)
@@ -177,8 +171,7 @@ class VisualFPNRoIEmbedder(nn.Module):
         self.backbone = resnet_fpn_backbone(
             backbone_name="resnet50",
             weights=torchvision.models.ResNet50_Weights.DEFAULT,
-            trainable_layers=3,   # 可按需调；最小化侵入先这么设
-        )
+            trainable_layers=3,   
 
         # For resnet_fpn_backbone, each pyramid level channel is 256
         self.pool = nn.AdaptiveAvgPool2d((1, 1))
