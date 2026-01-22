@@ -101,10 +101,7 @@ import heapq
 from collections import defaultdict
 
 def topo_sort_with_reading_priority(items):
-    """
-    items: HRDH json list，每个元素至少包含 box/page/parent_id
-    返回：满足 parent 一定在 child 前的顺序（同时尽量贴近阅读序）
-    """
+
     n = len(items)
 
     # reading priority rank
@@ -149,10 +146,7 @@ def topo_sort_with_reading_priority(items):
 
 
 def load_hrdh_json(json_path: str) -> Dict[str, Any]:
-    """
-    读取单个 HRDH json，返回 doc dict（units + labels + parent + relation），并重映射 parent 到新排序 index。
-    当前排序：按 (page, y0, x0) 近似阅读顺序（足够用于训练闭环；后续可替换为双栏阅读序）。
-    """
+
     with open(json_path, "r", encoding="utf-8") as f:
         items = json.load(f)
 
@@ -206,11 +200,7 @@ def load_hrdh_json(json_path: str) -> Dict[str, Any]:
 
 class HRDHDataset(Dataset):
     def __init__(self, root_dir: str, split: str = "train", max_len: int = 512,cfg=None):
-        """
-        root_dir: .../HRDH
-        split: train 或 test
-        max_len: 截断长度（论文常用 512）
-        """
+
         assert split in ("train", "test")
         self.root_dir = root_dir
         self.split = split
@@ -230,14 +220,14 @@ class HRDHDataset(Dataset):
         json_path = self.json_paths[idx]
         doc = load_hrdh_json(json_path)
 
-        # 截断（保持 parent 合法）
+        
         if len(doc["units"]) > self.max_len:
             keep = self.max_len
             doc["units"] = doc["units"][:keep]
             doc["y_cls"] = doc["y_cls"][:keep]
             doc["y_rel"] = doc["y_rel"][:keep]
             doc["is_meta"] = doc["is_meta"][:keep]
-            # parent: 超出范围的 parent 置为 0；指向被截断的也置 0（或 -1）
+            
             y_parent = []
             for i, p in enumerate(doc["y_parent"][:keep]):
                 if p == -1:
@@ -248,8 +238,7 @@ class HRDHDataset(Dataset):
                     y_parent.append(-1)
             doc["y_parent"] = y_parent
 
-        # 为每个 unit 找到对应页图路径（按 page_id）
-        # 注意：同一页只加载一次图片，训练时可以再做缓存/预处理
+
         page_ids = sorted(set(u["page_id"] for u in doc["units"]))
         page_images = {}
         for pid in page_ids:
@@ -284,13 +273,13 @@ def filter_meta_and_remap(units_raw):
     for old_i in keep_idx:
         u = units_raw[old_i]
         p_old = int(u.get("parent_id", -1))
-        # 如果 parent 被过滤掉，或本来就是 -1，则设为 ROOT(-1)
+       
         p_new = old2new.get(p_old, -1) if p_old >= 0 else -1
 
         rel = u.get("relation", None)
-        # 过滤后不应该再出现 meta；如果仍然出现，直接跳过该样本或置默认
+        
         if rel == "meta":
-            # 这里选择：直接将该单元丢弃（更干净）
+            
             continue
 
         if rel not in REL3:
